@@ -1,6 +1,5 @@
 import React from "react";
 import { Skills } from "../constant/constant";
-import javas from '../assets/Images/Skills/javascript-js.1024x1024.png'
 import Image from "next/image";
 
 const SkillSection = () => {

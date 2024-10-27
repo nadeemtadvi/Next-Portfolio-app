@@ -1,6 +1,6 @@
 // 'use client'
 import React from "react";
-import { userinfo, headerItem, DwnldButton } from "@/src/constant/constant";
+import {  headerItem, DwnldButton } from "@/src/constant/constant";
 import Image from "next/image";
 
 const Header = () => {
