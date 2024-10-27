@@ -13,7 +13,7 @@ const FooterSection = () => {
       <div className="p-5 flex justify-between items-center">
         <h4 className="text-[0.8rem] text-subtext">{Footer.copyright}</h4>
         <h4 className="text-[0.8rem] text-subtext">{Footer.dev}</h4>
-        <div className="flex justify-between items-center gap-5">
+        <div className="flex-wrap flex justify-between items-center gap-1 sm:gap-5">
           <Image
           src={insta}
           alt='insta'

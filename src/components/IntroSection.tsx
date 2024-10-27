@@ -8,8 +8,8 @@ import facebook from "../assets/Icons/facebook.png";
 
 const IntroSection = () => {
   return (
-    <div className="mb-[4rem]">
-      <div className="grid grid-cols-2 p-5">
+    <div className="">
+      <div className="sm:grid grid-cols-2 p-5">
         <div className=" flex justify-start items-center">
           <div>
             <h5 className="text-titletext font-semibold text-[2.6rem] leading-[48px] mb-5">
@@ -18,7 +18,7 @@ const IntroSection = () => {
               {InterSect.middletext}
               <span className="text-mainColor"> {InterSect.spanwork}</span>
             </h5>
-            <p className="w-[75%] text-subtext text-[1.04rem] mb-6">
+            <p className="sm:w-[75%] text-subtext text-[1.04rem] mb-6">
               {InterSect.subtitle}
             </p>
             <div className="mb-5">
@@ -31,20 +31,27 @@ const IntroSection = () => {
             </div>
           </div>
         </div>
-        <div className="relative flex justify-center items-center">
-          <div>
-            <div className=" mr-12 flex items-center justify-start">
-              <Image src={userinfo.picture} alt="dp" width={400} height={460} />
-            </div>
-            <div className="absolute top-0 right-0 flex items-center bottom-0">
-              <h4 className="text-[0.8rem] vertical-rl flex items-center gap-2 text-mainColor">
-                {InterSect.follow}
-                <div className="w-[1px] h-14 bg-mainColor"></div>
-                <Image src={insta} alt="insta" width={16} height={16} />
-                <Image src={facebook} alt="insta" width={16} height={16} />
-                <Image src={Linkedin} alt="insta" width={16} height={16} />
-                <Image src={git} alt="insta" width={16} height={16} />
-              </h4>
+        <div className="hidden sm:block">
+          <div className=" relative flex justify-center items-center">
+            <div>
+              <div className=" mr-12 flex items-center justify-start">
+                <Image
+                  src={userinfo.picture}
+                  alt="dp"
+                  width={400}
+                  height={460}
+                />
+              </div>
+              <div className="absolute top-0 right-0 flex items-center bottom-0">
+                <h4 className="text-[0.8rem] vertical-rl flex items-center gap-2 text-mainColor">
+                  {InterSect.follow}
+                  <div className="w-[1px] h-14 bg-mainColor"></div>
+                  <Image src={insta} alt="insta" width={16} height={16} />
+                  <Image src={facebook} alt="insta" width={16} height={16} />
+                  <Image src={Linkedin} alt="insta" width={16} height={16} />
+                  <Image src={git} alt="insta" width={16} height={16} />
+                </h4>
+              </div>
             </div>
           </div>
         </div>

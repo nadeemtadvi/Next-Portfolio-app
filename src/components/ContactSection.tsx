@@ -3,9 +3,9 @@ import { Contact } from "../constant/constant";
 
 const ContactSection = () => {
   return (
-    <div className="mb-[4rem] p-5">
-      <div className="text-center mb-[4rem]">
-        <button className="mb-[1rem] rounded-full bg-mainColorten text-mainColor font-medium p-[2px_20px_3px]">
+    <div className="mb-[1rem] sm:mb-[4rem] p-5">
+      <div className="text-center mb-[1rem] sm:mb-[4rem]">
+        <button id='contact' className="mb-[1rem] rounded-full bg-mainColorten text-mainColor font-medium p-[2px_20px_3px]">
           {Contact.contact}
         </button>
 
@@ -14,7 +14,7 @@ const ContactSection = () => {
         </h4>
         <p className="text-[1.04rem] text-subtext">{Contact.subtitle}</p>
       </div>
-      <div className="grid grid-cols-[40%_auto] ">
+      <div className="sm:grid grid-cols-[40%_auto] ">
         <div>
           {Contact.contactList.map((item, index) => (
             <div key={index} className="grid grid-cols-[50px_auto] items-center mb-8">

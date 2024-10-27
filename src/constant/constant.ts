@@ -22,6 +22,7 @@ import tailw from '../assets/Images/Skills/tailwind-css-icon.png'
 import illustrate from '../assets/Images/Intro/Devices-amico (1).png'
 import cmplogo from '../assets/Images/CompanyLogo/AplLogo.png'
 import logo from '../assets/Images/LOGO/N-Dev  (1).png'
+import profile from '../assets/Images/Profile/Visit.jpg'
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
@@ -62,7 +63,7 @@ export const AboutMe: AboutSectionProps = {
   title: "Curous about me?",
   subtitle:
     "I’m Tanvir, a creative Product Designer. I’ve been helping busto solve their problems with my design for 2 years. Developed a responsive blogging platform using React and Redux for efficient state management, improving data flow and user experience. Styled dynamic components and ensured mobile responsiveness using Tailwind CSS, achieving a modern and visually appealing design. Implemented CRUD functionalities for blogs, enabling users to create, edit, and delete posts seamlessly",
-  image: "",
+  image: profile,
 };
 
 export const Skills: SkillSectionProps = {
@@ -81,6 +82,7 @@ export const Skills: SkillSectionProps = {
 };
 
 export const Works: WorkSectionProps = {
+  button:'Experience',
   title: "Frontend Developer",
   startDate: "Jan 2024",
   endDate: "Sept 2024",

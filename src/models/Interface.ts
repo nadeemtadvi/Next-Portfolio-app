@@ -56,6 +56,7 @@ export interface SkillSectionProps {
 
 export interface WorkSectionProps {
   title: string;
+  button: string;
   startDate: string;
   endDate: string;
   subtitle: string;
