@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  font-family:  ''Tahoma,'Arial Narrow Bold', sans-serif,  sans-serif;
+} 
+
+.vertical-rl{
+  writing-mode: vertical-rl
+}
