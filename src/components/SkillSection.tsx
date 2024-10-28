@@ -18,7 +18,7 @@ const SkillSection = () => {
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3  md:grid-cols-4 gap-8">
           {Skills.skillObj.map((item, index) => (
-            <div key={index} className="border border-gray-300 rounded-[6px]">
+            <div key={index} className="border border-gray-300 rounded-[6px] transform transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-mainColorten">
               <div className="flex justify-center items-center ">
                 <div className="">
                 <Image src={item.image} alt="insta" width={100} height={100} className="p-[20px_10px_0px_10px] !h-[100px] !w-[100px]" />

@@ -12,8 +12,8 @@ const ProjectSection = () => {
         </div>
         <div className="md:grid grid-cols-2 gap-4">
           {Project.projectObject.map((item, index) => (
-            <div key={index} className="p-5">
-              <div className="h-[260px] w-full bg-black mb-3">{/* Image`` */}</div>
+            <div key={index} className="p-5 ">
+              <div className="h-[260px] w-full bg-black mb-3 transform transition-transform duration-300 ease-in-out hover:scale-105">{/* Image`` */}</div>
               <div>
                 <div>
                   <h4 className="text-[2rem] text-titletext font-medium mb-2 sm:mb-4">

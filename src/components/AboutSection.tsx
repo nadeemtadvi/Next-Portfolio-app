@@ -11,8 +11,8 @@ const AboutSection = () => {
         </button>
       </div>
       <div className="sm:grid grid-cols-2 items-center">
-        <div className="mb-14 sm:mb-0 relative flex items-center justify-center">
-          <div className="z-[10]  w-[260px] h-[260px] shadow-md rounded-[6px]">
+        <div className="mb-14 sm:mb-0 relative flex items-center justify-center transform transition-transform duration-300 ease-in-out hover:scale-105">
+          <div className="z-[10]  w-[260px] h-[260px] shadow-md rounded-[6px] ">
             <Image
               src={AboutMe.image}
               alt="dp"

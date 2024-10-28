@@ -22,10 +22,10 @@ const IntroSection = () => {
               {InterSect.subtitle}
             </p>
             <div className="mb-5">
-              <button className="bg-mainColor text-white rounded-[6px] p-[5px_24px_6px]">
+              <button className="bg-mainColor text-white rounded-[6px] p-[5px_24px_6px] hover:bg-[#111b8d]">
                 {InterSect.contact}
               </button>
-              <button className="ml-2  text-titletext rounded-[6px] p-[5px_24px_6px]">
+              <button className="ml-2  text-titletext rounded-[6px] p-[5px_24px_6px] ">
                 {InterSect.resume}
               </button>
             </div>

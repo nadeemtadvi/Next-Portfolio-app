@@ -77,7 +77,7 @@ const ContactSection = () => {
               />
             </div>
             <div className="text-end">
-              <button className="bg-mainColor text-white rounded-[6px] p-[5px_24px_6px]">
+              <button className="bg-mainColor text-white rounded-[6px] p-[5px_24px_6px] hover:bg-[#111b8d]">
                 {Contact.msgButton}
               </button>
             </div>

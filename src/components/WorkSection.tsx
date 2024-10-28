@@ -12,7 +12,7 @@ const WorkSection = () => {
       </div>
 
       <div className="sm:grid grid-cols-2 ">
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center transform transition-transform duration-300 ease-in-out hover:scale-105">
         <Image src={Works.image} alt="insta" width={250} height={250} />
         </div>
         <div>

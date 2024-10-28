@@ -11,9 +11,10 @@ export interface headerobj {
   label: string;
   page: string;
 }
-
-export interface headerIt {
+export interface ImageStatic {
   image:string | StaticImageData;
+}
+export interface headerIt {
   about: headerobj;
   skill: headerobj;
   work: headerobj;

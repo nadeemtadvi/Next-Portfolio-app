@@ -4,6 +4,7 @@ import {
   Downloadbtn,
   FooterSectionProps,
   headerIt,
+  ImageStatic,
   IntroSectionProps,
   ProjectSectionProps,
   SkillSectionProps,
@@ -11,35 +12,36 @@ import {
   WorkSectionProps,
 } from "../models/Interface";
 
-import javas from '../assets/Images/Skills/javascript-js.1024x1024.png'
-import types from '../assets/Images/Skills/typescript-icon.1024x1024.png'
-import gits from '../assets/Images/Skills/git.png'
-import story from '../assets/Images/Skills/storybook-icon.822x1024.png'
-import figma from '../assets/Images/Skills/figma-icon.png'
-import reduxs from '../assets/Images/Skills/redux.png'
-import reacts from '../assets/Images/Skills/react.png'
-import tailw from '../assets/Images/Skills/tailwind-css-icon.png'
-import illustrate from '../assets/Images/Intro/Devices-amico (1).png'
-import cmplogo from '../assets/Images/CompanyLogo/AplLogo.png'
-import logo from '../assets/Images/LOGO/N-Dev  (1).png'
-import profile from '../assets/Images/Profile/Visit.jpg'
+import javas from "../assets/Images/Skills/javascript-js.1024x1024.png";
+import types from "../assets/Images/Skills/typescript-icon.1024x1024.png";
+import gits from "../assets/Images/Skills/git.png";
+import story from "../assets/Images/Skills/storybook-icon.822x1024.png";
+import figma from "../assets/Images/Skills/figma-icon.png";
+import reduxs from "../assets/Images/Skills/redux.png";
+import reacts from "../assets/Images/Skills/react.png";
+import tailw from "../assets/Images/Skills/tailwind-css-icon.png";
+import illustrate from "../assets/Images/Intro/Devices-amico (1).png";
+import cmplogo from "../assets/Images/CompanyLogo/AplLogo.png";
+import logo from "../assets/Images/LOGO/N-Dev  (1).png";
+import profile from "../assets/Images/Profile/Visit.jpg";
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 
 export const userinfo: Userobject = {
   name: "info Code",
-  picture:illustrate,
+  picture: illustrate,
   skills: ["HTML", "CSS", "JAVASCRIPT"],
 };
-
+export const images: ImageStatic = {
+  image: logo,
+};
 export const headerItem: headerIt = {
   about: { label: "About", page: "about" },
   skill: { label: "Skills", page: "skills" },
   work: { label: "Work", page: "work" },
   project: { label: "Project", page: "project" },
   contact: { label: "Contact", page: "contact" },
-  image:logo,
 };
 export const DwnldButton: Downloadbtn = {
   btn: "Download",
@@ -82,7 +84,7 @@ export const Skills: SkillSectionProps = {
 };
 
 export const Works: WorkSectionProps = {
-  button:'Experience',
+  button: "Experience",
   title: "Frontend Developer",
   startDate: "Jan 2024",
   endDate: "Sept 2024",
@@ -131,7 +133,11 @@ export const Contact: ContactSectionProps = {
   subtitle: "Let’s make something amazing together",
   contactList: [
     { icon: IoCallOutline, title: "Call me", subtitle: "+91-6261296132" },
-    { icon: MdOutlineEmail, title: "Email me", subtitle: "nadeemtadvi1@gmail.com" },
+    {
+      icon: MdOutlineEmail,
+      title: "Email me",
+      subtitle: "nadeemtadvi1@gmail.com",
+    },
     {
       icon: IoLocationOutline,
       title: "Address",
@@ -145,7 +151,7 @@ export const Contact: ContactSectionProps = {
   message: "Message",
 };
 
-export const Footer:FooterSectionProps ={
-  copyright:'@ 2024 All Rights Reserved',
-  dev:'Designed by Nadeem',
-}
+export const Footer: FooterSectionProps = {
+  copyright: "@ 2024 All Rights Reserved",
+  dev: "Designed by Nadeem",
+};

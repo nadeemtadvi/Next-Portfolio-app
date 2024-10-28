@@ -2,35 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-body,html {
-  font-family:  ''Tahoma,'Arial Narrow Bold', sans-serif,  sans-serif;
+body,
+html {
+  font-family: "" Tahoma, "Arial Narrow Bold", sans-serif, sans-serif;
   scroll-behavior: smooth;
-} 
-
-body::-webkit-scrollbar{
-  width:6px
 }
-body::-webkit-scrollbar-track{
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+body::-webkit-scrollbar-track {
   background-color: #e4e4e4;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #757575; 
+  background-color: #757575;
   border-radius: 20px;
-border: 1px solid #e4e4e4;
-  
+  border: 1px solid #e4e4e4;
 }
-.vertical-rl{
-  writing-mode: vertical-rl
+.vertical-rl {
+  writing-mode: vertical-rl;
 }
 
-@media screen and (max-width:480px) {
-  .p-5{
-    padding: 10px!important;
+@media screen and (max-width: 480px) {
+  .p-5 {
+    padding: 10px !important;
   }
-  
 }
-#about,#skills,#work,#project,#contact {
+#about,
+#skills,
+#work,
+#project,
+#contact {
   transition: all ease 1s;
+}
+
+.active{
+  background-color: #e7e9f6;
+  color:#1623B2;
 }
