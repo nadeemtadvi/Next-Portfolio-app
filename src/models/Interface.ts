@@ -68,6 +68,9 @@ export interface projectObj {
   image: string | StaticImageData;
   title: string;
   subtitle: string;
+  Link: string;
+  LiveLink: string;
+  Github: string| StaticImageData;
   button: Array<string>;
 }
 

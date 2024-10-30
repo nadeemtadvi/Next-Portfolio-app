@@ -15,6 +15,7 @@ import {
 import javas from "../assets/Images/Skills/javascript-js.1024x1024.png";
 import types from "../assets/Images/Skills/typescript-icon.1024x1024.png";
 import gits from "../assets/Images/Skills/git.png";
+import git from "../assets/Icons/github.png";
 import story from "../assets/Images/Skills/storybook-icon.822x1024.png";
 import figma from "../assets/Images/Skills/figma-icon.png";
 import reduxs from "../assets/Images/Skills/redux.png";
@@ -24,6 +25,7 @@ import illustrate from "../assets/Images/Intro/Devices-amico (1).png";
 import cmplogo from "../assets/Images/CompanyLogo/AplLogo.png";
 import logo from "../assets/Images/LOGO/N-Dev  (1).png";
 import profile from "../assets/Images/Profile/Visit.jpg";
+import portfolio from "../assets/Images/Project/Screenshot 2024-10-28 231947.png";
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
@@ -62,7 +64,7 @@ export const InterSect: IntroSectionProps = {
 
 export const AboutMe: AboutSectionProps = {
   about: "About me",
-  title: "Curous about me?",
+  title: "Curious about me?",
   subtitle:
     "I’m Tanvir, a creative Product Designer. I’ve been helping busto solve their problems with my design for 2 years. Developed a responsive blogging platform using React and Redux for efficient state management, improving data flow and user experience. Styled dynamic components and ensured mobile responsiveness using Tailwind CSS, achieving a modern and visually appealing design. Implemented CRUD functionalities for blogs, enabling users to create, edit, and delete posts seamlessly",
   image: profile,
@@ -97,28 +99,40 @@ export const Project: ProjectSectionProps = {
   project: "Projects",
   projectObject: [
     {
-      image: "",
+      image: portfolio,
+      Link: "",
+      LiveLink: "",
+      Github: git,
+      title: "Portfolio-app",
+      button: ["HTML", "CSS", "TypeScript", "React", "Nextjs", "Taiwind"],
+      subtitle:
+        "I developed and maintained responsive websites to ensure a seamless user experience across all devices. By designing intuitive interfaces in Figm ...",
+    },
+    {
+      image: portfolio,
+      Link: "",
+      LiveLink: "",
+      Github: git,
       title: "Spotify Clone",
       button: ["HTML", "CSS", "JavaScript"],
       subtitle:
         "I developed and maintained responsive websites to ensure a seamless user experience across all devices. By designing intuitive interfaces in Figm ...",
     },
     {
-      image: "",
+      image: portfolio,
+      Link: "",
+      LiveLink: "",
+      Github: git,
       title: "Spotify Clone",
       button: ["HTML", "CSS", "JavaScript"],
       subtitle:
         "I developed and maintained responsive websites to ensure a seamless user experience across all devices. By designing intuitive interfaces in Figm ...",
     },
     {
-      image: "",
-      title: "Spotify Clone",
-      button: ["HTML", "CSS", "JavaScript"],
-      subtitle:
-        "I developed and maintained responsive websites to ensure a seamless user experience across all devices. By designing intuitive interfaces in Figm ...",
-    },
-    {
-      image: "",
+      image: portfolio,
+      Link: "",
+      LiveLink: "",
+      Github: git,
       title: "Spotify Clone",
       button: ["HTML", "CSS", "JavaScript"],
       subtitle:

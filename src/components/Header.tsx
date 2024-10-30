@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { headerItem, DwnldButton, images } from "@/src/constant/constant";
 import Image from "next/image";
 import { HiMenu } from "react-icons/hi";
-import Link from "next/link";
 
 const Header = () => {
   const [toggle, setToggle] = useState<boolean>(false)
@@ -43,7 +42,7 @@ const Header = () => {
                 <ul className="shadow-md min-w-[150px]  !pb-0 rounded-[6px]">
                   {Object.values(headerItem).map((item, index) => (
                     <li key={index} className="p-2.5  border-b border-gray-300 hover:bg-gray-300">
-                      <Link href={`#${item.page}`}>{item.label}</Link>
+                      <a href={`#${item.page}`}>{item.label}</a>
                     </li>
                   ))}
                 </ul>
