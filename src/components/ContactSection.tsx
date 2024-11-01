@@ -41,7 +41,7 @@ const ContactSection = () => {
                 <input
                   type="text"
                   id="first_name"
-                  className=" border border-gray-300 outline-none text-gray-900 text-sm rounded-[6px] focus:ring-mainColor focus:border-mainColor block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mainColor dark:focus:border-mainColor"
+                  className=" border border-gray-300 outline-none text-gray-900 text-sm rounded-[6px] focus:ring-mainColor focus:border-mainColor block w-full p-2.5"
                   placeholder={Contact.fullname}
                   required
                 />
@@ -50,7 +50,7 @@ const ContactSection = () => {
                 <input
                   type="email"
                   id="email"
-                  className=" border border-gray-300 outline-none text-gray-900 text-sm rounded-[6px] focus:ring-mainColor focus:border-mainColor block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mainColor dark:focus:border-mainColor"
+                  className=" border border-gray-300 outline-none text-gray-900 text-sm rounded-[6px] focus:ring-mainColor focus:border-mainColor block w-full p-2.5"
                   placeholder={Contact.email}
                   required
                 />
@@ -60,7 +60,7 @@ const ContactSection = () => {
                 <input
                   type="tel"
                   id="phone"
-                  className=" border border-gray-300 outline-none text-gray-900 text-sm rounded-[6px] focus:ring-mainColor focus:border-mainColor block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mainColor dark:focus:border-mainColor"
+                  className=" border border-gray-300 outline-none text-gray-900 text-sm rounded-[6px] focus:ring-mainColor focus:border-mainColor block w-full p-2.5"
                   placeholder={Contact.phone}
                   pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                   required
@@ -71,7 +71,7 @@ const ContactSection = () => {
               <textarea
                 id="message"
                 rows={4}
-                className="block p-2.5 w-full text-sm outline-none text-gray-900  rounded-[6px] border border-gray-300 focus:ring-mainColor focus:border-mainColor dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mainColor dark:focus:border-mainColor"
+                className="block p-2.5 w-full text-sm outline-none text-gray-900  rounded-[6px] border border-gray-300 focus:ring-mainColor focus:border-mainColor"
                 placeholder={Contact.message}
                 defaultValue={""}
               />
