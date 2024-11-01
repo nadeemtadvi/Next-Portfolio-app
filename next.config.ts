@@ -5,7 +5,22 @@ const nextConfig: NextConfig = {
   images: {
     domains: ['img.freepik.com'],
     unoptimized: true,
-  }
+  },
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.pdf$/,
+      use: {
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'static/pdf',
+          publicPath: '/_next/static/pdf',
+        },
+      },
+    });
+
+    return config; // Ensure the modified config is returned
+  },
 };
 
-export default nextConfig;
+export default nextConfig; // Ensure the configuration is exported

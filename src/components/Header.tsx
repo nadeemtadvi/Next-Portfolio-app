@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { headerItem, DwnldButton, images } from "@/src/constant/constant";
 import Image from "next/image";
 import { HiMenu } from "react-icons/hi";
+import Link from "next/link";
 
 const Header = () => {
   const [toggle, setToggle] = useState<boolean>(false)
@@ -30,7 +31,7 @@ const Header = () => {
          
           <div>
             <button className="border border-mainColor text-mainColor rounded-[6px] p-[5px_24px_6px] hover:bg-mainColorten">
-              {DwnldButton.btn}
+             <Link href="/Nadeem_CV.pdf" download="Nadeem_CV.pdf" passHref>{DwnldButton.btn}</Link> 
             </button>
           </div>
           <div className="sm:hidden block">
