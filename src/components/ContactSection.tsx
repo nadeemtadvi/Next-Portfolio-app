@@ -1,11 +1,21 @@
+"use client"
 import React from "react";
 import { Contact } from "../constant/constant";
+import { useForm, ValidationError } from "@formspree/react";
 
 const ContactSection = () => {
+  const [state, handleSubmit] = useForm("xovqewnl");
+  if (state.succeeded) {
+   
+    return <p className="bg-white border text-[20px] border-green-400 rounded-[4px] text-green-400 z-50 fixed top-[10px] right-[30px] p-[12px_30px_13px]">Message has been sent!</p>;
+  }
   return (
     <div className="mb-[1rem] sm:mb-[4rem] p-5">
       <div className="text-center mb-[1rem] sm:mb-[4rem]">
-        <button id='contact' className="mb-[1rem] rounded-full bg-mainColorten text-mainColor font-medium p-[2px_20px_3px]">
+        <button
+          id="contact"
+          className="mb-[1rem] rounded-full bg-mainColorten text-mainColor font-medium p-[2px_20px_3px]"
+        >
           {Contact.contact}
         </button>
 
@@ -17,12 +27,17 @@ const ContactSection = () => {
       <div className="sm:grid grid-cols-[40%_auto] ">
         <div>
           {Contact.contactList.map((item, index) => (
-            <div key={index} className="grid grid-cols-[50px_auto] items-center mb-8">
+            <div
+              key={index}
+              className="grid grid-cols-[50px_auto] items-center mb-8"
+            >
               <div>
-                <div className="rounded-[6px] w-10 h-10 bg-mainColor text-white flex justify-center items-center text-[20px]">{item.icon && <item.icon/>}</div>
+                <div className="rounded-[6px] w-10 h-10 bg-mainColor text-white flex justify-center items-center text-[20px]">
+                  {item.icon && <item.icon />}
+                </div>
               </div>
               <div>
-                <div  className="pl-2 ">
+                <div className="pl-2 ">
                   <h5 className="text-blurtext text-[1.04rem] mb-1">
                     {item.title}
                   </h5>
@@ -35,49 +50,76 @@ const ContactSection = () => {
           ))}
         </div>
         <div>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="grid gap-6  md:grid-cols-2 mb-6">
               <div>
                 <input
-                  type="text"
-                  id="first_name"
+                  type="name"
+                  id="name"
+                  name="name"
                   className=" border border-gray-300 outline-none text-gray-900 text-sm rounded-[6px] focus:ring-mainColor focus:border-mainColor block w-full p-2.5"
                   placeholder={Contact.fullname}
                   required
+                />
+                <ValidationError
+                  prefix="Name"
+                  field="name"
+                  errors={state.errors}
                 />
               </div>
               <div>
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   className=" border border-gray-300 outline-none text-gray-900 text-sm rounded-[6px] focus:ring-mainColor focus:border-mainColor block w-full p-2.5"
                   placeholder={Contact.email}
                   required
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
                 />
               </div>
 
               <div>
                 <input
                   type="tel"
-                  id="phone"
+                  id="tel"
+                  name="tel"
                   className=" border border-gray-300 outline-none text-gray-900 text-sm rounded-[6px] focus:ring-mainColor focus:border-mainColor block w-full p-2.5"
                   placeholder={Contact.phone}
-                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                   required
+                />
+                <ValidationError
+                  prefix="Tel"
+                  field="tel"
+                  errors={state.errors}
                 />
               </div>
             </div>
             <div className="mb-6">
               <textarea
                 id="message"
+                name="message"
                 rows={4}
                 className="block p-2.5 w-full text-sm outline-none text-gray-900  rounded-[6px] border border-gray-300 focus:ring-mainColor focus:border-mainColor"
                 placeholder={Contact.message}
                 defaultValue={""}
               />
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
             </div>
             <div className="text-end">
-              <button className="bg-mainColor text-white rounded-[6px] p-[5px_24px_6px] hover:bg-[#111b8d]">
+              <button
+                type="submit"
+                disabled={state.submitting}
+                className="bg-mainColor text-white rounded-[6px] p-[5px_24px_6px] hover:bg-[#111b8d]"
+              >
                 {Contact.msgButton}
               </button>
             </div>

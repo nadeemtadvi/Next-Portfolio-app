@@ -46,7 +46,7 @@ export const headerItem: headerIt = {
   contact: { label: "Contact", page: "contact" },
 };
 export const DwnldButton: Downloadbtn = {
-  btn: "Download",
+  btn: "Download CV",
 };
 
 export const InterSect: IntroSectionProps = {

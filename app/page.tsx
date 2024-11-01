@@ -1,7 +1,7 @@
 import Main from "@/src/pages/Main";
 import Header from "@/src/components/Header";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <div>
@@ -13,3 +13,4 @@ export default function Home() {
     </>
   );
 }
+export default Home
