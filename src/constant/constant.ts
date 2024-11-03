@@ -119,26 +119,8 @@ export const Project: ProjectSectionProps = {
       subtitle:
       "A fully responsive blogging website featuring both frontend and backend development. Built to offer a smooth and engaging user experience on all devices. Includes robust functionality for content management and user interactions."  
     },
-    {
-      image: portfolio,
-      Link: "",
-      LiveLink: "",
-      Github: git,
-      title: "Spotify Clone",
-      button: ["HTML", "CSS", "JavaScript"],
-      subtitle:
-        "I developed and maintained responsive websites to ensure a seamless user experience across all devices. By designing intuitive interfaces in Figm ...",
-    },
-    {
-      image: portfolio,
-      Link: "",
-      LiveLink: "",
-      Github: git,
-      title: "Spotify Clone",
-      button: ["HTML", "CSS", "JavaScript"],
-      subtitle:
-        "I developed and maintained responsive websites to ensure a seamless user experience across all devices. By designing intuitive interfaces in Figm ...",
-    },
+   
+    
   ],
 };
 
