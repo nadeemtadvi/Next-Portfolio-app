@@ -26,6 +26,7 @@ import cmplogo from "../assets/Images/CompanyLogo/AplLogo.png";
 import logo from "../assets/Images/LOGO/N-Dev  (1).png";
 import profile from "../assets/Images/Profile/Visit.jpg";
 import portfolio from "../assets/Images/Project/Screenshot 2024-10-28 231947.png";
+import cryptopedia from "../assets/Images/Project/Screenshot 2024-11-03 112611.png";
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
@@ -109,14 +110,14 @@ export const Project: ProjectSectionProps = {
         "I developed and maintained responsive websites to ensure a seamless user experience across all devices. By designing intuitive interfaces in Figm ...",
     },
     {
-      image: portfolio,
-      Link: "",
-      LiveLink: "",
+      image: cryptopedia,
+      Link: "https://github.com/nadeemtadvi/Cryptopedia-Backend",
+      LiveLink: "https://cryptopedia-update.netlify.app/",
       Github: git,
-      title: "Spotify Clone",
-      button: ["HTML", "CSS", "JavaScript"],
+      title: "Cryptopedia",
+      button: ["HTML", "CSS", "JavaScript", "React", "Taiwind","Mongodb", "expressjs", ],
       subtitle:
-        "I developed and maintained responsive websites to ensure a seamless user experience across all devices. By designing intuitive interfaces in Figm ...",
+      "A fully responsive blogging website featuring both frontend and backend development. Built to offer a smooth and engaging user experience on all devices. Includes robust functionality for content management and user interactions."  
     },
     {
       image: portfolio,

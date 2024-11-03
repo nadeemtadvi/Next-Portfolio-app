@@ -32,14 +32,14 @@ const ProjectSection = () => {
                   <div className="flex justify-between gap-5   mb-2 sm:mb-4">
                     <h4 className="text-titletext font-medium text-[1.2rem] md:text-[1.5rem] lg:text-[2rem] flex items-center">
                       <span>{item.title}</span>
-                      <Link href={item.LiveLink}>
+                      <Link href={item.LiveLink} target="_blank">
                         <span className="text-mainColor border-b border-mainColor font-medium ml-4 text-[1.1rem]">
                           Live Demo
                         </span>
                       </Link>
                     </h4>
                     <div className="self-center mr-4">
-                      <Link href={""}>
+                      <Link href={item.Link} target="_blank">
                         <Image
                           src={item.Github}
                           alt="logo"
