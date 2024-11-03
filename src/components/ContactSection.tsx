@@ -1,14 +1,24 @@
 "use client"
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Contact } from "../constant/constant";
 import { useForm, ValidationError } from "@formspree/react";
 
 const ContactSection = () => {
   const [state, handleSubmit] = useForm("xovqewnl");
-  if (state.succeeded) {
-   
-    return <p className="bg-white border text-[20px] border-green-400 rounded-[4px] text-green-400 z-50 fixed top-[10px] right-[30px] p-[12px_30px_13px]">Message has been sent!</p>;
-  }
+  const [showMessage, setShowMessage] = useState(false);
+  
+  useEffect(() => {
+    if (state.succeeded) {
+      setShowMessage(true);
+
+      const timer = setTimeout(() => {
+        setShowMessage(false);
+      }, 2000); 
+
+      return () => clearTimeout(timer); 
+    }
+  }, [state.succeeded]);
+
   return (
     <div className="mb-[1rem] sm:mb-[4rem] p-5">
       <div className="text-center mb-[1rem] sm:mb-[4rem]">
@@ -24,6 +34,11 @@ const ContactSection = () => {
         </h4>
         <p className="text-[1.04rem] text-subtext">{Contact.subtitle}</p>
       </div>
+      {showMessage && (
+        <p className=" text-[20px] bg-green-100 rounded-[4px] text-green-600 z-50 fixed top-[10px] right-[30px] p-[4px_50px_7px]">
+          Message has been sent!
+        </p>
+       )} 
       <div className="sm:grid grid-cols-[40%_auto] ">
         <div>
           {Contact.contactList.map((item, index) => (

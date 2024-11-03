@@ -5,6 +5,7 @@ import insta from "../assets/Icons/instagram.png";
 import git from "../assets/Icons/github-sign.png";
 import Linkedin from "../assets/Icons/linkedin (1).png";
 import facebook from "../assets/Icons/facebook.png";
+import Link from "next/link";
 
 const IntroSection = () => {
   return (
@@ -45,8 +46,9 @@ const IntroSection = () => {
                   <div className="w-[1px] h-14 bg-mainColor"></div>
                   <Image src={insta} alt="insta" width={16} height={16} />
                   <Image src={facebook} alt="insta" width={16} height={16} />
-                  <Image src={Linkedin} alt="insta" width={16} height={16} />
-                  <Image src={git} alt="insta" width={16} height={16} />
+                  <Link href="https://www.linkedin.com/in/nadeem-tadvi-290339159" target="_blank">
+                  <Image src={Linkedin} alt="insta" width={16} height={16} /></Link>
+                  <Link href="https://github.com/nadeemtadvi" target="_blank"><Image src={git} alt="insta" width={16} height={16} /></Link>
                 </h4>
               </div>
             </div>

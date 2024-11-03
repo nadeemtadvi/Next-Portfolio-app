@@ -100,8 +100,8 @@ export const Project: ProjectSectionProps = {
   projectObject: [
     {
       image: portfolio,
-      Link: "",
-      LiveLink: "",
+      Link: "https://github.com/nadeemtadvi/Next-Portfolio-app",
+      LiveLink: "https://imdeveloper-app.netlify.app/",
       Github: git,
       title: "Portfolio-app",
       button: ["HTML", "CSS", "TypeScript", "React", "Nextjs", "Taiwind"],

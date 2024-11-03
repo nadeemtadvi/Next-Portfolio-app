@@ -5,6 +5,7 @@ import git from '../assets/Icons/github.png'
 import Linkedin from '../assets/Icons/linkedin.png'
 import facebook from '../assets/Icons/facebook (1).png'
 import Image from "next/image";
+import Link from "next/link";
 
 
 const FooterSection = () => {
@@ -26,19 +27,19 @@ const FooterSection = () => {
           width={24}
           height={24}
           />
-          <Image
+         <Link href="https://www.linkedin.com/in/nadeem-tadvi-290339159" target="_blank"> <Image
           src={Linkedin}
           alt='insta'
           width={24}
           height={24}
-          />
-          <Image
+          /></Link>
+          <Link href="https://github.com/nadeemtadvi" target="_blank"><Image
           src={git}
           alt='insta'
           width={24}
           height={24}
           />
-        
+        </Link>
         </div>
       </div>
     </div>
