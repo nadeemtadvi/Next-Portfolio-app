@@ -56,7 +56,7 @@ export const InterSect: IntroSectionProps = {
   middletext: ",a passionate",
   spanwork: "Frontend Developer",
   subtitle:
-    "lorem ipsum sample text is here so do not read this is danger and you will get in danger this is good website and good portfolio.",
+  "I specialize in UI/UX design, crafting modern, user-friendly interfaces that elevate user experiences. Driven by a passion for innovation, I leverage Figma to bring creative ideas to life and effectively solve design challenges.",
   contact: "Contact Me",
   resume: "View Resume",
   image: "",
@@ -67,7 +67,7 @@ export const AboutMe: AboutSectionProps = {
   about: "About me",
   title: "Curious about me?",
   subtitle:
-    "I’m Tanvir, a creative Product Designer. I’ve been helping busto solve their problems with my design for 2 years. Developed a responsive blogging platform using React and Redux for efficient state management, improving data flow and user experience. Styled dynamic components and ensured mobile responsiveness using Tailwind CSS, achieving a modern and visually appealing design. Implemented CRUD functionalities for blogs, enabling users to create, edit, and delete posts seamlessly",
+  "I’m Nadeem, a Frontend Developer with 10 months of experience in creating engaging websites. I specialize in UI/UX design and have developed a full-stack blogging platform using React and Redux. My designs are crafted in Figma, ensuring modern, user-friendly interfaces that look great on any device.  I am passionate about solving design challenges and improving user experiences through innovative solutions. Let's create something amazing together!",
   image: profile,
 };
 

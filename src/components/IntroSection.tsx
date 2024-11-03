@@ -19,7 +19,7 @@ const IntroSection = () => {
               {InterSect.middletext}
               <span className="text-mainColor"> {InterSect.spanwork}</span>
             </h5>
-            <p className="sm:w-[75%] text-subtext text-[1.04rem] mb-6">
+            <p className="sm:w-[75%] text-subtext text-[0.93rem] mb-6">
               {InterSect.subtitle}
             </p>
             <div className="mb-5">
