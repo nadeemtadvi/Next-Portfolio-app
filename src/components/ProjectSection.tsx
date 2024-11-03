@@ -17,7 +17,7 @@ const ProjectSection = () => {
         </div>
         <div className="md:grid grid-cols-2 gap-4">
           {Project.projectObject.map((item, index) => (
-            <div key={index} className="p-5 ">
+            <div key={index} className="py-2 sm:p-5 ">
               <div className="h-[260px] w-full border border-gray-200 rounded-[10px] p-2 mb-3 transform transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image
                   src={item.image}

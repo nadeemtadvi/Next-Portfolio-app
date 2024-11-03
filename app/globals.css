@@ -40,3 +40,19 @@ body::-webkit-scrollbar-thumb {
   background-color: #e7e9f6;
   color:#1623B2;
 }
+@media screen and (max-width:560px) {
+  
+
+.logo-dev{
+width: 120px;
+}
+.workImg{
+  width: 170px;
+}
+.footer h4{
+  font-size: 9px!important;
+}
+.footer .flex-wrap img{
+width: 13px;
+}
+}

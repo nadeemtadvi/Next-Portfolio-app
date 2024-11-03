@@ -17,7 +17,7 @@ const Header = () => {
       <div className="mb-[0rem] shadow-sm ">
         <div className="flex justify-between items-center p-5 ">
           <div className="">
-            <Image src={images.image} alt="logo" width={170} height={170} />
+            <Image src={images.image} alt="logo" className="logo-dev" width={170} height={170} />
           </div>
           <div className="hidden sm:block">
             <ul className="flex justify-between items-center gap-14">
@@ -30,13 +30,13 @@ const Header = () => {
           </div>
          
           <div>
-            <button className="border border-mainColor text-mainColor rounded-[6px] p-[5px_24px_6px] hover:bg-mainColorten">
+            <button className="border border-mainColor text-mainColor rounded-[6px] p-[1px_10px_2px] sm:p-[5px_24px_6px] hover:bg-mainColorten">
              <Link href="/Nadeem_CV.pdf" download="Nadeem_CV.pdf" passHref>{DwnldButton.btn}</Link> 
             </button>
           </div>
           <div className="sm:hidden block">
             <div className="relative">
-              <button onClick={handleToggle} className="">
+              <button onClick={handleToggle} className="text-xl">
                 <HiMenu />
               </button>    
               {toggle ? ( <div className="absolute top-[45px] bg-white left-[-120px]">

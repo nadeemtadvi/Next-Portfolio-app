@@ -29,7 +29,7 @@ const ContactSection = () => {
           {Contact.contactList.map((item, index) => (
             <div
               key={index}
-              className="grid grid-cols-[50px_auto] items-center mb-8"
+              className="grid grid-cols-[50px_auto] items-center mb-3 sm:mb-8"
             >
               <div>
                 <div className="rounded-[6px] w-10 h-10 bg-mainColor text-white flex justify-center items-center text-[20px]">
@@ -51,7 +51,7 @@ const ContactSection = () => {
         </div>
         <div>
           <form onSubmit={handleSubmit}>
-            <div className="grid gap-6  md:grid-cols-2 mb-6">
+            <div className="grid gap-3 sm:gap-6  md:grid-cols-2 mb-3 sm:mb-6">
               <div>
                 <input
                   type="name"
@@ -99,7 +99,7 @@ const ContactSection = () => {
                 />
               </div>
             </div>
-            <div className="mb-6">
+            <div className="mb-3 sm:mb-6">
               <textarea
                 id="message"
                 name="message"

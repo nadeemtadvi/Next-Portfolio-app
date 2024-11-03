@@ -4,8 +4,9 @@ import Image from "next/image";
 
 const SkillSection = () => {
   return (
-    <div className="mt-[2rem] mb-[2rem] bg-sectionColor p-5">
-      <div className="p-5">
+    <div className="mt-[2rem] mb-[0.5rem] bg-sectionColor p-[1.5rem_0.6rem] sm:p-[1.5rem]">
+
+      <div className="sm:p-5">
         <div className="flex justify-center  mb-10">
           <div className="text-center">
             <button id='skills' className="rounded-full bg-mainColorten text-mainColor font-medium p-[2px_20px_3px]">
@@ -16,7 +17,7 @@ const SkillSection = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3  md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3  md:grid-cols-4 gap-3 sm:gap-8">
           {Skills.skillObj.map((item, index) => (
             <div key={index} className="border border-gray-300 rounded-[6px] transform transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-mainColorten">
               <div className="flex justify-center items-center ">
