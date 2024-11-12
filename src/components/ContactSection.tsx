@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import { Contact } from "../constant/constant";
 import { useForm, ValidationError } from "@formspree/react";
@@ -6,39 +6,40 @@ import { useForm, ValidationError } from "@formspree/react";
 const ContactSection = () => {
   const [state, handleSubmit] = useForm("xovqewnl");
   const [showMessage, setShowMessage] = useState(false);
-  
+
   useEffect(() => {
     if (state.succeeded) {
       setShowMessage(true);
 
       const timer = setTimeout(() => {
         setShowMessage(false);
-      }, 2000); 
+      }, 2000);
 
-      return () => clearTimeout(timer); 
+      return () => clearTimeout(timer);
     }
   }, [state.succeeded]);
 
   return (
     <div className="mb-[1rem] sm:mb-[4rem] p-5">
-      <div className="text-center mb-[1rem] sm:mb-[4rem]">
-        <button
+      <div className=" mb-14">
+        <h4
           id="contact"
-          className="mb-[1rem] rounded-full dark:bg-darkmainColorten dark:text-darkmainColor bg-mainColorten text-mainColor font-medium p-[2px_20px_3px]"
+          className="dark:text-white text-[2rem] mb-2  text-[#252525] font-medium"
         >
-          {Contact.contact}
-        </button>
-
-        <h4 className="text-[2rem] text-titletext dark:text-darktitletext font-medium mb-2">
-          {Contact.title}
+          <span className="p-[0px_42px_4px_0px] border-b-2 border-mainColor dark:border-darkmainColor">
+            {Contact.contact}
+          </span>
         </h4>
-        <p className="text-[1.04rem] text-subtext dark:text-darksubtext">{Contact.subtitle}</p>
+
+        <p className="text-[1.04rem] text-subtext dark:text-darksubtext">
+          {Contact.subtitle}
+        </p>
       </div>
       {showMessage && (
         <p className=" text-[20px] bg-green-100 rounded-[4px] text-green-600 z-50 fixed top-[10px] right-[30px] p-[4px_50px_7px]">
           Message has been sent!
         </p>
-       )} 
+      )}
       <div className="sm:grid grid-cols-[40%_auto] ">
         <div>
           {Contact.contactList.map((item, index) => (

@@ -6,30 +6,33 @@ const ProjectSection = () => {
   return (
     <div className="mb-[2rem] ">
       <div className=" p-5">
-        <div className="text-center pt-6">
-          <button
+        <div className="mb-14">
+          <h4
             id="project"
-            className="mb-[2.5rem] rounded-full bg-mainColorten text-mainColor dark:bg-darkmainColorten dark:text-darkmainColor font-medium p-[2px_20px_3px]"
-          >
+           className="dark:text-white text-[2rem]   text-[#252525] font-medium">
+        <span className="p-[0px_42px_4px_0px] border-b-2 border-mainColor dark:border-darkmainColor">
+
             {Project.project}
-          </button>
+        </span>
+          
+          </h4>
         </div>
-        <div className="md:grid grid-cols-2 gap-4">
+        <div className="md:grid grid-cols-2 gap-8">
           {Project.projectObject.map((item, index) => (
-            <div key={index} className="py-2 sm:p-5 ">
-              <div className="h-[260px] w-full border border-gray-200 dark:border-darkmainColorten rounded-[10px] p-2 mb-3 transform transition-transform duration-300 ease-in-out hover:scale-105">
+            <div key={index} className="py-2 mb-10 md:mb-0">
+              <div className="h-[160px] sm:h-[260px] w-full border border-gray-200 dark:border-darkmainColorten rounded-[10px] p-2 mb-3 transform transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image
                   src={item.image}
                   alt="dp"
                   width={400}
                   height={400}
-                  className="!w-full !h-full rounded-[10px]"
+                  className=" !w-full !h-full rounded-[10px]"
                 />
               </div>
               <div>
                 <div>
-                  <div className="flex justify-between gap-5   mb-2 sm:mb-4">
-                    <h4 className="text-titletext dark:text-darktitletext font-medium text-[1.2rem] md:text-[1.5rem] lg:text-[2rem] flex items-center">
+                  <div className="flex justify-between gap-5   mb-2 sm:mb-2">
+                    <h4 className="text-[#272727] dark:text-darktitletext font-medium text-[1.2rem] md:text-[1.6rem] flex items-center">
                       <span>{item.title}</span>
                       <Link href={item.LiveLink} target="_blank">
                         <span className="text-mainColor dark:text-darkmainColor border-b border-mainColor dark:border-darkmainColor font-medium ml-4 text-[1.1rem]">

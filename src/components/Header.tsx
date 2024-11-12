@@ -31,7 +31,7 @@ const Header = ({darkMode,setDarkMode}:Headerdataprops) => {
   };
   return (
     <>
-      <div className="mb-[0rem] shadow-sm dark:bg-black">
+      <div className="mb-[0rem]  dark:bg-black">
         <div className="flex justify-between items-center p-5 ">
           <div className="">
           <Image
