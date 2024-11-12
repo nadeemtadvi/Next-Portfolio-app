@@ -1,9 +1,9 @@
 import React from "react";
 import { Works } from "../constant/constant";
 import Image from "next/image";
-interface WorkSectiondataprops{
-  darkMode:boolean;
-}
+import { WorkSectiondataprops } from "../models/Interface";
+
+
 const WorkSection = ({darkMode}:WorkSectiondataprops) => {
   return (
     <div className="sm:mb-[2rem] p-5">
@@ -14,7 +14,7 @@ const WorkSection = ({darkMode}:WorkSectiondataprops) => {
       </div>
 
       <div className="sm:grid grid-cols-2 ">
-        <div className="flex  justify-center items-center transform transition-transform duration-300 ease-in-out hover:scale-105">
+        <div className="flex md:mt-0 md:mb-0 mb-2 mt-5 justify-center items-center transform transition-transform duration-300 ease-in-out hover:scale-105">
         <Image src={darkMode ? Works.image2 : Works.image} alt="insta" className="workImg dark:bg-white rounded-md" width={250} height={250} />
         </div>
         <div>

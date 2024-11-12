@@ -15,7 +15,6 @@ import {
 import javas from "../assets/Images/Skills/javascript-js.1024x1024.png";
 import types from "../assets/Images/Skills/typescript-icon.1024x1024.png";
 import gits from "../assets/Images/Skills/git.png";
-import git from "../assets/Icons/github.png";
 import story from "../assets/Images/Skills/storybook-icon.822x1024.png";
 import figma from "../assets/Images/Skills/figma-icon.png";
 import reduxs from "../assets/Images/Skills/redux.png";

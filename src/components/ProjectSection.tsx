@@ -2,7 +2,6 @@ import React from "react";
 import { Project } from "../constant/constant";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub } from "react-icons/fa6";
 const ProjectSection = () => {
   return (
     <div className="mb-[2rem] bg-sectionColor dark:bg-darksectionColor">

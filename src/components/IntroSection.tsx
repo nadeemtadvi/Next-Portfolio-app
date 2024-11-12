@@ -6,10 +6,8 @@ import git from "../assets/Icons/github-sign.png";
 import Linkedin from "../assets/Icons/linkedin (1).png";
 import facebook from "../assets/Icons/facebook.png";
 import Link from "next/link";
+import { IntroSectiondataprops } from "../models/Interface";
 
-interface IntroSectiondataprops {
-  darkMode:boolean;
-}
 
 const IntroSection = ({darkMode}: IntroSectiondataprops) => {
   return (

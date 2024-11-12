@@ -7,10 +7,8 @@ import Link from "next/link";
 import { MdDarkMode } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
 import { IoMdDownload } from "react-icons/io";
-interface Headerdataprops {
-  darkMode: boolean;
-  setDarkMode:(mode:boolean) => void;
-}
+import { Headerdataprops } from "../models/Interface";
+
 
 const Header = ({darkMode,setDarkMode}:Headerdataprops) => {
   const [toggle, setToggle] = useState<boolean>(false);

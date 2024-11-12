@@ -105,3 +105,15 @@ export interface FooterSectionProps {
   copyright:string;
   dev:string;
 } 
+
+export interface Headerdataprops {
+  darkMode: boolean;
+  setDarkMode:(mode:boolean) => void;
+}
+
+interface IntroSectiondataprops {
+  darkMode:boolean;
+}
+interface WorkSectiondataprops{
+  darkMode:boolean;
+}
