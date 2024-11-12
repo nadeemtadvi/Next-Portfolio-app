@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 const ProjectSection = () => {
   return (
-    <div className="mb-[2rem] bg-sectionColor dark:bg-darksectionColor">
+    <div className="mb-[2rem] ">
       <div className=" p-5">
         <div className="text-center pt-6">
           <button
