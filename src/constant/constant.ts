@@ -21,6 +21,8 @@ import figma from "../assets/Images/Skills/figma-icon.png";
 import reduxs from "../assets/Images/Skills/redux.png";
 import reacts from "../assets/Images/Skills/react.png";
 import tailw from "../assets/Images/Skills/tailwind-css-icon.png";
+import photo from "../assets/Images/Skills/adobe-photoshop-logo-2021.svg";
+import illustrator from "../assets/Images/Skills/adobe-Illustrator-logo.svg";
 import illustrate from "../assets/Images/Intro/Devices-amico (1).png";
 import cmplogo from "../assets/Images/CompanyLogo/AplLogo.png";
 import logo from "../assets/Images/LOGO/N-Dev  (1).png";
@@ -83,8 +85,8 @@ export const Skills: SkillSectionProps = {
     { image: figma, label: "Figma" },
     { image: reduxs, label: "Redux" },
     { image: story, label: "Storybook" },
-    { image: story, label: "Adobe Photoshop" },
-    { image: story, label: "Adobe Illustrator" },
+    { image: photo, label: "Adobe Photoshop" },
+    { image: illustrator, label: "Adobe Illustrator" },
   ],
 };
 
