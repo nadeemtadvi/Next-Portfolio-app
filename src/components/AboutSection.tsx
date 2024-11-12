@@ -6,7 +6,7 @@ const AboutSection = () => {
   return (
     <div className="p-5 sm:mb-[3.5rem]">
       <div className="flex justify-center mb-10">
-        <button id='about' className="rounded-full bg-mainColorten text-mainColor font-medium p-[2px_20px_3px]">
+        <button id='about' className="rounded-full dark:bg-darkmainColorten  dark:text-darkmainColor bg-mainColorten  text-mainColor font-medium p-[2px_20px_3px]">
           {AboutMe.about}
         </button>
       </div>
@@ -21,13 +21,13 @@ const AboutSection = () => {
               className="rounded-[6px] !w-full !h-full !object-fill"
             />
           </div>
-          <div className="z-[8] rounded-[6px] absolute left-0 right-[75px] m-auto top-[75px] bottom-0 border border-gray-300 w-[260px] h-[260px]"></div>
+          <div className="z-[8] rounded-[6px] absolute left-0 right-[75px] m-auto top-[75px] bottom-0 border border-gray-300 dark:border-darkmainColorten w-[260px] h-[260px]"></div>
         </div>
         <div>
-          <h4 className="text-[2rem] text-titletext font-medium mb-2 sm:mb-4">
+          <h4 className="text-[2rem] text-titletext dark:text-darktitletext font-medium mb-2 sm:mb-4">
             {AboutMe.title}
           </h4>
-          <p className="text-[1.04rem] text-subtext mb-2 sm:mb-4">{AboutMe.subtitle}</p>
+          <p className="text-[1.04rem] text-subtext dark:text-darksubtext mb-2 sm:mb-4">{AboutMe.subtitle}</p>
         </div>
       </div>
     </div>

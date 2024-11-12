@@ -4,6 +4,7 @@ import { IconType } from "react-icons";
 export interface Userobject {
   name: string;
   picture: string | StaticImageData;
+  picture2: string | StaticImageData;
   skills: Array<string>;
 }
 
@@ -13,6 +14,7 @@ export interface headerobj {
 }
 export interface ImageStatic {
   image:string | StaticImageData;
+  image2:string | StaticImageData;
 }
 export interface headerIt {
   about: headerobj;
@@ -62,6 +64,7 @@ export interface WorkSectionProps {
   endDate: string;
   subtitle: string;
   image: string | StaticImageData;
+  image2: string | StaticImageData;
 }
 
 export interface projectObj {
@@ -70,7 +73,7 @@ export interface projectObj {
   subtitle: string;
   Link: string;
   LiveLink: string;
-  Github: string| StaticImageData;
+  Github: IconType;
   button: Array<string>;
 }
 

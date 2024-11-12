@@ -24,22 +24,27 @@ import tailw from "../assets/Images/Skills/tailwind-css-icon.png";
 import photo from "../assets/Images/Skills/adobe-photoshop-logo-2021.svg";
 import illustrator from "../assets/Images/Skills/adobe-Illustrator-logo.svg";
 import illustrate from "../assets/Images/Intro/Devices-amico (1).png";
+import illustrate2 from "../assets/Images/Intro/Devices-amico.svg";
 import cmplogo from "../assets/Images/CompanyLogo/AplLogo.png";
+import cmplogo2 from "../assets/Images/CompanyLogo/AplLogo-removebg-preview.png";
 import logo from "../assets/Images/LOGO/N-Dev  (1).png";
+import darklogo from "../assets/Images/LOGO/darklogo.png";
 import profile from "../assets/Images/Profile/Visit.jpg";
 import portfolio from "../assets/Images/Project/Screenshot 2024-10-28 231947.png";
 import cryptopedia from "../assets/Images/Project/Screenshot 2024-11-03 112611.png";
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
-
+import { FaGithubSquare } from "react-icons/fa";
 export const userinfo: Userobject = {
   name: "info Code",
   picture: illustrate,
+  picture2: illustrate2,
   skills: ["HTML", "CSS", "JAVASCRIPT"],
 };
 export const images: ImageStatic = {
   image: logo,
+  image2: darklogo,
 };
 export const headerItem: headerIt = {
   about: { label: "About", page: "about" },
@@ -71,6 +76,7 @@ export const AboutMe: AboutSectionProps = {
   subtitle:
   "I’m Nadeem, a Frontend Developer with 10 months of experience in creating engaging websites. I specialize in UI/UX design and have developed a full-stack blogging platform using React and Redux. My designs are crafted in Figma, ensuring modern, user-friendly interfaces that look great on any device.  I am passionate about solving design challenges and improving user experiences through innovative solutions. Let's create something amazing together!",
   image: profile,
+
 };
 
 export const Skills: SkillSectionProps = {
@@ -98,6 +104,7 @@ export const Works: WorkSectionProps = {
   subtitle:
     "I developed and maintained responsive websites to ensure a seamless user experience across all devices. By designing intuitive interfaces in Figma, I enhanced both the visual appeal and usability of websites, making interactions smooth and enjoyable. I also optimized web performance through efficient coding and testing practices, leading to faster load times and improved responsiveness.Collaborating closely with cross-functional teams, I aligned project goals and met deadlines, consistently delivering high-quality solutions.",
   image: cmplogo,
+  image2: cmplogo2,
 };
 
 export const Project: ProjectSectionProps = {
@@ -107,7 +114,7 @@ export const Project: ProjectSectionProps = {
       image: portfolio,
       Link: "https://github.com/nadeemtadvi/Next-Portfolio-app",
       LiveLink: "https://imdeveloper-app.netlify.app/",
-      Github: git,
+      Github: FaGithubSquare,
       title: "Portfolio-app",
       button: ["HTML", "CSS", "TypeScript", "React", "Nextjs", "Taiwind"],
       subtitle:
@@ -117,7 +124,7 @@ export const Project: ProjectSectionProps = {
       image: cryptopedia,
       Link: "https://github.com/nadeemtadvi/Cryptopedia-Backend",
       LiveLink: "https://cryptopedia-update.netlify.app/",
-      Github: git,
+      Github: FaGithubSquare,
       title: "Cryptopedia",
       button: ["HTML", "CSS", "JavaScript", "React", "Taiwind","Mongodb", "expressjs", ],
       subtitle:

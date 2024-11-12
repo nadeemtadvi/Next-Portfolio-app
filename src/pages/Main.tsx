@@ -6,14 +6,17 @@ import WorkSection from "../components/WorkSection";
 import ProjectSection from "../components/ProjectSection";
 import ContactSection from "../components/ContactSection";
 import FooterSection from "../components/FooterSection";
+interface Mainprops{
+  darkMode:boolean;
+}
 
-const Main = () => {
+const Main = ({darkMode}:Mainprops) => {
   return (
     <>
-      <IntroSection />
+      <IntroSection darkMode={darkMode}/>
       <AboutSection />
       <SkillSection />
-      <WorkSection />
+      <WorkSection darkMode={darkMode} />
       <ProjectSection />
       <ContactSection />
       <FooterSection />
