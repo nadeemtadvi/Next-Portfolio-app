@@ -20,7 +20,7 @@ import cmplogo2 from "../assets/Images/CompanyLogo/AplLogo-removebg-preview.png"
 import logo from "../assets/Images/LOGO/N-Dev  (1).png";
 import darklogo from "../assets/Images/LOGO/darklogo.png";
 import profile from "../assets/Images/Profile/Visit.jpg";
-import portfolio from "../assets/Images/Project/Screenshot 2024-10-28 231947.png";
+import portfolio from "../assets/Images/Project/Screenshot 2024-11-03 123820.png";
 import cryptopedia from "../assets/Images/Project/Screenshot 2024-11-03 112611.png";
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
