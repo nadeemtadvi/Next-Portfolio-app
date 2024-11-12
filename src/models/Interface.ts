@@ -111,9 +111,9 @@ export interface Headerdataprops {
   setDarkMode:(mode:boolean) => void;
 }
 
-interface IntroSectiondataprops {
+export interface IntroSectiondataprops {
   darkMode:boolean;
 }
-interface WorkSectiondataprops{
+export interface WorkSectiondataprops{
   darkMode:boolean;
 }
