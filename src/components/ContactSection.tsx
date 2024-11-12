@@ -72,7 +72,7 @@ const ContactSection = () => {
                   type="name"
                   id="name"
                   name="name"
-                  className=" border border-gray-300 bg-transparent outline-none  text-gray-900 text-sm rounded-[6px] dark:bg-transparent dark:focus:ring-darkmainColor dark:focus:border-darkmainColor focus:ring-mainColor focus:border-mainColor block w-full p-2.5"
+                  className=" border border-gray-300 bg-transparent outline-none  text-gray-900 dark:text-gray-200 text-sm rounded-[6px] dark:bg-transparent dark:focus:ring-darkmainColor dark:focus:border-darkmainColor focus:ring-mainColor focus:border-mainColor block w-full p-2.5"
                   placeholder={Contact.fullname}
                   required
                 />
@@ -87,7 +87,7 @@ const ContactSection = () => {
                   type="email"
                   id="email"
                   name="email"
-                  className=" dark:bg-transparent bg-transparent dark:focus:ring-darkmainColor dark:focus:border-darkmainColor border border-gray-300 outline-none text-gray-900 text-sm rounded-[6px] focus:ring-mainColor focus:border-mainColor block w-full p-2.5"
+                  className=" dark:bg-transparent bg-transparent dark:text-gray-200 dark:focus:ring-darkmainColor dark:focus:border-darkmainColor border border-gray-300 outline-none text-gray-900 text-sm rounded-[6px] focus:ring-mainColor focus:border-mainColor block w-full p-2.5"
                   placeholder={Contact.email}
                   required
                 />
@@ -103,7 +103,7 @@ const ContactSection = () => {
                   type="tel"
                   id="tel"
                   name="tel"
-                  className="dark:bg-transparent bg-transparent dark:focus:ring-darkmainColor dark:focus:border-darkmainColor border border-gray-300 outline-none text-gray-900 text-sm rounded-[6px] focus:ring-mainColor focus:border-mainColor block w-full p-2.5"
+                  className="dark:bg-transparent bg-transparent dark:text-gray-200 dark:focus:ring-darkmainColor dark:focus:border-darkmainColor border border-gray-300 outline-none text-gray-900 text-sm rounded-[6px] focus:ring-mainColor focus:border-mainColor block w-full p-2.5"
                   placeholder={Contact.phone}
                   required
                 />
@@ -119,7 +119,7 @@ const ContactSection = () => {
                 id="message"
                 name="message"
                 rows={4}
-                className="dark:bg-transparent dark:focus:ring-darkmainColor dark:focus:border-darkmainColor block p-2.5 w-full text-sm outline-none text-gray-900  rounded-[6px] border border-gray-300 focus:ring-mainColor focus:border-mainColor"
+                className="dark:bg-transparent dark:focus:ring-darkmainColor dark:text-gray-200 dark:focus:border-darkmainColor block p-2.5 w-full text-sm outline-none text-gray-900  rounded-[6px] border border-gray-300 focus:ring-mainColor focus:border-mainColor"
                 placeholder={Contact.message}
                 defaultValue={""}
               />

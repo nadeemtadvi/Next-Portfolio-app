@@ -1,10 +1,9 @@
 import React from "react";
 import { Skills } from "../constant/constant";
-import Image from "next/image";
 
 const SkillSection = () => {
   return (
-    <div className="mt-[2rem] mb-[0.5rem] bg-sectionColor dark:bg-darksectionColor  p-[1.5rem_0.6rem] sm:p-[1.5rem]">
+    <div className="mt-[2rem] mb-[0.5rem]   p-[1.5rem_0.6rem] sm:p-[1.5rem]">
 
       <div className="sm:p-5">
         <div className="flex justify-center  mb-10">
@@ -17,15 +16,16 @@ const SkillSection = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3  md:grid-cols-4 gap-3 sm:gap-8">
+        
+        <div className="grid grid-cols-[repeat(_auto-fit,minmax(12rem,1fr)_)] gap-4 md:gap-8">
           {Skills.skillObj.map((item, index) => (
-            <div key={index} className="border border-gray-300 dark:border-darkmainColorten rounded-[6px] transform transition-transform duration-300 ease-in-out hover:scale-105 dark:hover:bg-darkmainColorten hover:bg-mainColorten">
+            <div key={index} className="border  border-gray-300 dark:border-darkmainColorten rounded-[6px] transform transition-transform duration-300 ease-in-out hover:scale-105 dark:hover:bg-darkmainColorten hover:bg-mainColorten">
               <div className="flex justify-center items-center ">
-                <div className="">
-                <Image src={item.image} alt="insta" width={100} height={100} className="p-[20px_10px_0px_10px] !h-[100px] !w-[100px]" />
+                <div className="text-[38px] mt-8 text-mainColor dark:text-darkmainColor">
+                {item.image && <item.image/>}
                 </div>
               </div>
-              <h4 className="text-center text-[1.04rem] dark:text-darksubtext text-subtext my-6 ">
+              <h4 className="text-center font-normal text-[1.04rem] dark:text-darksubtext text-subtext mt-6 mb-8 uppercase ">
                 {item.label}
               </h4>
             </div>

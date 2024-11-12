@@ -12,16 +12,7 @@ import {
   WorkSectionProps,
 } from "../models/Interface";
 
-import javas from "../assets/Images/Skills/javascript-js.1024x1024.png";
-import types from "../assets/Images/Skills/typescript-icon.1024x1024.png";
-import gits from "../assets/Images/Skills/git.png";
-import story from "../assets/Images/Skills/storybook-icon.822x1024.png";
-import figma from "../assets/Images/Skills/figma-icon.png";
-import reduxs from "../assets/Images/Skills/redux.png";
-import reacts from "../assets/Images/Skills/react.png";
-import tailw from "../assets/Images/Skills/tailwind-css-icon.png";
-import photo from "../assets/Images/Skills/adobe-photoshop-logo-2021.svg";
-import illustrator from "../assets/Images/Skills/adobe-Illustrator-logo.svg";
+
 import illustrate from "../assets/Images/Intro/Devices-amico (1).png";
 import illustrate2 from "../assets/Images/Intro/Devices-amico.svg";
 import cmplogo from "../assets/Images/CompanyLogo/AplLogo.png";
@@ -35,6 +26,16 @@ import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaGithubSquare } from "react-icons/fa";
+import { RiJavascriptFill } from "react-icons/ri";
+import { BiLogoTypescript } from "react-icons/bi";
+import { SiStorybook } from "react-icons/si";
+import { SiAdobephotoshop } from "react-icons/si";
+import { SiAdobeillustrator } from "react-icons/si";
+import { SiFigma } from "react-icons/si";
+import { FaReact } from "react-icons/fa6";
+import { SiRedux } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+
 export const userinfo: Userobject = {
   name: "info Code",
   picture: illustrate,
@@ -82,16 +83,16 @@ export const Skills: SkillSectionProps = {
   skill: "Skills",
   title: "The Skills , tools and technologies i am really good at:",
   skillObj: [
-    { image: javas, label: "Javascript" },
-    { image: tailw, label: "Tailwind" },
-    { image: types, label: "Typescript" },
-    { image: gits, label: "Git" },
-    { image: reacts, label: "React" },
-    { image: figma, label: "Figma" },
-    { image: reduxs, label: "Redux" },
-    { image: story, label: "Storybook" },
-    { image: photo, label: "Adobe Photoshop" },
-    { image: illustrator, label: "Adobe Illustrator" },
+    { image: RiJavascriptFill, label: "Javascript" },
+    { image: BiLogoTypescript, label: "Tailwind" },
+    { image: SiStorybook, label: "Typescript" },
+    { image: SiAdobephotoshop, label: "Git" },
+    { image: SiAdobeillustrator, label: "React" },
+    { image: FaGithubSquare, label: "Figma" },
+    { image: SiFigma, label: "Redux" },
+    { image: FaReact, label: "Storybook" },
+    { image: SiRedux, label: "Adobe Photoshop" },
+    { image: SiTailwindcss, label: "Adobe Illustrator" },
   ],
 };
 

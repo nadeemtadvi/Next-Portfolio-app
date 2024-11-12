@@ -12,11 +12,11 @@ const config: Config = {
     extend: {
       colors: {
         mainColor: "#1623B2",
-        mainColorten:"#e7e9f6",
+        mainColorten:"#e7e9f675",
         titletext:"#0B0C0C",
         subtext:"#323433",
         blurtext:"#92929D",
-        sectionColor:"#f8f8ff",
+        sectionColor:"#f8f8ff73",
          
         darkmainColor: "#a7ff00",
         darkmainColorten: "#a7ff0030",

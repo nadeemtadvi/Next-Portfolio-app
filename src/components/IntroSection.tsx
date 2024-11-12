@@ -1,12 +1,13 @@
 import React from "react";
 import { InterSect, userinfo } from "@/src/constant/constant";
 import Image from "next/image";
-import insta from "../assets/Icons/instagram.png";
-import git from "../assets/Icons/github-sign.png";
-import Linkedin from "../assets/Icons/linkedin (1).png";
-import facebook from "../assets/Icons/facebook.png";
+
+import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import { IntroSectiondataprops } from "../models/Interface";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaSquareWhatsapp } from "react-icons/fa6";
+import { FaSquareGithub } from "react-icons/fa6";
 
 
 const IntroSection = ({darkMode}: IntroSectiondataprops) => {
@@ -46,11 +47,18 @@ const IntroSection = ({darkMode}: IntroSectiondataprops) => {
                 <h4 className="text-[0.8rem] vertical-rl flex items-center gap-2 text-mainColor dark:text-darkmainColor">
                   {InterSect.follow}
                   <div className="w-[1px] h-14 bg-mainColor dark:bg-darkmainColor"></div>
-                  <Image src={insta} alt="insta" width={16} height={16} />
-                  <Image src={facebook} alt="insta" width={16} height={16} />
+                  <div className="text-[22px] flex gap-1">
                   <Link href="https://www.linkedin.com/in/nadeem-tadvi-290339159" target="_blank">
-                  <Image src={Linkedin} alt="insta" width={16} height={16} /></Link>
-                  <Link href="https://github.com/nadeemtadvi" target="_blank"><Image src={git} alt="insta" width={16} height={16} /></Link>
+                  <FaLinkedin/>
+                  </Link>
+                  <FaSquareInstagram/>
+                  <FaSquareWhatsapp/>
+                  <Link href="https://github.com/nadeemtadvi" target="_blank">
+                  <FaSquareGithub/>
+                  </Link>
+                  </div>
+
+                 
                 </h4>
               </div>
             </div>

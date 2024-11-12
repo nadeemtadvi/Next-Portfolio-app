@@ -47,7 +47,7 @@ export interface AboutSectionProps {
 }
 
 export interface skillobject {
-  image: string | StaticImageData;
+  image: IconType;
   label: string;
 }
 

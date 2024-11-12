@@ -39,7 +39,7 @@ const ProjectSection = () => {
                     </h4>
                     <div className="self-center mr-4">
                       <Link href={item.Link} target="_blank">
-                      <h4 className="dark:text-white text-mainColor ">{item.Github && <item.Github/>}</h4>
+                      <h4 className="dark:text-white text-mainColor text-[28px]">{item.Github && <item.Github/>}</h4>
                       
                       </Link>
                     </div>
