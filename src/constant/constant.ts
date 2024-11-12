@@ -54,7 +54,7 @@ export const InterSect: IntroSectionProps = {
   title: "Hi, I’m",
   spanname: "Nadeem",
   middletext: ",a passionate",
-  spanwork: "Frontend Developer",
+  spanwork: "UI UX Developer",
   subtitle:
   "I specialize in UI/UX design, crafting modern, user-friendly interfaces that elevate user experiences. Driven by a passion for innovation, I leverage Figma to bring creative ideas to life and effectively solve design challenges.",
   contact: "Contact Me",
@@ -83,12 +83,14 @@ export const Skills: SkillSectionProps = {
     { image: figma, label: "Figma" },
     { image: reduxs, label: "Redux" },
     { image: story, label: "Storybook" },
+    { image: story, label: "Adobe Photoshop" },
+    { image: story, label: "Adobe Illustrator" },
   ],
 };
 
 export const Works: WorkSectionProps = {
   button: "Experience",
-  title: "Frontend Developer",
+  title: "UI UX Developer",
   startDate: "Jan 2024",
   endDate: "Sept 2024",
   subtitle:
