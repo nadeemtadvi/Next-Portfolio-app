@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+
 body,
 html {
-  font-family: "" Tahoma, "Arial Narrow Bold", sans-serif, sans-serif;
+  font-family: "Frank Ruhl Libre", sans-serif, sans-serif;
   scroll-behavior: smooth;
 }
 
