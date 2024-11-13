@@ -26,15 +26,17 @@ import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaGithubSquare } from "react-icons/fa";
-import { RiJavascriptFill } from "react-icons/ri";
-import { BiLogoTypescript } from "react-icons/bi";
 import { SiStorybook } from "react-icons/si";
-import { SiAdobephotoshop } from "react-icons/si";
-import { SiAdobeillustrator } from "react-icons/si";
 import { SiFigma } from "react-icons/si";
 import { FaReact } from "react-icons/fa6";
 import { SiRedux } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiTypescript } from "react-icons/si";
+import { DiPhotoshop } from "react-icons/di";
+import { DiIllustrator } from "react-icons/di";
+import { FaGitAlt } from "react-icons/fa";
+
 
 export const userinfo: Userobject = {
   name: "info Code",
@@ -83,16 +85,16 @@ export const Skills: SkillSectionProps = {
   skill: "Skills",
   title: "The Skills , tools and technologies i am really good at:",
   skillObj: [
-    { image: RiJavascriptFill, label: "Javascript" },
-    { image: BiLogoTypescript, label: "Tailwind" },
-    { image: SiStorybook, label: "Typescript" },
-    { image: SiAdobephotoshop, label: "Git" },
-    { image: SiAdobeillustrator, label: "React" },
-    { image: FaGithubSquare, label: "Figma" },
-    { image: SiFigma, label: "Redux" },
-    { image: FaReact, label: "Storybook" },
-    { image: SiRedux, label: "Adobe Photoshop" },
-    { image: SiTailwindcss, label: "Adobe Illustrator" },
+    { image: SiTypescript, label: "Typescript" },
+    { image: IoLogoJavascript, label: "Javascript" },
+    { image: SiStorybook, label: "Storybook" },
+    { image: FaGitAlt, label: "Git" },
+    { image: SiFigma, label: "Figma" },
+    { image: DiPhotoshop, label: "Adobe Photoshop" },
+    { image: DiIllustrator, label: "Adobe Illustrator" },
+    { image: FaReact, label: "React" },
+    { image: SiRedux, label: "Redux" },
+    { image: SiTailwindcss, label: "Tailwind" },
   ],
 };
 

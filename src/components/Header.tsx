@@ -51,7 +51,7 @@ const Header = ({darkMode,setDarkMode}:Headerdataprops) => {
                   onClick={() => setActive(index)}
                   className={`${
                     active === index ? "active" : ""
-                  } hover:text-mainColor hover:bg-mainColorten dark:hover:text-darkmainColor dark:hover:bg-darkmainColorten p-[2px_10px_3px] rounded-[6px] `}
+                  } hover:text-mainColor hover:bg-mainColorten dark:hover:text-darkmainColor dark:hover:bg-darkmainColorten p-[2px_10px_3px]  `}
                 >
                   <a href={`#${item.page}`}>{item.label}</a>
                 </li>
@@ -66,7 +66,7 @@ const Header = ({darkMode,setDarkMode}:Headerdataprops) => {
             >
               {darkMode ? <MdLightMode /> : <MdDarkMode />}
             </div>
-            <button className="border border-mainColor text-mainColor dark:border-darkmainColor dark:text-darkmainColor rounded-[6px] p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:hover:bg-darkmainColorten hover:bg-mainColorten">
+            <button className="border border-mainColor text-mainColor dark:border-darkmainColor dark:text-darkmainColor  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:hover:bg-darkmainColorten hover:bg-mainColorten">
               <Link href="/Nadeem_CV.pdf" download="Nadeem_CV.pdf" passHref>
                
                 <span className="hidden md:block">
@@ -89,7 +89,7 @@ const Header = ({darkMode,setDarkMode}:Headerdataprops) => {
               </button>
               {toggle ? (
                 <div className="absolute top-[45px] bg-white dark:bg-darksectionColor dark:text-white left-[-120px]">
-                  <ul className="shadow-md min-w-[150px]  !pb-0 rounded-[6px]">
+                  <ul className="shadow-md min-w-[150px]  !pb-0 ">
                     {Object.values(headerItem).map((item, index) => (
                       <li
                         key={index}

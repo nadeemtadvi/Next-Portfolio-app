@@ -21,11 +21,11 @@ const SkillSection = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-[repeat(_auto-fit,minmax(12rem,1fr)_)] gap-4 md:gap-8">
+        <div className="grid  grid-cols-[repeat(_auto-fit,minmax(12rem,1fr)_)]  gap-[0px] border-t border-l border-gray-300">
           {Skills.skillObj.map((item, index) => (
             <div
               key={index}
-              className="border  border-gray-300 dark:border-darkmainColorten rounded-[6px] transform transition-transform duration-300 ease-in-out hover:scale-105 dark:hover:bg-darkmainColorten hover:bg-mainColorten"
+              className="border-r bg-[#ececec] border-b outline-none border-gray-300 dark:border-darkmainColorten  transform transition-transform duration-300 ease-in-out hover:scale-[1.02] dark:hover:bg-darkmainColorten hover:bg-mainColorten"
             >
               <div className="flex justify-center items-center ">
                 <div className="text-[38px] mt-8 text-mainColor dark:text-darkmainColor">

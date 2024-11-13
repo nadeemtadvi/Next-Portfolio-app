@@ -16,16 +16,16 @@ const AboutSection = () => {
       </div>
       <div className="sm:grid grid-cols-[330px_auto] ">
         <div className="mb-14 sm:mb-0 relative flex items-center justify-start transform transition-transform duration-300 ease-in-out hover:scale-105">
-          <div className="z-[10] ml-[35px] w-[260px] h-[260px] shadow-md rounded-[6px] ">
+          <div className="z-[10] ml-[35px] w-[260px] h-[260px] shadow-md  ">
             <Image
               src={AboutMe.image}
               alt="dp"
               width={100}
               height={100}
-              className="rounded-[6px]  !w-full !h-full !object-fill"
+              className="  !w-full !h-full !object-fill"
             />
           </div>
-          <div className="z-[8] rounded-[6px]  absolute left-0  m-auto top-[75px] bottom-0 border border-gray-300 dark:border-darkmainColorten w-[260px] h-[260px]"></div>
+          <div className="z-[8]   absolute left-0  m-auto top-[75px] bottom-0 border border-gray-300 dark:border-darkmainColorten w-[260px] h-[260px]"></div>
         </div>
         <div>
           <h4 className="text-[1.6rem] text-[#272727] dark:text-darktitletext font-medium mb-2">

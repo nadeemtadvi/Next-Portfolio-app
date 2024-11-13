@@ -20,13 +20,13 @@ const ProjectSection = () => {
         <div className="md:grid grid-cols-2 gap-8">
           {Project.projectObject.map((item, index) => (
             <div key={index} className="py-2 mb-10 md:mb-0">
-              <div className="h-[160px] sm:h-[260px] w-full border border-gray-200 dark:border-darkmainColorten rounded-[10px] p-2 mb-3 transform transition-transform duration-300 ease-in-out hover:scale-105">
+              <div className="h-[160px] sm:h-[260px] w-full border border-gray-200 dark:border-darkmainColorten  p-2 mb-3 transform transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image
                   src={item.image}
                   alt="dp"
                   width={400}
                   height={400}
-                  className=" !w-full !h-full rounded-[10px]"
+                  className=" !w-full !h-full "
                 />
               </div>
               <div>
@@ -51,12 +51,12 @@ const ProjectSection = () => {
                   <p className="text-[0.98rem] md:text-[1.04rem] dark:text-darksubtext text-subtext mb-2 sm:mb-4 ">
                     {item.subtitle}
                   </p>
-                  <div className=" flex items-center flex-wrap gap-3 ">
+                  <div className=" flex items-center flex-wrap gap-[1px] ">
                     {item.button &&
                       item.button.map((items, index) => (
                         <button
                           key={index}
-                          className=" rounded-full text-[0.9rem] bg-mainColorten text-mainColor dark:bg-darkmainColorten dark:text-darkmainColor font-medium p-[1px_16px_2px]"
+                          className="  text-[0.9rem] bg-mainColorten text-mainColor dark:bg-darkmainColorten dark:text-darkmainColor font-medium p-[4px_16px_3px]"
                         >
                           {items}
                         </button>
