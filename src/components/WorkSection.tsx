@@ -19,7 +19,7 @@ const WorkSection = ({darkMode}:WorkSectiondataprops) => {
 
       <div className="sm:grid grid-cols-[300px_auto] ">
         <div className="flex md:mt-0 md:mb-0 mb-10 sm:mb-2 mt-5 justify-center sm:justify-start items-center transform transition-transform duration-300 ease-in-out hover:scale-105">
-        <Image src={darkMode ? Works.image2 : Works.image} alt="insta" className="workImg dark:bg-white rounded-md" width={250} height={250} />
+        <Image src={darkMode ? Works.image2 : Works.image} alt="insta" className="workImg dark:bg-white " width={250} height={250} />
         </div>
         <div>
           <div>
