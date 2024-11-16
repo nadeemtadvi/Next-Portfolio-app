@@ -22,6 +22,7 @@ import darklogo from "../assets/Images/LOGO/darklogo.png";
 import profile from "../assets/Images/Profile/Visit.jpg";
 import portfolio from "../assets/Images/Project/Screenshot 2024-11-03 123820.png";
 import cryptopedia from "../assets/Images/Project/Screenshot 2024-11-03 112611.png";
+import furniture from "../assets/Images/Project/screencapture-localhost-3000-2024-11-16-15_19_35.png";
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
@@ -131,6 +132,16 @@ export const Project: ProjectSectionProps = {
       button: ["HTML", "CSS", "JavaScript", "React", "Taiwind","Mongodb", "expressjs", ],
       subtitle:
       "A fully responsive blogging website featuring both frontend and backend development. Built to offer a smooth and engaging user experience on all devices. Includes robust functionality for content management and user interactions."  
+    },
+    {
+      image: furniture,
+      Link: "https://github.com/nadeemtadvi/Furniture-app",
+      LiveLink: "https://shantifurniture.netlify.app/",
+      Github: FaGithubSquare,
+      title: "Shanti Furniture",
+      button: ["HTML", "CSS", "JavaScript", "React", "Taiwind", ],
+      subtitle:
+      "Furniture E-commerce App - A responsive e-commerce application for furniture items, built with React and Tailwind CSS. This app provides a modern and clean user interface for browsing and purchasing furniture, designed to be fully responsive across all devices."  
     },
    
     

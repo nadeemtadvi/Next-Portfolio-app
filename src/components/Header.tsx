@@ -9,11 +9,9 @@ import { MdLightMode } from "react-icons/md";
 import { IoMdDownload } from "react-icons/io";
 import { Headerdataprops } from "../models/Interface";
 
-
-const Header = ({darkMode,setDarkMode}:Headerdataprops) => {
+const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
   const [toggle, setToggle] = useState<boolean>(false);
   const [active, setActive] = useState<number | null>(null);
- 
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -34,14 +32,13 @@ const Header = ({darkMode,setDarkMode}:Headerdataprops) => {
       <div className="mb-[0rem]  dark:bg-black">
         <div className="flex justify-between items-center p-5 ">
           <div className="">
-          <Image
-                src={darkMode ? images.image2 : images.image}
-                alt="logo"
-                className="logo-dev"
-                width={170}
-                height={170}
-              />
-           
+            <Image
+              src={darkMode ? images.image2 : images.image}
+              alt="logo"
+              className="logo-dev"
+              width={170}
+              height={170}
+            />
           </div>
           <div className="hidden md:block">
             <ul className="flex justify-between items-center gap-14 dark:text-white">
@@ -68,37 +65,39 @@ const Header = ({darkMode,setDarkMode}:Headerdataprops) => {
             </div>
             <button className="border border-mainColor text-mainColor dark:border-darkmainColor dark:text-darkmainColor  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:hover:bg-darkmainColorten hover:bg-mainColorten">
               <Link href="/Nadeem_CV.pdf" download="Nadeem_CV.pdf" passHref>
-               
-                <span className="hidden md:block">
-                {DwnldButton.btn}
+                <span className="hidden md:block">{DwnldButton.btn}</span>
+                <span className="md:hidden block">
+                  <span className="flex items-center gap-1">
+                    <IoMdDownload /> CV
+                  </span>
                 </span>
-              <span className="md:hidden block">
-                <span className="flex items-center gap-1">
-
-               <IoMdDownload/> CV
-                </span>
-              </span>
-
               </Link>
             </button>
           </div>
           <div className="sm:hidden block">
             <div className="relative">
               <button onClick={handleToggle} className="text-xl">
-                <HiMenu className="dark:text-white"/>
+                <HiMenu className="dark:text-white" />
               </button>
               {toggle ? (
-                <div className="absolute top-[45px] bg-white dark:bg-darksectionColor dark:text-white left-[-120px]">
-                  <ul className="shadow-md min-w-[150px]  !pb-0 ">
-                    {Object.values(headerItem).map((item, index) => (
-                      <li
-                        key={index}
-                        className="p-2.5  border-b border-gray-300 dark:border-darkmainColorten hover:bg-gray-300 dark:hover:bg-darkmainColorten"
-                      >
-                        <a href={`#${item.page}`}>{item.label}</a>
-                      </li>
-                    ))}
-                  </ul>
+                <div>
+                  <div
+                    onClick={handleToggle}
+                    className="fixed z-10 bg-transparent top-0 right-0 left-0 bottom-0 m-auto "
+                  ></div>
+
+                  <div className="absolute top-[45px] bg-white dark:bg-darksectionColor dark:text-white left-[-120px]">
+                    <ul className="shadow-md min-w-[150px]  !pb-0 ">
+                      {Object.values(headerItem).map((item, index) => (
+                        <li
+                          key={index}
+                          className="p-2.5  border-b border-gray-300 dark:border-darkmainColorten hover:bg-gray-300 dark:hover:bg-darkmainColorten"
+                        >
+                          <a href={`#${item.page}`}>{item.label}</a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               ) : (
                 ""
