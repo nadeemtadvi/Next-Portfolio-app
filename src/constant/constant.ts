@@ -121,7 +121,7 @@ export const Project: ProjectSectionProps = {
       title: "Portfolio-app",
       button: ["HTML", "CSS", "TypeScript", "React", "Nextjs", "Taiwind"],
       subtitle:
-        "I developed and maintained responsive websites to ensure a seamless user experience across all devices. By designing intuitive interfaces in Figm ...",
+      "A sleek, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Designed to showcase projects, skills, and accomplishments in a clean and modern layout. This project is focused on performance, scalability, and a seamless user experience." , 
     },
     {
       image: cryptopedia,
