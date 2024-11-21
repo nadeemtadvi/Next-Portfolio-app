@@ -117,3 +117,6 @@ export interface IntroSectiondataprops {
 export interface WorkSectiondataprops{
   darkMode:boolean;
 }
+export interface SkillSectiondataprops{
+  darkMode:boolean;
+}

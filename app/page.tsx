@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <>
       <div>
-        <div className="max-w-screen-xl mx-auto ">
+        <div className=" ">
           <Header darkMode={darkMode} setDarkMode={setDarkMode}/>
           <Main darkMode={darkMode}/>
         </div>

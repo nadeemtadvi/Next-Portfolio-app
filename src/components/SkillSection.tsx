@@ -1,44 +1,106 @@
 import React from "react";
 import { Skills } from "../constant/constant";
+import WorkSection from "./WorkSection";
+import { SkillSectiondataprops } from "../models/Interface";
+import jarImage from "../assets/Images/Untitled_design__2_-removebg-preview.png";
+import FlowerImg from "../assets/Images/Shapes/whiteFlower.png";
+import springImg from "../assets/Images/Shapes/spring.png";
+import Image from "next/image";
+import { SiStorybook } from "react-icons/si";
+import { SiFigma } from "react-icons/si";
+import { FaReact } from "react-icons/fa6";
+import { SiRedux } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiTypescript } from "react-icons/si";
+import { DiPhotoshop } from "react-icons/di";
+import { DiIllustrator } from "react-icons/di";
+import { FaGitAlt } from "react-icons/fa";
 
-const SkillSection = () => {
+const SkillSection = ({ darkMode }: SkillSectiondataprops) => {
   return (
-    <div className="mt-[2rem] mb-[0.5rem]   p-[1.5rem_0.6rem] sm:p-[1.5rem]">
-      <div className="">
-        <div className="">
-          <div className="mb-14">
-            <h4
-              id="skills"
-              className="dark:text-white text-[2rem]  mb-2 text-[#252525] font-medium"
-            >
-              <span className="p-[0px_42px_4px_0px] border-b-2 border-mainColor dark:border-darkmainColor">
-                {Skills.skill}
-              </span>
-            </h4>
-            <p className=" text-[1.04rem] text-subtext dark:text-darksubtext  mb-2 sm:mb-4">
-              {Skills.title}
-            </p>
-          </div>
-        </div>
-
-        <div className="grid  grid-cols-[repeat(_auto-fit,minmax(12rem,1fr)_)]  gap-[0px] border-t border-l dark:border-darkmainColorten border-gray-300">
-          {Skills.skillObj.map((item, index) => (
-            <div
-              key={index}
-              className="border-r bg-mainColorten border-b outline-none border-gray-300 dark:border-darkmainColorten  transform transition-transform duration-300 ease-in-out hover:scale-[1.02] dark:hover:bg-black dark:bg-darkmainColorten hover:bg-white hover:border-l hover:border-t hover:border-gray-300"
-            >
-              <div className="flex justify-center items-center ">
-                <div className="text-[38px] mt-8 text-mainColor dark:text-darkmainColor">
-                  {item.image && <item.image />}
-                </div>
-              </div>
-              <h4 className="text-center font-normal text-[1.04rem] dark:text-darksubtext text-subtext mt-6 mb-8 uppercase ">
-                {item.label}
+    <div className="bg-[#90a7eb17] border-t-2 border-mainColor">
+    <div className=" max-w-screen-xl mx-auto py-16">
+      <div className=" mx-auto">
+        <div className="relative lg:grid grid-cols-2">
+        <Image
+                    src={FlowerImg}
+                    alt="dp"
+                    width={120}
+                    height={120}
+                    className="absolute  top-[-13rem] bottom-0 left-[-20rem] right-0 m-auto "
+                  />
+        <Image
+                    src={springImg}
+                    alt="dp"
+                    width={120}
+                    height={120}
+                    className="absolute  top-[4rem] left-[2rem] rotate-[-32deg] "
+                  />
+          <div className=" Skills-part py-10 pr-6">
+            <div className="">
+              <h4
+                id="skills"
+                className="dark:text-white text-[2rem]  mb-12 text-[#252525]  text-center  bg-[]"
+              >
+                <span className="rounded-[10px] shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] p-[5px_20px_6px] text-white font-medium border-2 border-[#323130]  bg-[#90A7EB]  dark:-darkmainColor">
+                  {Skills.skill}
+                </span>
               </h4>
             </div>
-          ))}
+            <div className=" text-center">
+              <div className="relative mx-auto pt-16 w-[400px]">
+                <Image
+                  src={jarImage}
+                  alt="dp"
+                  width={340}
+                  height={340}
+                  className="inline-block"
+                />
+                 <div className="icon-container text-white">
+                <span className="absolute bottom-[5rem] left-[14rem] bg-[#9723C9]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-[#323130] shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                  <SiRedux />
+                </span>
+                <span className="absolute bottom-[5.2rem] left-[9.8rem] bg-[#FF00F5]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-[#323130] shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                  <SiFigma />
+                </span>
+                <span className="absolute bottom-[8.15rem] left-[7.4rem] bg-[#FF4911]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-[#323130] shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                  <FaGitAlt />
+                </span>
+                
+                <span className="absolute bottom-[2rem] right-[7.6rem] bg-[#FF00F5]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-[#323130] shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                  <SiStorybook />
+                </span>
+                <span className="absolute bottom-[2rem] left-[7.3rem] bg-[#90A7EB]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-[#323130] shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                  <SiTailwindcss />
+                </span>
+                <span className="absolute bottom-[2rem] left-[10.5rem] bg-[#ff9728]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-[#323130] shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                  <IoLogoJavascript />
+                </span>
+                <span className="absolute bottom-[5rem] left-[6.5rem] bg-[#90A7EB]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-[#323130] shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                  <FaReact />
+                </span>
+                <span className="absolute bottom-[7.98rem] left-[12rem] bg-[#90A7EB]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-[#323130] shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                  <SiTypescript />
+                </span>
+                <span className="absolute top-0 left-[14rem] bg-[#90A7EB]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-[#323130] shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                  <DiPhotoshop />
+                </span>
+                <span className="absolute top-[3rem] left-[10rem] bg-[#ff9728]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-[#323130] shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                  <DiIllustrator />
+                </span>
+                <div className="jar-overlay"></div>
+              </div>
+              </div>
+             
+            </div>
+          </div>
+          <div className="Experience-part ">
+            <WorkSection darkMode={darkMode} />
+          </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

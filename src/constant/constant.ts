@@ -13,8 +13,8 @@ import {
 } from "../models/Interface";
 
 
-import illustrate from "../assets/Images/Intro/Devices-amico (1).png";
-import illustrate2 from "../assets/Images/Intro/Devices-amico.svg";
+import illustrate from "../assets/Images/Profile/profileN.png";
+import illustrate2 from "../assets/Images/Profile/profileN.png";
 import cmplogo from "../assets/Images/CompanyLogo/AplLogo.png";
 import cmplogo2 from "../assets/Images/CompanyLogo/AplLogo-removebg-preview.png";
 import logo from "../assets/Images/LOGO/N-Dev  (1).png";
@@ -62,8 +62,8 @@ export const DwnldButton: Downloadbtn = {
 
 export const InterSect: IntroSectionProps = {
   title: "Hi, I’m",
-  spanname: "Nadeem",
-  middletext: ",a passionate",
+  spanname: "Nadeem,",
+  middletext: "a passionate",
   spanwork: "UI UX Developer",
   subtitle:
   "I specialize in UI/UX design, crafting modern, user-friendly interfaces that elevate user experiences. Driven by a passion for innovation, I leverage Figma to bring creative ideas to life and effectively solve design challenges.",
