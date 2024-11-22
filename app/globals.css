@@ -10,25 +10,25 @@
 }
 @font-face {
   font-family: "Modern";
-  src: url("./fonts/Raleway-Regular.ttf") format("truetype");
+  src: url("./fonts/PublicSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Modern";
-  src: url("./fonts/Raleway-Medium.ttf") format("truetype");
+  src: url("./fonts/PublicSans-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Modern";
-  src: url("./fonts/Raleway-SemiBold.ttf") format("truetype");
+  src: url("./fonts/PublicSans-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Modern";
-  src: url("./fonts/Raleway-Bold.ttf") format("truetype");
+  src: url("./fonts/PublicSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -80,26 +80,6 @@ body::-webkit-scrollbar-thumb {
   background-color: #e7e9f6;
   color: #1623b2;
 }
-@media screen and (max-width: 560px) {
-  .logo-dev {
-    width: 120px;
-  }
-  .workImg {
-    width: 170px;
-  }
-  .footer h4 {
-    font-size: 9px !important;
-  }
-  .footer .flex-wrap img {
-    width: 13px;
-  }
-}
-.img-container{
-  border-top-right-radius: 160px;
-  border-top-left-radius: 160px;
-  
-
-}
 .jar-overlay{
   position: absolute;
   background-color: #ffffff6e;
@@ -111,6 +91,32 @@ body::-webkit-scrollbar-thumb {
   margin: auto;
   border-radius: 44px;
 }
+@media screen and (max-width: 560px) {
+  .logo-dev {
+    width: 120px;
+  }
+  .workImg {
+    width: 100px;
+  }
+  .footer h4 {
+    font-size: 9px !important;
+  }
+  .footer .flex-wrap img {
+    width: 13px;
+  }
+  .jar-overlay {
+    width: 162px;
+    height: 168px;
+    border-radius: 34px;}
+  
+}
+.img-container{
+  border-top-right-radius: 160px;
+  border-top-left-radius: 160px;
+  
+
+}
+
 .scroll-style::-webkit-scrollbar{
   width: 7px;
 }
@@ -124,7 +130,7 @@ body::-webkit-scrollbar-thumb {
 }
 .img-project{
   /* width: 600px!important; */
-  height: 270px!important;
+  /* height: 270px!important; */
 }
 .bg-grid{
   background-image: url("../src/assets/Images/gridlines.png");

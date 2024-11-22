@@ -77,7 +77,7 @@ export const AboutMe: AboutSectionProps = {
   about: "About me",
   title: "Curious about me?",
   subtitle:
-  "I’m Nadeem, a Frontend Developer with 10 months of experience in creating engaging websites. I specialize in UI/UX design and have developed a full-stack blogging platform using React and Redux. My designs are crafted in Figma, ensuring modern, user-friendly interfaces that look great on any device.  I am passionate about solving design challenges and improving user experiences through innovative solutions. Let's create something amazing together!",
+  "I’m Nadeem, UI UX Developer with hands on experience in creating engaging websites. I specialize in UI/UX design and have developed a full-stack blogging platform using React and Redux. My designs are crafted in Figma, ensuring modern, user-friendly interfaces that look great on any device.  I am passionate about solving design challenges and improving user experiences through innovative solutions. Let's create something amazing together!",
   image: profile,
 
 };

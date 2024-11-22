@@ -29,11 +29,11 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
   };
   return (
     <>
-      <div className="mb-[0rem]  bg-white dark:bg-borderblack border-b-2 border-borderblack">
+      <div className="mb-[0rem]  bg-white dark:bg-blackshadow border-b-2 border-blackshadow">
         <div className="max-w-screen-xl mx-auto">
           {" "}
-          <div className="grid grid-cols-[18%_auto_25%] items-center ">
-            <div className="border-r-2 text-center border-borderblack py-[1.38rem]  ">
+          <div className="flex justify-between  lg:grid grid-cols-[18%_auto_25%] items-center ">
+            <div className="border-r-2 text-center border-blackshadow py-3 lg:py-[1.38rem]  ">
               <Image
                 src={darkMode ? images.image2 : images.image}
                 alt="logo"
@@ -42,15 +42,15 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                 height={170}
               />
             </div>
-            <div className="hidden md:block pl-10 py-6   border-r-2 border-borderblack">
-              <ul className="flex font-semibold justify-center items-center gap-12  dark:text-white">
+            <div className="hidden lg:block  py-4 lg:py-6   ">
+              <ul className="flex font-medium justify-center items-center gap-12  dark:text-white">
                 {Object.values(headerItem).map((item, index) => (
                   <li
                     key={index}
                     onClick={() => setActive(index)}
                     className={`${
                       active === index ? "active" : ""
-                    } hover:text-mainColor hover:bg-mainColorten dark:hover:text-darkmainColor dark:hover:bg-darkmainColorten p-[2px_10px_3px]  `}
+                    } hover:text-blackshadow hover:bg-blackshadowten dark:hover:text-darkblackshadow dark:hover:bg-darkblackshadowten p-[2px_10px_3px]  `}
                   >
                     <a href={`#${item.page}`}>{item.label}</a>
                   </li>
@@ -59,7 +59,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
             </div>
 
             <div className="flex gap-2 items-center ">
-              <div className="flex-none border-r-2 border-borderblack py-6 ">
+              <div className="border-l-2  flex-none border-r-2 border-blackshadow py-4 lg:py-6 ">
                 <div
                   onClick={toggleDarkMode}
                   className="text-gray-900  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:text-white "
@@ -67,9 +67,9 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                   {darkMode ? <MdLightMode /> : <MdDarkMode />}
                 </div>
               </div>
-              <div className="grow text-center">
+              <div className="grow text-center mx-5 lg:mx-0">
                 {" "}
-                <button className="rounded-[8px] inline-block bg-[#ff9728db] text-white font-semibold  shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] border-2 border-borderblack  dark:border-darkmainColor dark:text-darkmainColor  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:hover:bg-darkmainColorten hover:bg-mainColorten">
+                <button className="rounded-[8px] inline-block bg-redreg text-white font-medium  shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] border-2 border-blackshadow  dark:border-darkblackshadow dark:text-darkblackshadow  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:hover:bg-darkblackshadowten hover:bg-blackshadowten">
                   <Link href="/Nadeem_CV.pdf" download="Nadeem_CV.pdf" passHref>
                     <span className="hidden md:block">{DwnldButton.btn}</span>
                     <span className="md:hidden block">
@@ -80,11 +80,10 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                   </Link>
                 </button>
               </div>
-            </div>
-            <div className="sm:hidden block py-6 ">
+              <div className="lg:hidden block py-4 lg:py-6 border-l-2 border-blackshadow">
               <div className="relative">
-                <button onClick={handleToggle} className="text-xl">
-                  <HiMenu className="dark:text-white" />
+                <button onClick={handleToggle} className="text-xl p-[1px_10px_2px] sm:p-[5px_24px_6px]">
+                  <HiMenu className="dark:text-white " />
                 </button>
                 {toggle ? (
                   <div>
@@ -93,12 +92,12 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                       className="fixed z-10 bg-transparent top-0 right-0 left-0 bottom-0 m-auto "
                     ></div>
 
-                    <div className="absolute top-[45px] bg-white dark:bg-darksectionColor dark:text-white left-[-120px]">
+                    <div className="absolute z-10 top-[45px] bg-white dark:bg-darksectionColor dark:text-white left-[-120px]">
                       <ul className="shadow-md min-w-[150px]  !pb-0 ">
                         {Object.values(headerItem).map((item, index) => (
                           <li
                             key={index}
-                            className="p-2.5  border-b border-gray-300 dark:border-darkmainColorten hover:bg-gray-300 dark:hover:bg-darkmainColorten"
+                            className="p-2.5  border-b border-gray-300 dark:border-darkblackshadowten hover:bg-gray-300 dark:hover:bg-darkblackshadowten"
                           >
                             <a href={`#${item.page}`}>{item.label}</a>
                           </li>
@@ -111,6 +110,8 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                 )}
               </div>
             </div>
+            </div>
+          
           </div>
         </div>
       </div>
