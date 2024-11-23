@@ -2,12 +2,11 @@ import React from "react";
 import { Project } from "../constant/constant";
 import Image from "next/image";
 import Link from "next/link";
-import starImg from "../assets/Images/Shapes/4star.png";
 
 const ProjectSection = () => {
   return (
     <div className="">
-      <div className="overflow-x-hidden whitespace-nowrap bg-blackshadow border-t-2 border-b-2 border-blackshadow  text-[1.4rem] font-medium text-white">
+      <div className="overflow-x-hidden whitespace-nowrap bg-blackshadow border-t-2 border-b-2 border-blackshadow  text-[1.4rem] font-medium text-white dark:text-darktext">
         <div className="moveelement ">
           <h4 className="inline-block py-3 px-12"> {Project.project}</h4>
           <h4 className="inline-block py-3 px-12"> {Project.project}</h4>
@@ -21,7 +20,7 @@ const ProjectSection = () => {
           <h4 className="inline-block py-3 px-12"> {Project.project}</h4>
         </div>
       </div>
-      <div className=" bg-purplelight">
+      <div className=" bg-purplelight  dark:bg-darkbgcolor">
         <div className="max-w-screen-xl mx-auto">
         
           <div className="relative  lg:grid grid-cols-2  gap-10 sm:px-8 px-4 py-4 sm:py-10 lg:py-24">
@@ -30,7 +29,7 @@ const ProjectSection = () => {
               <div key={index} className="py-4 sm:py-6  lg:py-0">
                 {/* Image Section */}
                 <div
-                  className={` border-2  m-0 lg:m-0 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)]  border-blackshadow rounded-[10px] overflow-hidden  w-full dark:-darkblackshadowten `}
+                  className={` border-2  m-0 lg:m-0 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)]  border-blackshadow rounded-[10px] overflow-hidden  w-full  `}
                 >
                   <div className="">
                     <Image
@@ -42,11 +41,11 @@ const ProjectSection = () => {
                     />
                     <div className="bg-purplereg  p-5  sm:h-[170px]">
                       <div className="flex justify-between sm:justify-start gap-5 ">
-                        <h4 className="text-[#272727]  dark:text-darktitletext font-medium text-[0.95rem] sm:text-[1.2rem] md:text-[1.6rem] flex items-center">
+                        <h4 className="text-[#272727]  dark:text-darkytext font-medium text-[0.95rem] sm:text-[1.2rem] md:text-[1.6rem] flex items-center">
                           <span className="mr-[5px]">{item.title}</span>
                           |
                           <Link href={item.LiveLink} target="_blank">
-                            <span className=" text-white dark:text-darkblackshadow  dark:-darkblackshadow font-medium ml-[5px] text-[0.95rem] sm:text-[1.1rem]">
+                            <span className=" text-white dark:text-darkytext   font-medium ml-[5px] text-[0.95rem] sm:text-[1.1rem]">
                               Live Demo
                             </span>
                           </Link>
@@ -55,7 +54,7 @@ const ProjectSection = () => {
                         
                         <div className="self-center  sm:mr-4 ">
                           <Link href={item.Link} target="_blank">
-                            <h4 className="dark:text-white text-blackshadow text-[23px]">
+                            <h4 className="dark:text-darkytext text-blackshadow text-[23px]">
                               {item.Github && <item.Github />}
                             </h4>
                           </Link>
@@ -67,7 +66,7 @@ const ProjectSection = () => {
                           item.button.map((items, index) => (
                             <button
                               key={index}
-                              className="text-[0.76rem] sm:text-[0.9rem] rounded-[6px] border border-blackshadow bg-white text-blackshadow dark:bg-darkblackshadowten dark:text-darkblackshadow font-medium p-[1px_12px_2px] sm:p-[4px_16px_3px]"
+                              className="text-[0.76rem] sm:text-[0.9rem] rounded-[6px] border border-blackshadow bg-white  text-blackshadow dark:bg-darkbgcolor dark:text-darktext font-medium p-[1px_12px_2px] sm:p-[4px_16px_3px]"
                             >
                               {items}
                             </button>

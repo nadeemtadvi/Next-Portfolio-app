@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <>
       <div>
-        <div className=" ">
+        <div className="dark:bg-darkbgcolor">
           <Header darkMode={darkMode} setDarkMode={setDarkMode}/>
           <Main darkMode={darkMode}/>
         </div>

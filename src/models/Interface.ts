@@ -114,6 +114,9 @@ export interface Headerdataprops {
 export interface IntroSectiondataprops {
   darkMode:boolean;
 }
+export interface AboutSectiondataprops {
+  darkMode:boolean;
+}
 export interface WorkSectiondataprops{
   darkMode:boolean;
 }

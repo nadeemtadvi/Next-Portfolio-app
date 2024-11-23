@@ -14,7 +14,7 @@ const Main = ({darkMode}:Mainprops) => {
   return (
     <>
       <IntroSection darkMode={darkMode}/>
-      <AboutSection />
+      <AboutSection darkMode={darkMode}/>
       <SkillSection darkMode={darkMode}/>
       {/* <WorkSection darkMode={darkMode} /> */}
       <ProjectSection />

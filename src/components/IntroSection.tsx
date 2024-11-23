@@ -13,7 +13,7 @@ import arrowImg from "../assets/Images/Shapes/arrow4.png";
 
 const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
   return (
-    <div className="bg-purplelight">
+    <div className="bg-purplelight dark:bg-darkbgcolor">
       {" "}
       <div className="max-w-screen-xl mx-auto">
         <div className="relative md:grid grid-cols-2 px-4 sm:px-8  py-6 lg:py-20">
@@ -26,23 +26,23 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
           />
           <div className="flex justify-start items-center -r -blackshadow">
             <div>
-              <h5 className="text-titletext dark:text-white font-medium text-[0.93rem] leading-[30px] sm:leading-[48px] mb-2">
+              <h5 className="text-titletext dark:text-darktext font-medium text-[0.93rem] leading-[30px] sm:leading-[48px] mb-2">
                 {InterSect.title}
-                <span className="text-blackshadow dark:text-darkblackshadow">
+                <span className="text-blackshadow dark:text-darktext">
                   {" "}
                   {InterSect.spanname}
                 </span>{" "}
                 <br />
-                <span className="text-blackshadow dark:text-darkblackshadow uppercase font-bold text-[2rem] sm:text-[2.4rem] lg:text-[3rem] xl:text-[3.6rem]">
+                <span className="text-blackshadow dark:text-darktext uppercase font-bold text-[2rem] sm:text-[2.4rem] lg:text-[3rem] xl:text-[3.6rem]">
                   {InterSect.middletext} <br />
                   {InterSect.spanwork}
                 </span>
               </h5>
-              <p className="lg:w-[75%] text-subtext dark:text-darksubtext text-[0.93rem] mb-6">
+              <p className="lg:w-[75%] text-subtext dark:text-darktext text-[0.93rem] mb-6">
                 {InterSect.subtitle}
               </p>
               <div className="mb-5">
-                <button className="bg-redreg rounded-[8px] border-2 border-blackshadow dark:bg-darkblackshadow shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] text-white font-medium dark:text-blackshadow  p-[5px_24px_6px] hover:bg-[#111b8d]">
+                <button className="bg-redreg rounded-[8px] border-2 border-blackshadow  shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] text-white font-medium dark:text-darkbgcolor  p-[5px_24px_6px] hover:bg-[#111b8d]">
                   <a href="#contact">{InterSect.contact}</a>
                 </button>
               </div>
@@ -65,9 +65,9 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
                     </span>
                   </div>
                   <div className="absolute top-0 right-0 flex items-center bottom-0">
-                    <h4 className="font-medium text-[0.8rem] vertical-rl flex items-center gap-2 text-blackshadow dark:text-darkblackshadow">
+                    <h4 className="font-medium text-[0.8rem] vertical-rl flex items-center gap-2 text-blackshadow dark:text-darktext">
                       {InterSect.follow}
-                      <div className="w-[2px] h-14 bg-blackshadow dark:bg-darkblackshadow"></div>
+                      <div className="w-[2px] h-14 bg-blackshadow dark:bg-darktext"></div>
                       <div className="text-[22px] flex gap-1">
                         <Link
                           href="https://www.linkedin.com/in/nadeem-tadvi-290339159"

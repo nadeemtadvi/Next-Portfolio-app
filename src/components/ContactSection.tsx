@@ -23,7 +23,7 @@ const ContactSection = () => {
 
   return (
     <div className="">
-      <div className="overflow-x-hidden whitespace-nowrap bg-blackshadow border-t-2 border-b-2 border-blackshadow  text-[1.4rem] font-medium text-white">
+      <div className="overflow-x-hidden whitespace-nowrap bg-blackshadow border-t-2 border-b-2 border-blackshadow  text-[1.4rem] font-medium text-white dark:text-darktext">
         <div className="moveelement  ">
           <h4 className="inline-block py-3 px-12"> {Contact.contact}</h4>
           <h4 className="inline-block py-3 px-12"> {Contact.contact}</h4>
@@ -36,7 +36,7 @@ const ContactSection = () => {
           <h4 className="inline-block py-3 px-12"> {Contact.contact}</h4>
         </div>
       </div>
-      <div className="bg-purplelight">
+      <div className="bg-purplelight  dark:bg-darkbgcolor">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-8 py-6 sm:py-10 lg:py-20">
         {showMessage && (
           <p className=" text-[20px] bg-green-100 rounded-[4px] text-green-600 z-50 fixed top-[10px] right-[30px] p-[4px_50px_7px]">
@@ -65,10 +65,10 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <div className="lg:pl-2 ">
-                      <h5 className="dark:text-darkblurtext text-blurtext text-[1.04rem] mb-1">
+                      <h5 className="dark:text-darktext text-blurtext text-[1.04rem] mb-1">
                         {item.title}
                       </h5>
-                      <h5 className="dark:text-darktitletext text-titletext font-medium text-[1.04rem] ">
+                      <h5 className="dark:text-darkhtext text-titletext font-medium text-[1.04rem] ">
                         {item.subtitle}
                       </h5>
                     </div>
@@ -85,7 +85,7 @@ const ContactSection = () => {
                     type="name"
                     id="name"
                     name="name"
-                    className="rounded-[10px] bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] border-2 border-blackshadow bg-transparent outline-none  text-gray-900 dark:text-gray-200 text-sm  dark:bg-transparent dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow focus:ring-blackshadow focus:border-blackshadow block w-full p-2.5"
+                    className="rounded-[10px] bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] border-2 border-blackshadow bg-transparent outline-none  text-gray-900 dark:text-gray-200 text-sm  dark:bg-blackshadow dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow focus:ring-blackshadow focus:border-blackshadow block w-full p-2.5"
                     placeholder={Contact.fullname}
                     required
                   />
@@ -100,7 +100,7 @@ const ContactSection = () => {
                     type="email"
                     id="email"
                     name="email"
-                    className="rounded-[10px] bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] dark:bg-transparent bg-transparent dark:text-gray-200 dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow border-2 border-blackshadow outline-none text-gray-900 text-sm  focus:ring-blackshadow focus:border-blackshadow block w-full p-2.5"
+                    className="rounded-[10px] bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] dark:bg-blackshadow bg-transparent dark:text-gray-200 dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow border-2 border-blackshadow outline-none text-gray-900 text-sm  focus:ring-blackshadow focus:border-blackshadow block w-full p-2.5"
                     placeholder={Contact.email}
                     required
                   />
@@ -116,7 +116,7 @@ const ContactSection = () => {
                     type="tel"
                     id="tel"
                     name="tel"
-                    className="rounded-[10px] bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] dark:bg-transparent bg-transparent dark:text-gray-200 dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow border-2 border-blackshadow outline-none text-gray-900 text-sm  focus:ring-blackshadow focus:border-blackshadow block w-full p-2.5"
+                    className="rounded-[10px] bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] dark:bg-blackshadow bg-transparent dark:text-gray-200 dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow border-2 border-blackshadow outline-none text-gray-900 text-sm  focus:ring-blackshadow focus:border-blackshadow block w-full p-2.5"
                     placeholder={Contact.phone}
                     required
                   />
@@ -132,7 +132,7 @@ const ContactSection = () => {
                   id="message"
                   name="message"
                   rows={4}
-                  className="rounded-[10px] shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] dark:bg-transparent dark:focus:ring-darkblackshadow dark:text-gray-200 dark:focus:border-darkblackshadow block p-2.5 w-full text-sm outline-none text-gray-900   border-2 border-blackshadow focus:ring-blackshadow focus:border-blackshadow"
+                  className="rounded-[10px] shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] dark:bg-blackshadow dark:focus:ring-darkblackshadow dark:text-gray-200 dark:focus:border-darkblackshadow block p-2.5 w-full text-sm outline-none text-gray-900   border-2 border-blackshadow focus:ring-blackshadow focus:border-blackshadow"
                   placeholder={Contact.message}
                   defaultValue={""}
                 />
@@ -146,7 +146,7 @@ const ContactSection = () => {
                 <button
                   type="submit"
                   disabled={state.submitting}
-                  className="bg-redreg rounded-[10px] border-2 border-blackshadow shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] text-white font-medium dark:bg-darkblackshadow dark:text-blackshadow  p-[5px_24px_6px] hover:bg-[#111b8d]"
+                  className="bg-redreg rounded-[10px] border-2 border-blackshadow shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] text-white font-medium  dark:text-darkbgcolor  p-[5px_24px_6px] hover:bg-[#111b8d]"
                 >
                   {Contact.msgButton}
                 </button>

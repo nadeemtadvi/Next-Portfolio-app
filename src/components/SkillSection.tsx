@@ -19,7 +19,7 @@ import { FaGitAlt } from "react-icons/fa";
 
 const SkillSection = ({ darkMode }: SkillSectiondataprops) => {
   return (
-    <div className="bg-purplelight border-t-2 border-blackshadow">
+    <div className="bg-purplelight dark:bg-darkbgcolor border-t-2 border-blackshadow">
       <div className=" max-w-screen-xl mx-auto py-8 px-4 sm:px-8  lg:py-16">
         <div className=" mx-auto">
           <div className="relative md:grid grid-cols-2">
@@ -42,9 +42,9 @@ const SkillSection = ({ darkMode }: SkillSectiondataprops) => {
               <div className="">
                 <h4
                   id="skills"
-                  className="dark:text-white text-[2rem]  mb-12 text-[#252525]  text-center  bg-[]"
+                  className="dark:text-darkbgcolor  text-[2rem]  mb-12 text-white  text-center  bg-[]"
                 >
-                  <span className="rotate-[14deg] inline-block rounded-[10px] shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] p-[5px_20px_6px] text-white font-medium border-2 border-[#323130]  bg-greenreg  dark:-darkblackshadow">
+                  <span className="rotate-[14deg] inline-block rounded-[10px] shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] p-[5px_20px_6px]  font-medium border-2 border-[#323130]  bg-greenreg  dark:-darkblackshadow">
                     {Skills.skill}
                   </span>
                 </h4>

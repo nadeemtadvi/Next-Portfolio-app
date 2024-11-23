@@ -29,6 +29,11 @@ const config: Config = {
         blackshadow:"#323130",
         borderblack:"#323130",
 
+        darkbgcolor:"#3b3b3b",
+        darktext:"#8f8f8f",
+        darkytext:"#252525",
+        darkhtext:"#ababab",
+
         // mainColor: "#1623B2",
         mainColor: "#323130",
         mainColorten:"#e7e9f675",

@@ -7,9 +7,9 @@ import dotImg from "../assets/Images/Shapes/yellowstar.png";
 const WorkSection = ({ darkMode }: WorkSectiondataprops) => {
   return (
     <div className=" flex items-center justify-center h-full w-full">
-      <div className=" lg:mx-10 xl:mx-auto border-2 border-blackshadow rounded-[16px] overflow-hidden bg-white xl:w-[380px] shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)]">
+      <div className="dark:bg-blackshadow lg:mx-10 xl:mx-auto border-2 border-blackshadow rounded-[16px] overflow-hidden bg-white xl:w-[380px] shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)]">
         <div className="relative py-2 px-4 border-b-2 border-blackshadow bg-purplereg">
-          <span className=" dark:text-white text-[1.4rem]   text-white font-semibold uppercase ">
+          <span className=" dark:text-darkytext text-[1.4rem]   text-white font-semibold uppercase ">
             {Works.button}
           </span>
           <Image
@@ -32,14 +32,14 @@ const WorkSection = ({ darkMode }: WorkSectiondataprops) => {
           </div>
           <div>
             <div>
-              <h4 className="text-[1.2rem] leading-none text-[#272727] dark:text-darktitletext font-bold mb-3 ">
+              <h4 className="text-[1.2rem] leading-none text-[#272727] dark:text-darktext font-bold mb-3 ">
                 {Works.title}<br/>
-                <span className="text-[0.8rem] italic text-titletext dark:text-darktitletext font-normal">
+                <span className="text-[0.8rem] italic text-titletext dark:text-darktext font-normal">
                   {" "}
                   ({Works.startDate} - {Works.endDate})
                 </span>
               </h4>
-              <p className="text-[1rem] font-medium text-subtext dark:text-darksubtext mb-2 sm:mb-4">
+              <p className="text-[1rem] font-medium text-subtext dark:text-darktext mb-2 sm:mb-4">
                 {Works.subtitle}
               </p>
             </div>
