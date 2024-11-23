@@ -42,7 +42,7 @@ const SkillSection = ({ darkMode }: SkillSectiondataprops) => {
               className="absolute  top-[4rem] left-[2rem] rotate-[-32deg] "
             />
               <div className="">
-                <h4
+                <div
                   id="skills"
                   className="dark:text-darkbgcolor  text-[2rem]  mb-12 text-white  text-center  bg-[]"
                 >
@@ -56,7 +56,7 @@ const SkillSection = ({ darkMode }: SkillSectiondataprops) => {
                       className="absolute w-[60px] top-[-1.5rem] left-[-2rem]"
                     />
                   </h6>
-                </h4>
+                </div>
               </div>
               <div className=" text-center">
                 <div className="relative mx-auto pt-16 w-[300px] md:w-[400px]">
