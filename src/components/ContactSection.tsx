@@ -25,19 +25,7 @@ const ContactSection = () => {
 
   return (
     <div className="">
-      {/* <div className="overflow-x-hidden whitespace-nowrap bg-blackshadow border-t-2 border-b-2 border-blackshadow  text-[1.4rem] font-medium text-white dark:text-darktext">
-        <div className="moveelement  ">
-          <h4 className="inline-block py-3 px-12"> {Contact.contact}</h4>
-          <h4 className="inline-block py-3 px-12"> {Contact.contact}</h4>
-          <h4 className="inline-block py-3 px-12"> {Contact.contact}</h4>
-          <h4 className="inline-block py-3 px-12"> {Contact.contact}</h4>
-          <h4 className="inline-block py-3 px-12"> {Contact.contact}</h4>
-          <h4 className="inline-block py-3 px-12"> {Contact.contact}</h4>
-          <h4 className="inline-block py-3 px-12"> {Contact.contact}</h4>
-          <h4 className="inline-block py-3 px-12"> {Contact.contact}</h4>
-          <h4 className="inline-block py-3 px-12"> {Contact.contact}</h4>
-        </div>
-      </div> */}
+     
       <div className="bg-purplelight  dark:bg-darkbgcolor">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-8 py-6 sm:py-10 lg:py-20">
           {showMessage && (
@@ -50,7 +38,7 @@ const ContactSection = () => {
               id="skills"
               className="dark:text-darkbgcolor  text-[2rem]  mb-12 text-white  text-center  bg-[]"
             >
-              <h6 className="relative rotate-[14deg] inline-block rounded-[10px] shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] p-[5px_26px_6px]  font-medium border-2 border-[#323130]  bg-greenreg  dark:-darkblackshadow">
+              <h6 className="relative rotate-[14deg] inline-block rounded-[10px] shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] p-[5px_26px_6px]  font-medium border-2 border-[#323130]  bg-purplereg  dark:-darkblackshadow">
                 {Contact.contact}
                 <Image
                       src={pinImage}

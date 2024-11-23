@@ -7,20 +7,7 @@ import pinImage from "../assets/Images/Shapes/pngwingReverse.png"
 const ProjectSection = () => {
   return (
     <div className="">
-      {/* <div className="overflow-x-hidden whitespace-nowrap bg-blackshadow border-t-2 border-b-2 border-blackshadow  text-[1.4rem] font-medium text-white dark:text-darktext">
-        <div className="moveelement ">
-          <h4 className="inline-block py-3 px-12"> {Project.project}</h4>
-          <h4 className="inline-block py-3 px-12"> {Project.project}</h4>
-          <h4 className="inline-block py-3 px-12"> {Project.project}</h4>
-          <h4 className="inline-block py-3 px-12"> {Project.project}</h4>
-          <h4 className="inline-block py-3 px-12"> {Project.project}</h4>
-          <h4 className="inline-block py-3 px-12"> {Project.project}</h4>
-          <h4 className="inline-block py-3 px-12"> {Project.project}</h4>
-          <h4 className="inline-block py-3 px-12"> {Project.project}</h4>
-          <h4 className="inline-block py-3 px-12"> {Project.project}</h4>
-          <h4 className="inline-block py-3 px-12"> {Project.project}</h4>
-        </div>
-      </div> */}
+      
       <div className=" bg-purplelight  dark:bg-darkbgcolor">
         <div className="max-w-screen-xl mx-auto">
           <div className="">
@@ -28,7 +15,7 @@ const ProjectSection = () => {
               id="skills"
               className="dark:text-darkbgcolor  text-white text-[2rem]  mb-12 flex justify-center items-center  text-center  "
             >
-              <div className="relative rotate-[14deg] w-[240px] rounded-[10px] shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] p-[5px_20px_6px]  font-medium border-2 border-[#323130]  bg-greenreg  dark:-darkblackshadow">
+              <div className="relative rotate-[14deg] w-[240px] rounded-[10px] shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] p-[5px_20px_6px]  font-medium border-2 border-[#323130]  bg-purplereg  dark:-darkblackshadow">
                 {Project.project}
                 <Image
                       src={pinImage}
