@@ -10,7 +10,7 @@ import { AboutSectiondataprops } from "../models/Interface";
 const AboutSection = ({ darkMode }: AboutSectiondataprops) => {
   return (
     <div className="">
-      <div className="overflow-x-hidden whitespace-nowrap bg-blackshadow border-t-2 border-b-2 border-blackshadow  text-[1.4rem] font-medium text-white dark:text-darktext">
+      <div className="overflow-x-hidden whitespace-nowrap bg-purplereg dark:bg-blackshadow border-t-2 border-b-2 border-purplereg dark:border-blackshadow  text-[1.4rem] font-medium text-white dark:text-darktext">
         <div className="moveelement">
           <h4 className="inline-block py-3 px-12"> {AboutMe.title}</h4>
           <h4 className="inline-block py-3 px-12"> {AboutMe.title}</h4>

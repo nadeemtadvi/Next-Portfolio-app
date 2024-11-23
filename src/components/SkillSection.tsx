@@ -16,6 +16,8 @@ import { SiTypescript } from "react-icons/si";
 import { DiPhotoshop } from "react-icons/di";
 import { DiIllustrator } from "react-icons/di";
 import { FaGitAlt } from "react-icons/fa";
+import pinImage from "../assets/Images/Shapes/pngwingReverse.png"
+
 
 const SkillSection = ({ darkMode }: SkillSectiondataprops) => {
   return (
@@ -44,9 +46,16 @@ const SkillSection = ({ darkMode }: SkillSectiondataprops) => {
                   id="skills"
                   className="dark:text-darkbgcolor  text-[2rem]  mb-12 text-white  text-center  bg-[]"
                 >
-                  <span className="rotate-[14deg] inline-block rounded-[10px] shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] p-[5px_20px_6px]  font-medium border-2 border-[#323130]  bg-greenreg  dark:-darkblackshadow">
+                  <h6 className="rotate-[14deg] inline-block rounded-[10px] shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] p-[5px_20px_6px]  font-medium border-2 border-[#323130]  bg-greenreg  dark:-darkblackshadow">
                     {Skills.skill}
-                  </span>
+                    <Image
+                      src={pinImage}
+                      alt="dp"
+                      width={100}
+                      height={100}
+                      className="absolute w-[60px] top-[-1.5rem] left-[-2rem]"
+                    />
+                  </h6>
                 </h4>
               </div>
               <div className=" text-center">
