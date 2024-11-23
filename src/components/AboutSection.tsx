@@ -21,19 +21,19 @@ const AboutSection = ({ darkMode }: AboutSectiondataprops) => {
           <h4 className="inline-block py-3 px-12"> {AboutMe.title}</h4>
         </div>
       </div>
-      <div className={`${darkMode ? "":"bg-grid "}`}>
+      <div className={`${darkMode ? "" : "bg-grid "}`}>
         <div className=" mx-auto max-w-screen-xl  ">
           <div className="md:grid grid-cols-[200px_auto] lg:grid-cols-[324px_auto] gap-4 lg:gap-10   lg:py-28 px-4 sm:px-8 py-12">
             <div className=" flex items-center justify-center my-8 md:my-0">
               <div className="relative w-[280px] md:w-[200px] lg:w-[324px] transform transition-transform duration-300 ease-in-out hover:scale-105">
-               <div className="">
-                <Image
-                  src={imgStatic}
-                  alt="dp"
-                  width={100}
-                  height={100}
-                  className="  !w-full !h-full !object-fill"
-                />
+                <div className="">
+                  <Image
+                    src={imgStatic}
+                    alt="dp"
+                    width={100}
+                    height={100}
+                    className="  !w-full !h-full !object-fill"
+                  />
                 </div>
                 <Image
                   src={LightImg}
@@ -49,16 +49,20 @@ const AboutSection = ({ darkMode }: AboutSectiondataprops) => {
                 {AboutMe.subtitle}
               </p>
               <div className="">
-              <Image
-                src={testimonialImg}
-                alt="dp"
-                className="absolute w-6 xl:w-12  lg:bottom-[3rem] bottom-[-1.5rem] md:bottom-[0.5rem] lg:right-[-4rem] right-[-0.5rem] md:right-[-2.5rem]  "
-              />
-              <Image
-                src={testimonialImg2}
-                alt="dp"
-                className="absolute w-6 lg:w-8 xl:w-12 lg:top-[3rem] top-[-1.5rem] md:top-[0.5rem] lg:left-[-4rem] left-[-0.5rem] md:left-[-2.5rem] rotate-180 -scale-x-100"
-              />
+                <Image
+                  width={100}
+                  height={100}
+                  src={testimonialImg}
+                  alt="dp"
+                  className="absolute w-6 xl:w-12  lg:bottom-[3rem] bottom-[-1.5rem] md:bottom-[0.5rem] lg:right-[-4rem] right-[-0.5rem] md:right-[-2.5rem]  "
+                />
+                <Image
+                  width={100}
+                  height={100}
+                  src={testimonialImg2}
+                  alt="dp"
+                  className="absolute w-6 lg:w-8 xl:w-12 lg:top-[3rem] top-[-1.5rem] md:top-[0.5rem] lg:left-[-4rem] left-[-0.5rem] md:left-[-2.5rem] rotate-180 -scale-x-100"
+                />
               </div>
             </div>
           </div>

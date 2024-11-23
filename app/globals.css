@@ -82,9 +82,9 @@ body::-webkit-scrollbar-thumb {
 }
 .jar-overlay{
   position: absolute;
-  background-color: #ffffff6e;
+  background-color: #ffffff4f;
   width: 181px;
-  height: 190px;
+  height: 181px;
   bottom: 20px;
   left: -11px;
   right: 0;
