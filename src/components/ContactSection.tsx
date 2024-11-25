@@ -29,7 +29,7 @@ const ContactSection = () => {
       <div className="bg-purplelight  dark:bg-darkbgcolor">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-8 py-6 sm:py-10 lg:py-20">
           {showMessage && (
-            <p className=" text-[20px] bg-green-100 rounded-[4px] text-green-600 z-50 fixed top-[10px] right-[30px] p-[4px_50px_7px]">
+            <p className=" text-[20px] bg-green-100 rounded-[6px] text-green-600 z-50 fixed top-[10px] right-[30px] p-[4px_50px_7px]">
               Message has been sent!
             </p>
           )}
@@ -38,7 +38,7 @@ const ContactSection = () => {
               id="skills"
               className="dark:text-darkbgcolor  text-[2rem]  mb-12 text-white  text-center  bg-[]"
             >
-              <h6 className="relative rotate-[14deg] inline-block rounded-[10px] shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] p-[5px_26px_6px]  font-medium border-2 border-[#323130]  bg-purplereg  dark:-darkblackshadow">
+              <h6 className="relative rotate-[14deg] inline-block rounded-[6px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] p-[5px_26px_6px]  font-medium border border-blackshadow  bg-purplereg  dark:-darkblackshadow">
                 {Contact.contact}
                 <Image
                       src={pinImage}
@@ -66,7 +66,7 @@ const ContactSection = () => {
                     className="grid grid-cols-[60px_auto] lg:grid-cols-[50px_auto] items-center mb-3 sm:mb-8"
                   >
                     <div>
-                      <div className="rounded-[10px] border-2 border-blackshadow shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] w-10 h-10 bg-purplereg text-white dark:bg-darkblackshadow dark:text-blackshadow flex justify-center items-center text-[20px]">
+                      <div className="rounded-[6px] border border-blackshadow hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] w-10 h-10 bg-purplereg text-white dark:bg-darkblackshadow dark:text-blackshadow flex justify-center items-center text-[20px]">
                         {item.icon && <item.icon />}
                       </div>
                     </div>
@@ -92,7 +92,7 @@ const ContactSection = () => {
                       type="name"
                       id="name"
                       name="name"
-                      className="rounded-[10px] bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] border-2 border-blackshadow bg-transparent outline-none  text-gray-900 dark:text-gray-200 text-sm  dark:bg-blackshadow dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow focus:ring-blackshadow focus:border-blackshadow block w-full p-2.5"
+                      className="rounded-[6px] bg-white hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] border border-blackshadow bg-transparent outline-none  text-gray-900 dark:text-gray-200 text-sm  dark:bg-blackshadow dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow focus:ring-blackshadow focus:border-blackshadow block w-full p-2.5"
                       placeholder={Contact.fullname}
                       required
                     />
@@ -107,7 +107,7 @@ const ContactSection = () => {
                       type="email"
                       id="email"
                       name="email"
-                      className="rounded-[10px] bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] dark:bg-blackshadow bg-transparent dark:text-gray-200 dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow border-2 border-blackshadow outline-none text-gray-900 text-sm  focus:ring-blackshadow focus:border-blackshadow block w-full p-2.5"
+                      className="rounded-[6px] bg-white hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] dark:bg-blackshadow bg-transparent dark:text-gray-200 dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow border border-blackshadow outline-none text-gray-900 text-sm  focus:ring-blackshadow focus:border-blackshadow block w-full p-2.5"
                       placeholder={Contact.email}
                       required
                     />
@@ -123,7 +123,7 @@ const ContactSection = () => {
                       type="tel"
                       id="tel"
                       name="tel"
-                      className="rounded-[10px] bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] dark:bg-blackshadow bg-transparent dark:text-gray-200 dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow border-2 border-blackshadow outline-none text-gray-900 text-sm  focus:ring-blackshadow focus:border-blackshadow block w-full p-2.5"
+                      className="rounded-[6px] bg-white hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] dark:bg-blackshadow bg-transparent dark:text-gray-200 dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow border border-blackshadow outline-none text-gray-900 text-sm  focus:ring-blackshadow focus:border-blackshadow block w-full p-2.5"
                       placeholder={Contact.phone}
                       required
                     />
@@ -139,7 +139,7 @@ const ContactSection = () => {
                     id="message"
                     name="message"
                     rows={4}
-                    className="rounded-[10px] shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] dark:bg-blackshadow dark:focus:ring-darkblackshadow dark:text-gray-200 dark:focus:border-darkblackshadow block p-2.5 w-full text-sm outline-none text-gray-900   border-2 border-blackshadow focus:ring-blackshadow focus:border-blackshadow"
+                    className="rounded-[6px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] dark:bg-blackshadow dark:focus:ring-darkblackshadow dark:text-gray-200 dark:focus:border-darkblackshadow block p-2.5 w-full text-sm outline-none text-gray-900   border border-blackshadow focus:ring-blackshadow focus:border-blackshadow"
                     placeholder={Contact.message}
                     defaultValue={""}
                   />
@@ -153,7 +153,7 @@ const ContactSection = () => {
                   <button
                     type="submit"
                     disabled={state.submitting}
-                    className="bg-redreg rounded-[10px] border-2 border-blackshadow shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] text-white font-medium  dark:text-darkbgcolor  p-[5px_24px_6px] hover:bg-[#111b8d]"
+                    className="bg-redreg rounded-[6px] border border-blackshadow hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] text-white font-medium  dark:text-darkbgcolor  p-[5px_24px_6px] "
                   >
                     {Contact.msgButton}
                   </button>

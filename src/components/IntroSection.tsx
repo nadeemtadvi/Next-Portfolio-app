@@ -24,7 +24,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
             height={120}
             className="absolute w-[80px] md:w-[120px] rotate-[-58deg] bottom-[4rem]  left-[-15rem] sm:left-[-18rem] md:left-0 right-0 m-auto"
           />
-          <div className="flex justify-start items-center -r -blackshadow">
+          <div className="flex justify-start items-center ">
             <div>
               <h5 className="text-titletext dark:text-darktext font-medium text-[0.93rem] leading-[30px] sm:leading-[48px] mb-2">
                 {InterSect.title}
@@ -42,7 +42,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
                 {InterSect.subtitle}
               </p>
               <div className="mb-5">
-                <button className="bg-redreg rounded-[8px] border-2 border-blackshadow  shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] text-white font-medium dark:text-darkbgcolor  p-[5px_24px_6px] hover:bg-[#111b8d]">
+                <button className="bg-redreg rounded-[6px] border border-blackshadow  hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] text-white font-medium dark:text-darkbgcolor  p-[5px_24px_6px] ">
                   <a href="#contact">{InterSect.contact}</a>
                 </button>
               </div>
@@ -52,7 +52,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
             <div className="mr-3 sm:mr-6 my-10 md:m0-0 lg:mr-0 md:h-[400px] flex justify-end lg:justify-center items-center">
               <div className="  flex justify-center items-center">
                 <div>
-                  <div className="relative h-[220px] sm:h-[260px] w-[170px] sm:w-[210px] img-container bg-purplereg flex items-center justify-start border-[3px] border-[#323130] shadow-[8px_8px_0px_1px_rgba(0,0,0,0.8)]">
+                  <div className="relative h-[220px] sm:h-[260px] w-[170px] sm:w-[210px] img-container bg-purplereg flex items-center justify-start border border-blackshadow hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)]">
                     <Image
                       src={darkMode ? userinfo.picture2 : userinfo.picture}
                       alt="dp"
@@ -60,7 +60,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
                       height={240}
                       className="absolute bottom-0 left-[-25px]   w-full"
                     />
-                    <span className="lapbox absolute top-0 left-[-6.5rem] bg-purplereg  text-[2.64rem]  w-16 h-16 flex items-center justify-center  border-2 border-[#323130] shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+                    <span className="lapbox absolute top-0 left-[-6.5rem] bg-purplereg  text-[2.64rem]  w-16 h-16 flex items-center justify-center  border border-blackshadow hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)]">
                       <FaLaptopCode />
                     </span>
                   </div>

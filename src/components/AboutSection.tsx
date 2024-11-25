@@ -45,7 +45,7 @@ const AboutSection = ({ darkMode }: AboutSectiondataprops) => {
               </div>
             </div>
             <div className="relative flex items-center justify-center mx-4 md:mx-10 lg:mx-16">
-              <p className="bg-yellowlight border-2  shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)]  border-blackshadow text-[1.04rem] p-5 rounded-[10px] text-subtext dark:text-darkytext mb-2 sm:mb-4 text-justify">
+              <p className="bg-yellowlight border  hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)]  border-blackshadow text-[1.04rem] p-5 rounded-[6px] text-subtext dark:text-darkytext mb-2 sm:mb-4 text-justify">
                 {AboutMe.subtitle}
               </p>
               <div className="">

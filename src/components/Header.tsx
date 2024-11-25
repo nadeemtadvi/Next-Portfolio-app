@@ -29,11 +29,11 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
   };
   return (
     <>
-      <div className="mb-[0rem]  bg-white dark:bg-blackshadow border-b-2 border-blackshadow">
+      <div className="mb-[0rem]  bg-white dark:bg-blackshadow border-b border-blackshadow">
         <div className="max-w-screen-xl mx-auto">
           {" "}
           <div className="flex justify-between  lg:grid grid-cols-[18%_auto_25%] items-center ">
-            <div className="border-r-2 text-center border-blackshadow py-3 lg:py-[1.38rem]  ">
+            <div className="border-r text-center border-blackshadow py-3 lg:py-[1.59rem]  ">
               <Image
                 src={darkMode ? images.image2 : images.image}
                 alt="logo"
@@ -58,8 +58,8 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
               </ul>
             </div>
 
-            <div className="flex gap-2 items-center ">
-              <div className="border-l-2  flex-none border-r-2 border-blackshadow py-4 lg:py-6 ">
+            <div className="flex gap items-center ">
+              <div className="border-l  flex-none border-r border-blackshadow py-4 lg:py-6 ">
                 <div
                   onClick={toggleDarkMode}
                   className="text-gray-900  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:text-white "
@@ -69,7 +69,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
               </div>
               <div className="grow text-center mx-5 lg:mx-0">
                 {" "}
-                <button className="rounded-[8px] inline-block bg-redreg text-white font-medium  shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] border-2 border-blackshadow  dark:border-darkblackshadow dark:text-darkblackshadow  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:hover:bg-darkblackshadowten hover:bg-blackshadowten">
+                <button className="rounded-[6px] inline-block bg-redreg text-white font-medium  hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] border border-blackshadow  dark:border-darkblackshadow dark:text-darkblackshadow  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:hover:bg-darkblackshadowten hover:bg-blackshadowten">
                   <Link href="/Nadeem_CV.pdf" download="Nadeem_CV.pdf" passHref>
                     <span className="hidden md:block">{DwnldButton.btn}</span>
                     <span className="md:hidden block">
@@ -80,7 +80,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                   </Link>
                 </button>
               </div>
-              <div className="lg:hidden block py-4 lg:py-6 border-l-2 border-blackshadow">
+              <div className="lg:hidden block py-4 lg:py-6 border-l border-blackshadow">
               <div className="relative">
                 <button onClick={handleToggle} className="text-xl p-[1px_10px_2px] sm:p-[5px_24px_6px]">
                   <HiMenu className="dark:text-white " />
@@ -97,7 +97,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                         {Object.values(headerItem).map((item, index) => (
                           <li
                             key={index}
-                            className="p-2.5  border-b border-gray-300 dark:border-darkblackshadowten hover:bg-gray-300 dark:hover:bg-darkblackshadowten"
+                            className="p.5  border-b border-gray-300 dark:border-darkblackshadowten hover:bg-gray-300 dark:hover:bg-darkblackshadowten"
                           >
                             <a href={`#${item.page}`}>{item.label}</a>
                           </li>

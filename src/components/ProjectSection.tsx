@@ -15,7 +15,7 @@ const ProjectSection = () => {
               id="skills"
               className="dark:text-darkbgcolor  text-white text-[2rem]  mb-12 flex justify-center items-center  text-center  "
             >
-              <div className="relative rotate-[14deg] w-[240px] rounded-[10px] shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] p-[5px_20px_6px]  font-medium border-2 border-[#323130]  bg-purplereg  dark:-darkblackshadow">
+              <div className="relative rotate-[14deg] w-[240px] rounded-[6px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] p-[5px_20px_6px]  font-medium border border-blackshadow  bg-purplereg  dark:-darkblackshadow">
                 {Project.project}
                 <Image
                       src={pinImage}
@@ -35,7 +35,7 @@ const ProjectSection = () => {
               <div key={index} className="py-4 sm:py-6  lg:py-0">
                 {/* Image Section */}
                 <div
-                  className={` border-2  m-0 lg:m-0 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)]  border-blackshadow rounded-[10px] overflow-hidden  w-full  `}
+                  className={` border  m-0 lg:m-0 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)]  border-blackshadow rounded-[6px] overflow-hidden  w-full  `}
                 >
                   <div className="">
                     <Image
@@ -65,14 +65,14 @@ const ProjectSection = () => {
                         </div>
                       </div>
 
-                      <div className="mt-4 flex items-center flex-wrap gap-[4px] sm:gap-[6px] ">
+                      <div className="mt-4 flex items-center flex-wrap rounded-[6px] overflow-hidden  ">
                         {item.button &&
                           item.button.map((items, index) => (
                             <button
                               key={index}
-                              className="text-[0.76rem] sm:text-[0.9rem] rounded-[6px] border border-blackshadow bg-white  text-blackshadow dark:bg-darkbgcolor dark:text-darktext font-medium p-[1px_12px_2px] sm:p-[4px_16px_3px]"
+                              className="bg-white    text-blackshadow dark:bg-darkbgcolor py-1 dark:text-darktext font-medium inline-block"
                             >
-                              {items}
+                              <span className=" text-[0.6rem] sm:text-[0.8rem] border-r border-[#e0e0e0] p-[1px_10px] sm:p-[0px_12px_1px] inline-block">{items}</span>
                             </button>
                           ))}
                       </div>
