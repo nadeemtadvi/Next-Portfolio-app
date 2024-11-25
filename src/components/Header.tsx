@@ -32,8 +32,8 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
       <div className="mb-[0rem]  bg-white dark:bg-blackshadow border-b border-blackshadow">
         <div className="max-w-screen-xl mx-auto">
           {" "}
-          <div className="flex justify-between  lg:grid grid-cols-[18%_auto_25%] items-center ">
-            <div className="border-r text-center border-blackshadow py-3 lg:py-[1.59rem]  ">
+          <div className="h-[75px] flex justify-between  lg:grid grid-cols-[18%_auto_25%] items-center ">
+            <div className="border-r text-center border-blackshadow h-full  flex justify-center  items-center">
               <Image
                 src={darkMode ? images.image2 : images.image}
                 alt="logo"
@@ -42,8 +42,8 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                 height={170}
               />
             </div>
-            <div className="hidden lg:block  py-4 lg:py-6   ">
-              <ul className="flex font-medium justify-center items-center gap-12  dark:text-white">
+            <div className="hidden lg:block    ">
+              <ul className="flex font-normal justify-center items-center gap-12  dark:text-white">
                 {Object.values(headerItem).map((item, index) => (
                   <li
                     key={index}
@@ -58,8 +58,8 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
               </ul>
             </div>
 
-            <div className="flex gap items-center ">
-              <div className="border-l  flex-none border-r border-blackshadow py-4 lg:py-6 ">
+            <div className="flex   items-center  h-full">
+              <div className="border-l h-full  flex-none border-r border-blackshadow flex justify-center  items-center">
                 <div
                   onClick={toggleDarkMode}
                   className="text-gray-900  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:text-white "
@@ -67,9 +67,9 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                   {darkMode ? <MdLightMode /> : <MdDarkMode />}
                 </div>
               </div>
-              <div className="grow text-center mx-5 lg:mx-0">
+              <div className="grow text-center mx-5 lg:mx-0 flex justify-center  items-center h-full">
                 {" "}
-                <button className="rounded-[6px] inline-block bg-redreg text-white font-medium  hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] border border-blackshadow  dark:border-darkblackshadow dark:text-darkblackshadow  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:hover:bg-darkblackshadowten hover:bg-blackshadowten">
+                <button className="rounded-[6px] inline-block bg-redreg text-white font-medium   hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] border border-blackshadow  dark:border-darkblackshadow dark:text-darkblackshadow  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:hover:bg-darkblackshadowten hover:bg-blackshadowten">
                   <Link href="/Nadeem_CV.pdf" download="Nadeem_CV.pdf" passHref>
                     <span className="hidden md:block">{DwnldButton.btn}</span>
                     <span className="md:hidden block">
@@ -80,7 +80,8 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                   </Link>
                 </button>
               </div>
-              <div className="lg:hidden block py-4 lg:py-6 border-l border-blackshadow">
+              <div  className="lg:hidden block h-full">
+              <div className="  border-l border-blackshadow h-full flex justify-center  items-center" >
               <div className="relative">
                 <button onClick={handleToggle} className="text-xl p-[1px_10px_2px] sm:p-[5px_24px_6px]">
                   <HiMenu className="dark:text-white " />
@@ -97,7 +98,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                         {Object.values(headerItem).map((item, index) => (
                           <li
                             key={index}
-                            className="p.5  border-b border-gray-300 dark:border-darkblackshadowten hover:bg-gray-300 dark:hover:bg-darkblackshadowten"
+                            className="p-1.5  border-b border-gray-300 dark:border-darkblackshadowten hover:bg-gray-300 dark:hover:bg-darkblackshadowten"
                           >
                             <a href={`#${item.page}`}>{item.label}</a>
                           </li>
@@ -109,6 +110,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                   ""
                 )}
               </div>
+            </div>
             </div>
             </div>
           
