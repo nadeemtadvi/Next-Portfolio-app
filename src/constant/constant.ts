@@ -52,8 +52,7 @@ export const images: ImageStatic = {
 export const headerItem: headerIt = {
   about: { label: "About", page: "about" },
   skill: { label: "Skills", page: "skills" },
-  work: { label: "Work", page: "work" },
-  project: { label: "Project", page: "project" },
+  project: { label: "Porfolio", page: "project" },
   contact: { label: "Contact", page: "contact" },
 };
 export const DwnldButton: Downloadbtn = {
@@ -63,10 +62,10 @@ export const DwnldButton: Downloadbtn = {
 export const InterSect: IntroSectionProps = {
   title: "Hi, I’m",
   spanname: "Nadeem,",
-  middletext: "a passionate",
+
   spanwork: "UI UX Developer",
   subtitle:
-  "I specialize in UI/UX design, crafting modern, user-friendly interfaces that elevate user experiences. Driven by a passion for innovation, I leverage Figma to bring creative ideas to life and effectively solve design challenges.",
+  "I specialize in crafting modern, user-friendly UI/UX designs with Figma, transforming ideas into seamless, innovative user experiences.",
   contact: "Contact Me",
   resume: "View Resume",
   image: "",

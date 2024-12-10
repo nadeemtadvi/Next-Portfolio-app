@@ -5,7 +5,7 @@ import { FaSquareInstagram, FaSquareWhatsapp, FaSquareGithub, FaLinkedin } from 
 
 const FooterSection = () => {
   return (
-    <footer className="bg-black footer">
+    <footer className=" footer">
       <div className="p-5 flex justify-between items-center">
         {/* Copyright Section */}
         <h4 className="text-[0.8rem] text-white dark:text-darksubtext">

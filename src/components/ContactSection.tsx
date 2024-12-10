@@ -23,7 +23,7 @@ const ContactSection = () => {
 
   return (
     <div className="bg-purplelight dark:bg-darkbgcolor">
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-8 py-6 sm:py-10 lg:py-20">
+      <div className="">
         {/* Success Message */}
         {showMessage && (
           <p className="fixed top-10 right-30 z-50 bg-green-100 rounded-[6px] text-green-600 p-4 text-[20px]">
@@ -42,14 +42,14 @@ const ContactSection = () => {
                   key={index}
                   className="grid grid-cols-[60px_auto] lg:grid-cols-[50px_auto] items-center mb-3 sm:mb-8"
                 >
-                  <div className="flex justify-center items-center w-10 h-10 bg-purplereg text-white dark:bg-darkblack dark:text-black rounded-[6px] text-[20px]">
+                  <div className="flex justify-center items-center w-10 h-10 bg-purplereg text-white dark:bg-darkblack dark:text-white rounded-[6px] text-[20px]">
                     {item.icon && <item.icon />}
                   </div>
                   <div className="lg:pl-2">
                     <h5 className="text-blurtext dark:text-darktext text-[1.04rem] mb-1">
                       {item.title}
                     </h5>
-                    <h5 className="text-titletext dark:text-darkhtext font-medium text-[1.04rem]">
+                    <h5 className="text-white dark:text-darkhtext font-medium text-[1.04rem]">
                       {item.subtitle}
                     </h5>
                   </div>

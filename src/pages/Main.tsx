@@ -6,20 +6,26 @@ import SkillSection from "../components/SkillSection";
 import ProjectSection from "../components/ProjectSection";
 import ContactSection from "../components/ContactSection";
 import FooterSection from "../components/FooterSection";
-interface Mainprops{
-  darkMode:boolean;
+interface Mainprops {
+  darkMode: boolean;
 }
 
-const Main = ({darkMode}:Mainprops) => {
+const Main = ({ darkMode }: Mainprops) => {
   return (
     <>
-      <IntroSection darkMode={darkMode}/>
-      <AboutSection darkMode={darkMode}/>
-      <SkillSection darkMode={darkMode}/>
-      {/* <WorkSection darkMode={darkMode} /> */}
-      <ProjectSection />
-      <ContactSection />
-      <FooterSection />
+      <div>
+        {" "}
+        <div>
+          {" "}
+          <IntroSection darkMode={darkMode} />
+          <AboutSection darkMode={darkMode} />
+          <SkillSection darkMode={darkMode} />
+          {/* <WorkSection darkMode={darkMode} /> */}
+          <ProjectSection />
+          <ContactSection />
+          <FooterSection />
+        </div>
+      </div>
     </>
   );
 };

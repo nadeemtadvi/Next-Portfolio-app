@@ -1,34 +1,74 @@
 import React from "react";
-import { InterSect, userinfo } from "@/src/constant/constant";
+import { DwnldButton, InterSect, userinfo } from "@/src/constant/constant";
 import Image from "next/image";
 import { FaLinkedin, FaLaptopCode } from "react-icons/fa";
-import { FaSquareInstagram, FaSquareWhatsapp, FaSquareGithub } from "react-icons/fa6";
+import {
+  FaSquareInstagram,
+  FaSquareWhatsapp,
+  FaSquareGithub,
+} from "react-icons/fa6";
 import Link from "next/link";
 import { IntroSectiondataprops } from "../models/Interface";
+import { IoMdDownload } from "react-icons/io";
 
 const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
   return (
     <div className={`dark:bg-darkbgcolor`}>
-      <div className="max-w-screen-xl mx-auto">
-        <div className="relative grid grid-cols-1 md:grid-cols-2 px-4 sm:px-8 py-6 lg:py-20">
+      <div className=" mx-auto">
+        <div className="">
           {/* Left Section */}
-          <div className="flex justify-start items-center">
-            <div>
+          <div className="flex gap-6 ">
+            <div className="flex-none">
+              <div className="">
+                {/* Profile Picture Container */}
+                <div className="relative bg-black rounded-full overflow-hidden w-[120px] h-[120px]">
+                  <Image
+                    src={darkMode ? userinfo.picture2 : userinfo.picture}
+                    alt="Profile Picture"
+                    width={140}
+                    height={140}
+                    className="w-full h-auto object-cover"
+                  />
+                  {/* Icon */}
+                </div>
+                {/* Social Links */}
+                <div className="absolute top-0 right-0 flex flex-col items-center gap-2">
+                  <h4 className="font-medium text-[0.8rem] text-white dark:text-darktext flex items-center">
+                    {InterSect.follow}
+                  </h4>
+                  <div className="w-[2px] h-14 bg-white dark:bg-darktext"></div>
+                  <div className="text-[22px] flex gap-2 text-white">
+                    <Link
+                      href="https://www.linkedin.com/in/nadeem-tadvi-290339159"
+                      target="_blank"
+                    >
+                      <FaLinkedin />
+                    </Link>
+                    <FaSquareInstagram />
+                    <FaSquareWhatsapp />
+                    <Link href="https://github.com/nadeemtadvi" target="_blank">
+                      <FaSquareGithub />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="grow">
+              <div>
               {/* Title Section */}
-              <h5 className="text-titletext dark:text-darktext font-medium text-[0.93rem] leading-[30px] sm:leading-[48px] mb-2">
+              <h5 className="text-white dark:text-darktext font-medium text-[1.23rem]">
                 {InterSect.title}{" "}
-                <span className="text-black dark:text-darktext">
+                <span className="text-white dark:text-darktext">
                   {InterSect.spanname}
                 </span>
-                <br />
-                <span className="text-black dark:text-darktext uppercase font-bold text-[2rem] sm:text-[2.4rem] lg:text-[3rem] xl:text-[3.6rem]">
-                  {InterSect.middletext}
-                  <br />
-                  {InterSect.spanwork}
+              </h5>
+              <h5>
+                <span className="text-white dark:text-darktext uppercase font-bold text-[0.92rem] ">
+                  <span> {InterSect.spanwork}</span>
                 </span>
               </h5>
               {/* Subtitle */}
-              <p className="lg:w-[75%] text-subtext dark:text-darktext text-[0.93rem] mb-6">
+              <p className="text-white dark:text-darktext text-[0.93rem]">
                 {InterSect.subtitle}
               </p>
               {/* Contact Button */}
@@ -36,49 +76,20 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
                 <button className="bg-redreg rounded-[6px] text-white font-medium dark:text-darkbgcolor px-6 py-2 hover:shadow-md">
                   <a href="#contact">{InterSect.contact}</a>
                 </button>
+                <button className="rounded-[6px] bg-redreg text-white hover:bg-blackten dark:bg-darkblack dark:hover:bg-darkblackten p-[5px_24px_6px]">
+                  <Link href="/Nadeem_CV.pdf" download="Nadeem_CV.pdf" passHref>
+                    <span className="hidden md:block">{DwnldButton.btn}</span>
+                    <span className="md:hidden flex items-center gap-1">
+                      <IoMdDownload /> CV
+                    </span>
+                  </Link>
+                </button>
               </div>
+            </div>
             </div>
           </div>
 
           {/* Right Section */}
-          <div className="flex justify-end lg:justify-center items-center">
-            <div className="relative flex justify-center items-center">
-              {/* Profile Picture Container */}
-              <div className="relative h-[220px] sm:h-[260px] w-[170px] sm:w-[210px] bg-purplereg flex items-center justify-start rounded-lg shadow-md hover:shadow-lg">
-                <Image
-                  src={darkMode ? userinfo.picture2 : userinfo.picture}
-                  alt="Profile Picture"
-                  width={240}
-                  height={240}
-                  className="absolute bottom-0 left-[-25px] w-full"
-                />
-                {/* Icon */}
-                <span className="lapbox absolute top-0 left-[-6.5rem] bg-purplereg text-[2.64rem] w-16 h-16 flex items-center justify-center rounded-full shadow-md">
-                  <FaLaptopCode />
-                </span>
-              </div>
-              {/* Social Links */}
-              <div className="absolute top-0 right-0 flex flex-col items-center gap-2">
-                <h4 className="font-medium text-[0.8rem] text-black dark:text-darktext flex items-center">
-                  {InterSect.follow}
-                </h4>
-                <div className="w-[2px] h-14 bg-black dark:bg-darktext"></div>
-                <div className="text-[22px] flex gap-2">
-                  <Link
-                    href="https://www.linkedin.com/in/nadeem-tadvi-290339159"
-                    target="_blank"
-                  >
-                    <FaLinkedin />
-                  </Link>
-                  <FaSquareInstagram />
-                  <FaSquareWhatsapp />
-                  <Link href="https://github.com/nadeemtadvi" target="_blank">
-                    <FaSquareGithub />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

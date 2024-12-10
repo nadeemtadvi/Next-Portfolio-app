@@ -19,7 +19,6 @@ export interface ImageStatic {
 export interface headerIt {
   about: headerobj;
   skill: headerobj;
-  work: headerobj;
   project: headerobj;
   contact: headerobj;
 }
@@ -31,7 +30,6 @@ export interface IntroSectionProps {
   title: string;
   spanname: string;
   spanwork: string;
-  middletext: string;
   subtitle: string;
   contact: string;
   resume: string;

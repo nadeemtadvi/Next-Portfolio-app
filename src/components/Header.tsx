@@ -23,23 +23,15 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
   return (
-    <header className="bg-white dark:bg-black">
-      <div className="max-w-screen-xl mx-auto">
-        <div className="h-[75px] flex justify-between items-center lg:grid lg:grid-cols-[18%_auto_25%]">
+    <header className=" dark:bg-black">
+      <div className=" mx-auto">
+        <div className="h-[75px] flex justify-between items-center ">
           {/* Logo Section */}
-          <div className="flex justify-center items-center">
-            <Image
-              src={darkMode ? images.image2 : images.image}
-              alt="logo"
-              className="logo-dev"
-              width={170}
-              height={170}
-            />
-          </div>
+          <h2 className="text-white text-[1.6rem] font-bold">NADEEM<span className="text-[0.8rem]">.STYLE</span></h2>
 
           {/* Navigation Links */}
           <nav className="hidden lg:block">
-            <ul className="flex justify-center items-center gap-12 text-black dark:text-white">
+            <ul className="flex justify-center items-center gap-2 text-white dark:text-white">
               {Object.values(headerItem).map((item, index) => (
                 <li
                   key={index}
@@ -47,7 +39,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                   className={`p-[2px_10px_3px] ${
                     activeIndex === index
                       ? "active"
-                      : "hover:text-black hover:bg-blackten dark:hover:text-darkblack dark:hover:bg-darkblackten"
+                      : "hover:text-white hover:bg-blackten dark:hover:text-darkblack dark:hover:bg-darkblackten"
                   }`}
                 >
                   <a href={`#${item.page}`}>{item.label}</a>
@@ -61,21 +53,14 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
             {/* Dark Mode Toggle */}
             <button
               onClick={toggleDarkMode}
-              className="p-[5px_24px_6px] text-gray-900 dark:text-white"
+              className="p-[5px_24px_6px] text-white dark:text-white"
               aria-label="Toggle Dark Mode"
             >
               {darkMode ? <MdLightMode /> : <MdDarkMode />}
             </button>
 
             {/* Download CV Button */}
-            <button className="rounded-[6px] bg-redreg text-white hover:bg-blackten dark:bg-darkblack dark:hover:bg-darkblackten p-[5px_24px_6px]">
-              <Link href="/Nadeem_CV.pdf" download="Nadeem_CV.pdf" passHref>
-                <span className="hidden md:block">{DwnldButton.btn}</span>
-                <span className="md:hidden flex items-center gap-1">
-                  <IoMdDownload /> CV
-                </span>
-              </Link>
-            </button>
+           
 
             {/* Mobile Menu Toggle */}
             <div className="lg:hidden">

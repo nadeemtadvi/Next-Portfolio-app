@@ -6,17 +6,12 @@ import Link from "next/link";
 const ProjectSection = () => {
   return (
     <section className="bg-purplelight dark:bg-darkbgcolor">
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-8 py-10 lg:py-24">
+      <div className=" ">
         {/* Section Heading */}
-        <div
-          id="skills"
-          className="text-center text-[2rem] text-white dark:text-darkbgcolor mb-12"
-        >
-          {/* Add a title here if needed */}
-        </div>
+        
 
         {/* Projects Grid */}
-        <div className="relative grid lg:grid-cols-2 gap-10">
+        <div className="relative ">
           {Project.projectObject.map((project, index) => (
             <div key={index} className="py-4">
               {/* Project Card */}
@@ -34,7 +29,7 @@ const ProjectSection = () => {
                 <div className="bg-purplereg p-5 sm:h-[170px]">
                   {/* Title and Links */}
                   <div className="flex justify-between sm:justify-start gap-5">
-                    <h4 className="text-[#272727] dark:text-darkytext font-medium text-[0.95rem] sm:text-[1.2rem] md:text-[1.6rem] flex items-center">
+                    <h4 className="text-white dark:text-darkytext font-medium text-[0.95rem] sm:text-[1.2rem] md:text-[1.6rem] flex items-center">
                       <span className="mr-[5px]">{project.title}</span>|
                       <Link href={project.LiveLink} target="_blank">
                         <span className="text-white dark:text-darkytext font-medium ml-[5px] text-[0.95rem] sm:text-[1.1rem]">
@@ -46,7 +41,7 @@ const ProjectSection = () => {
                     {/* GitHub Link */}
                     {project.Github && (
                       <Link href={project.Link} target="_blank">
-                        <h4 className="text-black dark:text-darkytext text-[23px]">
+                        <h4 className="text-white dark:text-darkytext text-[23px]">
                           <project.Github />
                         </h4>
                       </Link>

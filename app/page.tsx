@@ -15,8 +15,8 @@ const Home = () => {
   }, []);
   return (
     <>
-      <div>
-        <div className="dark:bg-darkbgcolor">
+      <div className="bg-black">
+        <div className="dark:bg-darkbgcolor  max-w-screen-md mx-auto">
           <Header darkMode={darkMode} setDarkMode={setDarkMode}/>
           <Main darkMode={darkMode}/>
         </div>
