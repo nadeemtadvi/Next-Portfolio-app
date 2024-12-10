@@ -2,36 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Font Faces */
 @font-face {
   font-family: "Modern";
   src: url("./fonts/Raleway-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Modern";
   src: url("./fonts/PublicSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Modern";
   src: url("./fonts/PublicSans-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Modern";
   src: url("./fonts/PublicSans-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Modern";
   src: url("./fonts/PublicSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Modern";
   src: url("./fonts/Raleway-ExtraBold.ttf") format("truetype");
@@ -39,112 +45,99 @@
   font-style: normal;
 }
 
-body,
-html {
-  font-family: "Modern", "Frank Ruhl Libre", sans-serif, sans-serif;
+/* Global Styles */
+body, html {
+  font-family: "Modern", "Frank Ruhl Libre", sans-serif;
   scroll-behavior: smooth;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FBF9FA;
 }
 
+/* Scrollbar Styles */
 body::-webkit-scrollbar {
   width: 6px;
 }
+
 body::-webkit-scrollbar-track {
   background-color: #e4e4e4;
 }
+
 body::-webkit-scrollbar-thumb {
   background-color: #757575;
   border-radius: 20px;
   border: 1px solid #e4e4e4;
 }
+
+/* Layout Utilities */
 .vertical-rl {
   writing-mode: vertical-rl;
 }
 
+/* Mobile Responsiveness */
 @media screen and (max-width: 480px) {
   .p-5 {
     padding: 10px !important;
   }
 }
-#about,
-#skills,
-#work,
-#project,
-#contact {
+
+/* Section Transitions */
+#about, #skills, #work, #project, #contact {
   transition: all ease 1s;
 }
 
+/* Active Class Styles */
 .active {
   background-color: #e7e9f6;
   color: #1623b2;
 }
-.jar-overlay{
-  position: absolute;
-  background-color: #ffffff4f;
-  width: 181px;
-  height: 181px;
-  bottom: 20px;
-  left: -11px;
-  right: 0;
-  margin: auto;
-  border-radius: 44px;
-}
+
+/* Additional Mobile Responsiveness */
 @media screen and (max-width: 560px) {
   .logo-dev {
     width: 120px;
   }
+
   .workImg {
     width: 100px;
   }
+
   .footer h4 {
     font-size: 9px !important;
   }
+
   .footer .flex-wrap img {
     width: 13px;
   }
-  .jar-overlay {
-    width: 162px;
-    height: 168px;
-    border-radius: 34px;}
-  
 }
-.img-container{
+
+/* Custom Styles */
+.img-container {
   border-top-right-radius: 160px;
   border-top-left-radius: 160px;
-  
-
 }
 
-.scroll-style::-webkit-scrollbar{
+.scroll-style::-webkit-scrollbar {
   width: 7px;
 }
+
 .scroll-style::-webkit-scrollbar-track {
-  background: #90a7eb3f; 
+  background: #90a7eb3f;
 }
 
 .scroll-style::-webkit-scrollbar-thumb {
-  background: #90A7EB; 
-  border-radius: 6px; 
+  background: #90A7EB;
+  border-radius: 6px;
 }
-.img-project{
-  /* width: 600px!important; */
-  /* height: 270px!important; */
-}
-.bg-grid{
-  background-image: url("../src/assets/Images/gridlines.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: repeat;
-}
-.lapbox{
+
+.lapbox {
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
 
-
+/* Animation */
 .moveelement {
   white-space: nowrap;
   display: inline-block;
@@ -153,12 +146,13 @@ body::-webkit-scrollbar-thumb {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
 @keyframes move {
   from {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 
   to {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
