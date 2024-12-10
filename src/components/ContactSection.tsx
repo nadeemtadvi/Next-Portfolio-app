@@ -42,14 +42,14 @@ const ContactSection = () => {
                   key={index}
                   className="grid grid-cols-[60px_auto] lg:grid-cols-[50px_auto] items-center mb-3 sm:mb-8"
                 >
-                  <div className="flex justify-center items-center w-10 h-10 bg-purplereg text-white dark:bg-darkblack dark:text-white rounded-[6px] text-[20px]">
+                  <div className="flex justify-center items-center w-10 h-10 bg-purplereg text-colorsecondary dark:bg-darkblack dark:text-colorsecondary rounded-[6px] text-[20px]">
                     {item.icon && <item.icon />}
                   </div>
                   <div className="lg:pl-2">
-                    <h5 className="text-blurtext dark:text-darktext text-[1.04rem] mb-1">
+                    <h5 className="text-colorprimary dark:text-darktext text-[1.04rem] mb-1">
                       {item.title}
                     </h5>
-                    <h5 className="text-white dark:text-darkhtext font-medium text-[1.04rem]">
+                    <h5 className="text-colorsecondary dark:text-darkhtext  text-[1.04rem]">
                       {item.subtitle}
                     </h5>
                   </div>
@@ -111,7 +111,7 @@ const ContactSection = () => {
                 <button
                   type="submit"
                   disabled={state.submitting}
-                  className="bg-redreg text-white dark:text-darkbgcolor rounded-[6px] p-[5px_24px_6px] hover:shadow-md"
+                  className="bg-redreg text-colorsecondary dark:text-darkbgcolor rounded-[6px] p-[5px_24px_6px] hover:shadow-md"
                 >
                   {Contact.msgButton}
                 </button>

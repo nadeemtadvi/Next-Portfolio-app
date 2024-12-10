@@ -27,11 +27,11 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
       <div className=" mx-auto">
         <div className="h-[75px] flex justify-between items-center ">
           {/* Logo Section */}
-          <h2 className="text-white text-[1.6rem] font-bold">NADEEM<span className="text-[0.8rem]">.STYLE</span></h2>
+          <h2 className="text-colorprimary text-[1.6rem] font-bold">NADEEM<span className="text-[0.8rem]">.STYLE</span></h2>
 
           {/* Navigation Links */}
           <nav className="hidden lg:block">
-            <ul className="flex justify-center items-center gap-2 text-white dark:text-white">
+            <ul className="flex justify-center items-center gap-2 text-colorprimary dark:text-colorsecondary">
               {Object.values(headerItem).map((item, index) => (
                 <li
                   key={index}
@@ -39,7 +39,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                   className={`p-[2px_10px_3px] ${
                     activeIndex === index
                       ? "active"
-                      : "hover:text-white hover:bg-blackten dark:hover:text-darkblack dark:hover:bg-darkblackten"
+                      : "hover:text-colorsecondary hover:bg-blackten dark:hover:text-darkblack dark:hover:bg-darkblackten"
                   }`}
                 >
                   <a href={`#${item.page}`}>{item.label}</a>
@@ -53,7 +53,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
             {/* Dark Mode Toggle */}
             <button
               onClick={toggleDarkMode}
-              className="p-[5px_24px_6px] text-white dark:text-white"
+              className="p-[5px_24px_6px] text-colorsecondary dark:text-colorsecondary"
               aria-label="Toggle Dark Mode"
             >
               {darkMode ? <MdLightMode /> : <MdDarkMode />}
@@ -69,7 +69,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                 className="text-xl p-[5px_24px_6px]"
                 aria-label="Toggle Menu"
               >
-                <HiMenu className="dark:text-white" />
+                <HiMenu className="dark:text-colorsecondary" />
               </button>
 
               {menuOpen && (
@@ -81,7 +81,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                   />
 
                   {/* Mobile Menu */}
-                  <div className="absolute z-10 top-[45px] left-[-120px] bg-white dark:bg-darksectionColor dark:text-white min-w-[150px]">
+                  <div className="absolute z-10 top-[45px] left-[-120px] bg-white dark:bg-darksectionColor dark:text-colorsecondary min-w-[150px]">
                     <ul>
                       {Object.values(headerItem).map((item, index) => (
                         <li

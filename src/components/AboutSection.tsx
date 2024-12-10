@@ -19,7 +19,7 @@ const AboutSection = ({ darkMode }: AboutSectiondataprops) => {
 
             {/* About Me Content */}
             <div className="relative flex items-center justify-center">
-              <p className="text-[1.04rem] p-5 rounded-[6px] text-white dark:text-darkytext mb-2 sm:mb-4 text-justify">
+              <p className="text-[1.04rem] p-5 rounded-[6px] text-colorsecondary dark:text-darkytext mb-2 sm:mb-4 ">
                 {AboutMe.subtitle}
               </p>
             </div>

@@ -29,10 +29,10 @@ const ProjectSection = () => {
                 <div className="bg-purplereg p-5 sm:h-[170px]">
                   {/* Title and Links */}
                   <div className="flex justify-between sm:justify-start gap-5">
-                    <h4 className="text-white dark:text-darkytext font-medium text-[0.95rem] sm:text-[1.2rem] md:text-[1.6rem] flex items-center">
+                    <h4 className="text-colorprimary dark:text-darkytext  text-[0.95rem] sm:text-[1.2rem] md:text-[1.6rem] flex items-center">
                       <span className="mr-[5px]">{project.title}</span>|
                       <Link href={project.LiveLink} target="_blank">
-                        <span className="text-white dark:text-darkytext font-medium ml-[5px] text-[0.95rem] sm:text-[1.1rem]">
+                        <span className="text-colorsecondary dark:text-darkytext  ml-[5px] text-[0.95rem] sm:text-[1.1rem]">
                           Live Demo
                         </span>
                       </Link>
@@ -41,7 +41,7 @@ const ProjectSection = () => {
                     {/* GitHub Link */}
                     {project.Github && (
                       <Link href={project.Link} target="_blank">
-                        <h4 className="text-white dark:text-darkytext text-[23px]">
+                        <h4 className="text-colorsecondary dark:text-darkytext text-[23px]">
                           <project.Github />
                         </h4>
                       </Link>
@@ -53,7 +53,7 @@ const ProjectSection = () => {
                     {project.button?.map((tech, idx) => (
                       <button
                         key={idx}
-                        className="bg-white text-black dark:bg-darkbgcolor dark:text-darktext font-medium py-1 px-3 text-[0.6rem] sm:text-[0.8rem] rounded"
+                        className="bg-white text-black dark:bg-darkbgcolor dark:text-darktext  py-1 px-3 text-[0.6rem] sm:text-[0.8rem] rounded"
                       >
                         {tech}
                       </button>

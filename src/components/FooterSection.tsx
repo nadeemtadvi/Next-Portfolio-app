@@ -8,17 +8,17 @@ const FooterSection = () => {
     <footer className=" footer">
       <div className="p-5 flex justify-between items-center">
         {/* Copyright Section */}
-        <h4 className="text-[0.8rem] text-white dark:text-darksubtext">
+        <h4 className="text-[0.8rem] text-colorsecondary dark:text-darksubtext">
           {Footer.copyright}
         </h4>
 
         {/* Developer Info */}
-        <h4 className="text-[0.8rem] text-white dark:text-darksubtext">
+        <h4 className="text-[0.8rem] text-colorsecondary dark:text-darksubtext">
           {Footer.dev}
         </h4>
 
         {/* Social Media Icons */}
-        <div className="flex items-center gap-4 text-white text-[24px]">
+        <div className="flex items-center gap-4 text-colorsecondary text-[24px]">
           <FaSquareInstagram aria-label="Instagram" />
           <FaSquareWhatsapp aria-label="WhatsApp" />
           <Link href="https://github.com/nadeemtadvi" target="_blank" aria-label="GitHub">
