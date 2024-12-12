@@ -28,15 +28,15 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
   };
   return (
     <>
-      <div className="mb-[0rem]  bg-white dark:bg-blackshadow border-b ">
+      <div className="mb-[0rem]  bg-white  dark:bg-blackshadow border-b ">
         <div className="max-w-screen-xl mx-auto">
           {" "}
           <div className="h-[75px] flex justify-between  lg:grid grid-cols-[18%_auto_25%] items-center ">
             <div className="border-r text-center  h-full  flex justify-center  items-center">
-              <h2 className="text-[1.72rem] font-extrabold text-[#252525] uppercase">Nadeem<span className="text-[0.78rem]">.style</span></h2>
+              <h2 className="text-[1.72rem] font-extrabold text-[#252525] dark:text-white uppercase">Nadeem<span className="text-[0.78rem]">.style</span></h2>
             </div>
             <div className="hidden lg:block    ">
-              <ul className="flex font-light justify-center items-center gap-12  dark:text-[#252525]">
+              <ul className="flex font-light justify-center items-center gap-12   dark:text-white">
                 {Object.values(headerItem).map((item, index) => (
                   <li
                     key={index}
@@ -55,7 +55,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
               <div className="border-l h-full  flex-none border-r  flex justify-center  items-center">
                 <div
                   onClick={toggleDarkMode}
-                  className="text-gray-900  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:text-[#252525] "
+                  className="text-gray-900  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:text-white"
                 >
                   {darkMode ? <MdLightMode /> : <MdDarkMode />}
                 </div>

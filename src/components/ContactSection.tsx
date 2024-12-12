@@ -4,7 +4,6 @@ import { Contact } from "../constant/constant";
 import { useForm, ValidationError } from "@formspree/react";
 import cancelImg from "../assets/Images/Shapes/wrong.png";
 import Image from "next/image";
-import pinImage from "../assets/Images/Shapes/pngwingReverse.png"
 
 
 const ContactSection = () => {
@@ -26,7 +25,7 @@ const ContactSection = () => {
   return (
     <div className="">
      
-      <div className="bg-purplelight  dark:bg-darkbgcolor">
+      <div className="  dark:bg-darkbgcolor">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-8 py-6 sm:py-10 lg:py-20">
           {showMessage && (
             <p className=" text-[20px] bg-green-100  text-green-600 z-50 fixed top-[10px] right-[30px] p-[4px_50px_7px]">
@@ -38,7 +37,7 @@ const ContactSection = () => {
               id="skills"
               className="dark:text-darkbgcolor  text-[2rem]  mb-12 text-[#252525]  text-center  bg-[]"
             >
-              <h6 className="relative  inline-block w-[240px]  text-[1.8rem]  font-light border border-gray-200 bg-white  dark:-darkblackshadow">
+              <h6 className="relative  inline-block w-[240px]  text-[1.8rem]  font-light border border-gray-200 bg-white  dark:-darkdarkytext">
                 {Contact.contact}
                
               </h6>
@@ -60,13 +59,13 @@ const ContactSection = () => {
                     className="grid grid-cols-[60px_auto] lg:grid-cols-[50px_auto] items-center mb-3 sm:mb-8"
                   >
                     <div>
-                      <div className=" border   w-10 h-10 bg-purplereg text-[#252525] dark:bg-darkblackshadow dark:text-blackshadow flex justify-center items-center text-[20px]">
+                      <div className=" border   w-10 h-10 bg-purplereg text-[#252525] dark:bg-darkdarkytext dark:text-darkytext flex justify-center items-center text-[20px]">
                         {item.icon && <item.icon />}
                       </div>
                     </div>
                     <div>
                       <div className="lg:pl-2 ">
-                        <h5 className="dark:text-darktext text-blurtext text-[1.04rem] mb-1">
+                        <h5 className="dark:text-darktext font-light text-blurtext text-[1.04rem] mb-1">
                           {item.title}
                         </h5>
                         <h5 className="dark:text-darkhtext text-titletext font-medium text-[1.04rem] ">
@@ -86,7 +85,7 @@ const ContactSection = () => {
                       type="name"
                       id="name"
                       name="name"
-                      className=" bg-white  border  bg-transparent outline-none  text-gray-900 dark:text-gray-200 text-sm  dark:bg-blackshadow dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow focus:ring-blackshadow focus: block w-full p-2.5"
+                      className=" bg-white pl-0   border-b  bg-transparent outline-none  text-gray-900 dark:text-gray-200 text-[1rem] font-light  dark:bg-darkytext dark:focus:ring-darkdarkytext dark:focus:border-darkdarkytext focus:ring-darkytext focus: block w-full p-2.5"
                       placeholder={Contact.fullname}
                       required
                     />
@@ -101,7 +100,7 @@ const ContactSection = () => {
                       type="email"
                       id="email"
                       name="email"
-                      className=" bg-white  dark:bg-blackshadow bg-transparent dark:text-gray-200 dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow border  outline-none text-gray-900 text-sm  focus:ring-blackshadow focus: block w-full p-2.5"
+                      className=" bg-white pl-0  dark:bg-darkytext bg-transparent dark:text-gray-200 dark:focus:ring-darkdarkytext dark:focus:border-darkdarkytext border-b  outline-none text-gray-900 text-[1rem] font-light  focus:ring-darkytext focus: block w-full p-2.5"
                       placeholder={Contact.email}
                       required
                     />
@@ -117,7 +116,7 @@ const ContactSection = () => {
                       type="tel"
                       id="tel"
                       name="tel"
-                      className=" bg-white  dark:bg-blackshadow bg-transparent dark:text-gray-200 dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow border  outline-none text-gray-900 text-sm  focus:ring-blackshadow focus: block w-full p-2.5"
+                      className=" bg-white pl-0  dark:bg-darkytext bg-transparent dark:text-gray-200 dark:focus:ring-darkdarkytext dark:focus:border-darkdarkytext border-b  outline-none text-gray-900 text-[1rem] font-light  focus:ring-darkytext focus: block w-full p-2.5"
                       placeholder={Contact.phone}
                       required
                     />
@@ -133,7 +132,7 @@ const ContactSection = () => {
                     id="message"
                     name="message"
                     rows={4}
-                    className="  dark:bg-blackshadow dark:focus:ring-darkblackshadow dark:text-gray-200 dark:focus:border-darkblackshadow block p-2.5 w-full text-sm outline-none text-gray-900   border  focus:ring-blackshadow focus:"
+                    className="  dark:bg-darkytext dark:focus:ring-darkdarkytext dark:text-gray-200 dark:focus:border-darkdarkytext block pl-0 p-2.5 w-full text-[1rem] font-light outline-none text-gray-900   border-b  focus:ring-darkytext focus:"
                     placeholder={Contact.message}
                     defaultValue={""}
                   />

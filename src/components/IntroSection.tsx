@@ -26,19 +26,19 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
           />
           <div className="flex justify-start items-center ">
             <div>
-              <h5 className="text-titletext dark:text-darktext font-light text-[1.24rem] leading-[30px] sm:leading-[48px] mb-2">
+              <h5 className="text-titletext dark:text-white font-light text-[1.24rem] leading-[30px] sm:leading-[48px] mb-2">
                 {InterSect.title}
-                <span className="text-blackshadow dark:text-darktext">
+                <span className="text-blackshadow dark:text-white">
                   {" "}
                   {InterSect.spanname}
                 </span>{" "}
                 <br />
-                <span className="text-blackshadow dark:text-darktext uppercase font-bold text-[2rem] sm:text-[2.4rem] lg:text-[3rem] xl:text-[3.6rem]">
+                <span className="text-blackshadow dark:text-white uppercase font-bold text-[2rem] sm:text-[2.4rem] lg:text-[3rem] xl:text-[3.6rem]">
                   {InterSect.middletext} <br />
                   {InterSect.spanwork}
                 </span>
               </h5>
-              <p className=" text-subtext dark:text-darktext font-light text-[1.24rem] mb-6">
+              <p className=" text-subtext dark:text-white font-light text-[1.24rem] mb-6">
                 {InterSect.subtitle}
               </p>
               <div className="mb-5">
@@ -65,7 +65,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
                     </span>
                   </div>
                   <div className="absolute top-0 right-0 flex items-center bottom-0">
-                    <h4 className="font-light text-[0.8rem] vertical-rl flex items-center gap-2 text-blackshadow dark:text-darktext">
+                    <h4 className="font-light text-[0.8rem] vertical-rl flex items-center gap-2 text-blackshadow dark:text-white">
                       {InterSect.follow}
                       <div className="w-[1px] h-14 bg-blackshadow dark:bg-darktext"></div>
                       <div className="text-[22px] flex gap-1">
