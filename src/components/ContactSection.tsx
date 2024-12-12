@@ -38,15 +38,9 @@ const ContactSection = () => {
               id="skills"
               className="dark:text-darkbgcolor  text-[2rem]  mb-12 text-[#252525]  text-center  bg-[]"
             >
-              <h6 className="relative rotate-[14deg] inline-block  shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] p-[5px_26px_6px]  font-medium border   bg-purplereg  dark:-darkblackshadow">
+              <h6 className="relative  inline-block w-[240px]  text-[1.8rem]  font-light border border-gray-200 bg-white  dark:-darkblackshadow">
                 {Contact.contact}
-                <Image
-                      src={pinImage}
-                      alt="dp"
-                      width={100}
-                      height={100}
-                      className="absolute w-[60px] top-[-1.5rem] left-[-2rem]"
-                    />
+               
               </h6>
             </h4>
           </div>
@@ -66,7 +60,7 @@ const ContactSection = () => {
                     className="grid grid-cols-[60px_auto] lg:grid-cols-[50px_auto] items-center mb-3 sm:mb-8"
                   >
                     <div>
-                      <div className=" border  shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] w-10 h-10 bg-purplereg text-[#252525] dark:bg-darkblackshadow dark:text-blackshadow flex justify-center items-center text-[20px]">
+                      <div className=" border   w-10 h-10 bg-purplereg text-[#252525] dark:bg-darkblackshadow dark:text-blackshadow flex justify-center items-center text-[20px]">
                         {item.icon && <item.icon />}
                       </div>
                     </div>
@@ -92,7 +86,7 @@ const ContactSection = () => {
                       type="name"
                       id="name"
                       name="name"
-                      className=" bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] border  bg-transparent outline-none  text-gray-900 dark:text-gray-200 text-sm  dark:bg-blackshadow dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow focus:ring-blackshadow focus: block w-full p-2.5"
+                      className=" bg-white  border  bg-transparent outline-none  text-gray-900 dark:text-gray-200 text-sm  dark:bg-blackshadow dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow focus:ring-blackshadow focus: block w-full p-2.5"
                       placeholder={Contact.fullname}
                       required
                     />
@@ -107,7 +101,7 @@ const ContactSection = () => {
                       type="email"
                       id="email"
                       name="email"
-                      className=" bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] dark:bg-blackshadow bg-transparent dark:text-gray-200 dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow border  outline-none text-gray-900 text-sm  focus:ring-blackshadow focus: block w-full p-2.5"
+                      className=" bg-white  dark:bg-blackshadow bg-transparent dark:text-gray-200 dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow border  outline-none text-gray-900 text-sm  focus:ring-blackshadow focus: block w-full p-2.5"
                       placeholder={Contact.email}
                       required
                     />
@@ -123,7 +117,7 @@ const ContactSection = () => {
                       type="tel"
                       id="tel"
                       name="tel"
-                      className=" bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] dark:bg-blackshadow bg-transparent dark:text-gray-200 dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow border  outline-none text-gray-900 text-sm  focus:ring-blackshadow focus: block w-full p-2.5"
+                      className=" bg-white  dark:bg-blackshadow bg-transparent dark:text-gray-200 dark:focus:ring-darkblackshadow dark:focus:border-darkblackshadow border  outline-none text-gray-900 text-sm  focus:ring-blackshadow focus: block w-full p-2.5"
                       placeholder={Contact.phone}
                       required
                     />
@@ -139,7 +133,7 @@ const ContactSection = () => {
                     id="message"
                     name="message"
                     rows={4}
-                    className=" shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] dark:bg-blackshadow dark:focus:ring-darkblackshadow dark:text-gray-200 dark:focus:border-darkblackshadow block p-2.5 w-full text-sm outline-none text-gray-900   border  focus:ring-blackshadow focus:"
+                    className="  dark:bg-blackshadow dark:focus:ring-darkblackshadow dark:text-gray-200 dark:focus:border-darkblackshadow block p-2.5 w-full text-sm outline-none text-gray-900   border  focus:ring-blackshadow focus:"
                     placeholder={Contact.message}
                     defaultValue={""}
                   />
@@ -153,7 +147,7 @@ const ContactSection = () => {
                   <button
                     type="submit"
                     disabled={state.submitting}
-                    className="bg-redreg  border  shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] text-[#252525] font-medium  dark:text-darkbgcolor  p-[5px_24px_6px] "
+                    className="bg-redreg     text-[#252525] font-light  dark:text-darkbgcolor  p-[5px_24px_6px] "
                   >
                     {Contact.msgButton}
                   </button>

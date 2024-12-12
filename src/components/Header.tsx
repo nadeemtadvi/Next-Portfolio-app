@@ -36,7 +36,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
               <h2 className="text-[1.72rem] font-extrabold text-[#252525] uppercase">Nadeem<span className="text-[0.78rem]">.style</span></h2>
             </div>
             <div className="hidden lg:block    ">
-              <ul className="flex font-normal justify-center items-center gap-12  dark:text-[#252525]">
+              <ul className="flex font-light justify-center items-center gap-12  dark:text-[#252525]">
                 {Object.values(headerItem).map((item, index) => (
                   <li
                     key={index}
@@ -62,7 +62,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
               </div>
               <div className="grow text-center mx-5 lg:mx-0 flex justify-center  items-center h-full">
                 {" "}
-                <button className=" inline-block bg-redreg text-[#252525] font-medium   shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] border   dark:border-darkblackshadow dark:text-darkblackshadow  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:hover:bg-darkblackshadowten hover:bg-blackshadowten">
+                <button className=" inline-block bg-redreg text-[#252525] font-light   dark:border-darkblackshadow dark:text-darkblackshadow  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:hover:bg-darkblackshadowten hover:bg-blackshadowten">
                   <Link href="/Nadeem_CV.pdf" download="Nadeem_CV.pdf" passHref>
                     <span className="hidden md:block">{DwnldButton.btn}</span>
                     <span className="md:hidden block">

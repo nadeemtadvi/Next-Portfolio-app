@@ -26,7 +26,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
           />
           <div className="flex justify-start items-center ">
             <div>
-              <h5 className="text-titletext dark:text-darktext font-medium text-[0.93rem] leading-[30px] sm:leading-[48px] mb-2">
+              <h5 className="text-titletext dark:text-darktext font-light text-[1.24rem] leading-[30px] sm:leading-[48px] mb-2">
                 {InterSect.title}
                 <span className="text-blackshadow dark:text-darktext">
                   {" "}
@@ -38,11 +38,11 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
                   {InterSect.spanwork}
                 </span>
               </h5>
-              <p className="lg:w-[75%] text-subtext dark:text-darktext text-[0.93rem] mb-6">
+              <p className=" text-subtext dark:text-darktext font-light text-[1.24rem] mb-6">
                 {InterSect.subtitle}
               </p>
               <div className="mb-5">
-                <button className="bg-redreg  border   shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] text-[#252525] font-medium dark:text-darkbgcolor  p-[5px_24px_6px] ">
+                <button className="bg-redreg      text-[#252525] font-light dark:text-darkbgcolor  p-[5px_24px_6px] ">
                   <a href="#contact">{InterSect.contact}</a>
                 </button>
               </div>
@@ -52,7 +52,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
             <div className="mr-3 sm:mr-6 my-10 md:m0-0 lg:mr-0 md:h-[400px] flex justify-end lg:justify-center items-center">
               <div className="  flex justify-center items-center">
                 <div>
-                  <div className="relative h-[220px] sm:h-[260px] w-[170px] sm:w-[210px] img-container bg-purplereg flex items-center justify-start border  shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)]">
+                  <div className="relative h-[220px] sm:h-[260px] w-[170px] sm:w-[210px] img-container bg-purplereg flex items-center justify-start border  ">
                     <Image
                       src={darkMode ? userinfo.picture2 : userinfo.picture}
                       alt="dp"
@@ -60,14 +60,14 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
                       height={240}
                       className="absolute bottom-0 left-[-25px]   w-full"
                     />
-                    <span className="lapbox absolute top-0 left-[-6.5rem] bg-purplereg  text-[2.64rem]  w-16 h-16 flex items-center justify-center  border  shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)]">
+                    <span className="lapbox absolute top-0 left-[-6.5rem] bg-purplereg  text-[2.64rem]  w-16 h-16 flex items-center justify-center  border  ">
                       <FaLaptopCode />
                     </span>
                   </div>
                   <div className="absolute top-0 right-0 flex items-center bottom-0">
-                    <h4 className="font-medium text-[0.8rem] vertical-rl flex items-center gap-2 text-blackshadow dark:text-darktext">
+                    <h4 className="font-light text-[0.8rem] vertical-rl flex items-center gap-2 text-blackshadow dark:text-darktext">
                       {InterSect.follow}
-                      <div className="w-[2px] h-14 bg-blackshadow dark:bg-darktext"></div>
+                      <div className="w-[1px] h-14 bg-blackshadow dark:bg-darktext"></div>
                       <div className="text-[22px] flex gap-1">
                         <Link
                           href="https://www.linkedin.com/in/nadeem-tadvi-290339159"

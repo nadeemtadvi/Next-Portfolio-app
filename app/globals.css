@@ -128,10 +128,7 @@ body::-webkit-scrollbar-thumb {
   background: #90A7EB; 
   border-radius: 6px; 
 }
-.img-project{
-  /* width: 600px!important; */
-  /* height: 270px!important; */
-}
+
 .bg-grid{
   background-image: url("../src/assets/Images/gridlines.png");
   background-size: contain;

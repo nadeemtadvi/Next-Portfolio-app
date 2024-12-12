@@ -2,9 +2,7 @@ import React from "react";
 import { Skills } from "../constant/constant";
 import WorkSection from "./WorkSection";
 import { SkillSectiondataprops } from "../models/Interface";
-import jarImage from "../assets/Images/Untitled_design__2_-removebg-preview.png";
-import FlowerImg from "../assets/Images/Shapes/whiteFlower.png";
-import springImg from "../assets/Images/Shapes/spring.png";
+
 import Image from "next/image";
 import { SiStorybook } from "react-icons/si";
 import { SiFigma } from "react-icons/si";
@@ -16,84 +14,113 @@ import { SiTypescript } from "react-icons/si";
 import { DiPhotoshop } from "react-icons/di";
 import { DiIllustrator } from "react-icons/di";
 import { FaGitAlt } from "react-icons/fa";
-import pinImage from "../assets/Images/Shapes/pngwingReverse.png"
-
+import pinImage from "../assets/Images/Shapes/pngwingReverse.png";
 
 const SkillSection = ({ darkMode }: SkillSectiondataprops) => {
   return (
     <div className="bg-purplelight dark:bg-darkbgcolor border-t-2 border-purplelight">
       <div className=" max-w-screen-xl mx-auto py-8 px-4 sm:px-8  lg:py-16">
         <div className=" mx-auto">
+          <div
+            id="skills"
+            className="mb-16 dark:text-darkbgcolor  text-[2rem]   text-[#252525]  text-center  ]"
+          >
+            <h6 className=" inline-block w-[240px]  text-[1.8rem]  font-light border border-gray-200 bg-white  dark:-darkblackshadow">
+              {Skills.skill} & Exp.
+             
+            </h6>
+          </div>
           <div className="relative md:grid grid-cols-2">
-          
-            <div className=" Skills-part py-10 ">
-           
-              <div className="">
-                <div
-                  id="skills"
-                  className="dark:text-darkbgcolor  text-[2rem]  mb-12 text-[#252525]  text-center  bg-[]"
-                >
-                  <h6 className="rotate-[14deg] inline-block  shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] p-[5px_20px_6px]  font-medium border   bg-purplereg  dark:-darkblackshadow">
-                    {Skills.skill}
-                    <Image
-                      src={pinImage}
-                      alt="dp"
-                      width={100}
-                      height={100}
-                      className="absolute w-[60px] top-[-1.5rem] left-[-2rem]"
-                    />
-                  </h6>
-                </div>
-              </div>
+          <div className="Experience-part ">
+              <WorkSection darkMode={darkMode} />
+            </div>
+            <div className=" Skills-part ml-10">
               <div className=" text-center">
-                <div className="relative mx-auto pt-16 w-[300px] md:w-[400px]">
-                  <Image
-                    src={jarImage}
-                    alt="dp"
-                    width={300}
-                    height={300}
-                    className="inline-block"
-                  />
-                  <div className="icon-container text-[#252525]">
-                    <span className="absolute bottom-[5rem] left-[3.85rem] sm:left-[14rem] bg-[#9723C9]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
-                      <SiRedux />
-                    </span>
-                    <span className="absolute bottom-[5.2rem] left-[9.8rem] bg-[#FF00F5]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
-                      <SiFigma />
-                    </span>
-                    <span className="absolute bottom-[8.15rem] left-[7.4rem] bg-[#FF4911]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
-                      <FaGitAlt />
-                    </span>
+                <div className="">
+                  <div className="  grid grid-cols-2 gap-1 text-[#252525]">
+                    <div className="flex items-center gap-6  bg-white p-5  ">
+                      <span className="  bg-white text-[1.2rem]  rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                        <SiFigma />
+                      </span>
+                      <h4 className="text-[1.24rem] font-light">Figma</h4>
+                    </div>
+                    <div className="flex items-center gap-6  bg-white p-5 ">
 
-                    <span className="absolute bottom-[2rem] right-[7.6rem] bg-[#FF00F5]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
-                      <SiStorybook />
-                    </span>
-                    <span className="absolute bottom-[2rem] left-[4.6rem] sm:left-[7.3rem] bg-[#90A7EB]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
-                      <SiTailwindcss />
-                    </span>
-                    <span className="absolute bottom-[2rem] left-[10rem] sm:left-[10.5rem] bg-[#ff9728]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
-                      <IoLogoJavascript />
-                    </span>
-                    <span className="absolute bottom-[5rem] left-[6.5rem] bg-[#90A7EB]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
-                      <FaReact />
-                    </span>
-                    <span className="absolute bottom-[7.98rem] left-[4rem] sm:left-[12rem] bg-[#90A7EB]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
-                      <SiTypescript />
-                    </span>
-                    <span className="absolute top-0 left-[14rem] bg-[#90A7EB]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
-                      <DiPhotoshop />
-                    </span>
-                    <span className="absolute top-[3rem] left-[9rem] sm:left-[10rem] bg-[#ff9728]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
-                      <DiIllustrator />
-                    </span>
-                    <div className="jar-overlay"></div>
+                      <span className="    bg-white text-[1.2rem]  rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                        <FaGitAlt />
+                      </span>
+                      <h4 className="text-[1.24rem] font-light">Git</h4>
+
+                    </div>
+                    <div className="flex items-center gap-6  bg-white p-5">
+
+                      <span className="    bg-white text-[1.2rem]  rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                        <SiStorybook />
+                      </span>
+                      <h4 className="text-[1.24rem] font-light">Storybook</h4>
+
+                    </div>
+                    <div className="flex items-center gap-6  bg-white p-5">
+
+                      <span className="    bg-white text-[1.2rem]  rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                        <SiTailwindcss />
+                      </span>
+                      <h4 className="text-[1.24rem] font-light">Tailwind Css</h4>
+
+                    </div>
+                    <div className="flex items-center gap-6  bg-white p-5">
+
+                      <span className="   bg-white text-[1.2rem]  rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                        <IoLogoJavascript />
+                      </span>
+                      <h4 className="text-[1.24rem] font-light">Javascript</h4>
+
+                    </div>
+                    <div className="flex items-center gap-6  bg-white p-5">
+
+                      <span className="   bg-white text-[1.2rem]  rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                        <FaReact />
+                      </span>
+                      <h4 className="text-[1.24rem] font-light">React</h4>
+
+                    </div>
+                    <div className="flex items-center gap-6  bg-white p-5">
+
+                      <span className="    bg-white text-[1.2rem]  rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                        <SiTypescript />
+                      </span>
+                      <h4 className="text-[1.24rem] font-light">Typescript</h4>
+
+                    </div>
+                    <div className="flex items-center gap-6  bg-white p-5">
+
+                      <span className="    bg-white text-[1.2rem]  rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                        <DiPhotoshop />
+                      </span>
+                      <h4 className="text-[1.24rem] font-light">Adobe Photoshop</h4>
+
+                    </div>
+                    <div className="flex items-center gap-6  bg-white p-5">
+
+                      <span className="  bg-white text-[1.2rem]  rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                        <DiIllustrator />
+                      </span>
+                      <h4 className="text-[1.24rem] font-light">Adobe Illustrator</h4>
+
+                    </div>
+                    <div className="flex items-center gap-6  bg-white p-5">
+
+                      <span className="    bg-white text-[1.2rem]  rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                        <SiRedux />
+                      </span>
+                      <h4 className="text-[1.24rem] font-light">Redux</h4>
+
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="Experience-part ">
-              <WorkSection darkMode={darkMode} />
-            </div>
+           
           </div>
         </div>
       </div>

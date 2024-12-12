@@ -20,8 +20,10 @@ import cmplogo2 from "../assets/Images/CompanyLogo/AplLogo-removebg-preview.png"
 import logo from "../assets/Images/LOGO/Nadeemlight.png";
 import darklogo from "../assets/Images/LOGO/Nadeemdark.png";
 import profile from "../assets/Images/Profile/Visit.jpg";
-import portfolio from "../assets/Images/Project/Screenshot 2024-11-03 123820.png";
-import cryptopedia from "../assets/Images/Project/Screenshot 2024-11-03 112611.png";
+import shamidarbar from "../assets/Images/Project/shamidarbar.png";
+import shanti from "../assets/Images/Project/shanti.png";
+import wellspring from "../assets/Images/Project/wellspring.png";
+import cryptopedia from "../assets/Images/Project/crypto.png";
 import furniture from "../assets/Images/Project/screencapture-localhost-3000-2024-11-16-15_19_35.png";
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
@@ -37,6 +39,7 @@ import { SiTypescript } from "react-icons/si";
 import { DiPhotoshop } from "react-icons/di";
 import { DiIllustrator } from "react-icons/di";
 import { FaGitAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 
 export const userinfo: Userobject = {
@@ -114,30 +117,40 @@ export const Project: ProjectSectionProps = {
   project: "Projects",
   projectObject: [
     {
-      image: portfolio,
+      image: shamidarbar,
       Link: "https://github.com/nadeemtadvi/Next-Portfolio-app",
       LiveLink: "https://imdeveloper-app.netlify.app/",
-      Github: FaGithubSquare,
-      title: "Portfolio-app",
+      Github: FaGithub,
+      title: "Shami Darbar",
       button: ["HTML", "CSS", "TypeScript", "React", "Nextjs", "Taiwind"],
       subtitle:
       "A sleek, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Designed to showcase projects, skills, and accomplishments in a clean and modern layout. This project is focused on performance, scalability, and a seamless user experience." , 
     },
     {
-      image: cryptopedia,
-      Link: "https://github.com/nadeemtadvi/Cryptopedia-Backend",
-      LiveLink: "https://cryptopedia-update.netlify.app/",
-      Github: FaGithubSquare,
+      image: wellspring,
+      Link: "https://github.com/nadeemtadvi/blogapp-frontend-vite",
+      LiveLink: "https://wellspringblog.netlify.app/",
+      Github: FaGithub,
       title: "Cryptopedia",
       button: ["HTML", "CSS", "JavaScript", "React", "Taiwind","Mongodb", "expressjs", ],
       subtitle:
       "A fully responsive blogging website featuring both frontend and backend development. Built to offer a smooth and engaging user experience on all devices. Includes robust functionality for content management and user interactions."  
     },
     {
-      image: furniture,
+      image: cryptopedia,
+      Link: "https://github.com/nadeemtadvi/Cryptopedia-Backend",
+      LiveLink: "https://cryptopedia-update.netlify.app/",
+      Github: FaGithub,
+      title: "Cryptopedia",
+      button: ["HTML", "CSS", "JavaScript", "React", "Taiwind","Mongodb", "expressjs", ],
+      subtitle:
+      "A fully responsive blogging website featuring both frontend and backend development. Built to offer a smooth and engaging user experience on all devices. Includes robust functionality for content management and user interactions."  
+    },
+    {
+      image: shanti,
       Link: "https://github.com/nadeemtadvi/Furniture-app",
       LiveLink: "https://shantifurniture.netlify.app/",
-      Github: FaGithubSquare,
+      Github: FaGithub,
       title: "Shanti Furniture",
       button: ["HTML", "CSS", "JavaScript", "React", "Taiwind", ],
       subtitle:
