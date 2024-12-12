@@ -31,9 +31,9 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
       <div className="mb-[0rem]  bg-white  dark:bg-blackshadow border-b ">
         <div className="max-w-screen-xl mx-auto">
           {" "}
-          <div className="h-[75px] flex justify-between  lg:grid grid-cols-[18%_auto_25%] items-center ">
+          <div className="h-[75px] flex sm:justify-between  lg:grid grid-cols-[18%_auto_25%] items-center ">
             <div className="border-r text-center  h-full  flex justify-center  items-center">
-              <h2 className="text-[1.72rem] font-extrabold text-[#252525] dark:text-white uppercase">Nadeem<span className="text-[0.78rem]">.style</span></h2>
+              <h2 className="text-[1.2rem] sm:text-[1.72rem] font-extrabold text-[#252525] dark:text-white uppercase">Nadeem<span className="text-[0.42rem] sm:text-[0.78rem]">.style</span></h2>
             </div>
             <div className="hidden lg:block    ">
               <ul className="flex font-light justify-center items-center gap-12   dark:text-white">
@@ -91,7 +91,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                         {Object.values(headerItem).map((item, index) => (
                           <li
                             key={index}
-                            className="p-1.5  border-b border-gray-300 dark:border-darkblackshadowten hover:bg-gray-300 dark:hover:bg-darkblackshadowten"
+                            className="p-1.5 font-light  border-b border-gray-300 dark:border-darkblackshadowten hover:bg-gray-300 dark:hover:bg-darkblackshadowten"
                           >
                             <a href={`#${item.page}`}>{item.label}</a>
                           </li>

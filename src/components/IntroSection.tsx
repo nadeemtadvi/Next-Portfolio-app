@@ -16,7 +16,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
     <div className="bg-purplelight dark:bg-darkbgcolor">
       {" "}
       <div className="max-w-screen-xl mx-auto">
-        <div className="relative md:grid grid-cols-2 px-4 sm:px-8  py-6 lg:py-20">
+        <div className="relative md:grid grid-cols-2 p-4 sm:px-8  lg:py-20">
           <Image
             src={arrowImg}
             alt="dp"
@@ -26,7 +26,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
           />
           <div className="flex justify-start items-center ">
             <div>
-              <h5 className="text-titletext dark:text-white font-light text-[1.24rem] leading-[30px] sm:leading-[48px] mb-2">
+              <h5 className="text-titletext dark:text-white font-light text-[0.96rem] sm:text-[1.24rem] leading-[30px] sm:leading-[48px] mb-2">
                 {InterSect.title}
                 <span className="text-blackshadow dark:text-white">
                   {" "}
@@ -38,7 +38,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
                   {InterSect.spanwork}
                 </span>
               </h5>
-              <p className=" text-subtext dark:text-white font-light text-[1.24rem] mb-6">
+              <p className=" text-subtext dark:text-white font-light text-[0.96rem] sm:text-[1.24rem] mb-6">
                 {InterSect.subtitle}
               </p>
               <div className="mb-5">

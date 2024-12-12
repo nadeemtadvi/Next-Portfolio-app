@@ -32,86 +32,86 @@ const SkillSection = ({ darkMode }: SkillSectiondataprops) => {
           <div className="Experience-part ">
               <WorkSection darkMode={darkMode} />
             </div>
-            <div className=" Skills-part ml-10">
+            <div className="py-4 sm:p-0 Skills-part sm:ml-10">
               <div className=" text-center">
                 <div className="">
-                  <div className="  grid grid-cols-2 gap-1 text-[#252525] dark:text-white">
-                    <div className="flex items-center gap-6  bg-white p-5 dark:bg-darkytext  ">
-                      <span className="  bg-white text-[1.2rem] dark:text-[#252525] rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                  <div className="whitespace-nowrap   grid grid-cols-2 gap-1 text-[#252525] dark:text-white">
+                    <div className="flex items-center gap-2 sm:gap-6 overflow-hidden  bg-white py-2 sm:p-5 dark:bg-darkytext  ">
+                      <span className="  bg-white text-[0.96rem] sm:text-[1.2rem] dark:text-[#252525] rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center  border-[1.5px]  ">
                         <SiFigma />
                       </span>
-                      <h4 className="text-[1.24rem] font-light">Figma</h4>
+                      <h4 className="text-[0.8rem] sm:text-[1.24rem] font-light">Figma</h4>
                     </div>
-                    <div className="flex items-center gap-6  bg-white p-5 dark:bg-darkytext ">
+                    <div className="flex items-center gap-2 sm:gap-6 overflow-hidden  bg-white py-2 sm:p-5 dark:bg-darkytext ">
 
-                      <span className="    bg-white text-[1.2rem] dark:text-[#252525]  rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                      <span className="    bg-white text-[0.96rem] sm:text-[1.2rem] dark:text-[#252525]  rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center  border-[1.5px]  ">
                         <FaGitAlt />
                       </span>
-                      <h4 className="text-[1.24rem] font-light">Git</h4>
+                      <h4 className="text-[0.8rem] sm:text-[1.24rem] font-light">Git</h4>
 
                     </div>
-                    <div className="flex items-center gap-6  bg-white p-5 dark:bg-darkytext">
+                    <div className="flex items-center gap-2 sm:gap-6 overflow-hidden  bg-white py-2 sm:p-5 dark:bg-darkytext">
 
-                      <span className="    bg-white text-[1.2rem] dark:text-[#252525]  rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                      <span className="    bg-white text-[0.96rem] sm:text-[1.2rem] dark:text-[#252525]  rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center  border-[1.5px]  ">
                         <SiStorybook />
                       </span>
-                      <h4 className="text-[1.24rem] font-light">Storybook</h4>
+                      <h4 className="text-[0.8rem] sm:text-[1.24rem] font-light">Storybook</h4>
 
                     </div>
-                    <div className="flex items-center gap-6  bg-white p-5 dark:bg-darkytext">
+                    <div className="flex items-center gap-2 sm:gap-6 overflow-hidden  bg-white py-2 sm:p-5 dark:bg-darkytext">
 
-                      <span className="    bg-white text-[1.2rem] dark:text-[#252525]  rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                      <span className="    bg-white text-[0.96rem] sm:text-[1.2rem] dark:text-[#252525]  rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center  border-[1.5px]  ">
                         <SiTailwindcss />
                       </span>
-                      <h4 className="text-[1.24rem] font-light">Tailwind Css</h4>
+                      <h4 className="text-[0.8rem] sm:text-[1.24rem] font-light">Tailwind Css</h4>
 
                     </div>
-                    <div className="flex items-center gap-6  bg-white p-5 dark:bg-darkytext">
+                    <div className="flex items-center gap-2 sm:gap-6 overflow-hidden  bg-white py-2 sm:p-5 dark:bg-darkytext">
 
-                      <span className="   bg-white text-[1.2rem] dark:text-[#252525]  rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                      <span className="   bg-white text-[0.96rem] sm:text-[1.2rem] dark:text-[#252525]  rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center  border-[1.5px]  ">
                         <IoLogoJavascript />
                       </span>
-                      <h4 className="text-[1.24rem] font-light">Javascript</h4>
+                      <h4 className="text-[0.8rem] sm:text-[1.24rem] font-light">Javascript</h4>
 
                     </div>
-                    <div className="flex items-center gap-6  bg-white p-5 dark:bg-darkytext">
+                    <div className="flex items-center gap-2 sm:gap-6 overflow-hidden  bg-white py-2 sm:p-5 dark:bg-darkytext">
 
-                      <span className="   bg-white text-[1.2rem] dark:text-[#252525]  rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                      <span className="   bg-white text-[0.96rem] sm:text-[1.2rem] dark:text-[#252525]  rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center  border-[1.5px]  ">
                         <FaReact />
                       </span>
-                      <h4 className="text-[1.24rem] font-light">React</h4>
+                      <h4 className="text-[0.8rem] sm:text-[1.24rem] font-light">React</h4>
 
                     </div>
-                    <div className="flex items-center gap-6  bg-white p-5 dark:bg-darkytext">
+                    <div className="flex items-center gap-2 sm:gap-6 overflow-hidden  bg-white py-2 sm:p-5 dark:bg-darkytext">
 
-                      <span className="    bg-white text-[1.2rem] dark:text-[#252525]  rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                      <span className="    bg-white text-[0.96rem] sm:text-[1.2rem] dark:text-[#252525]  rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center  border-[1.5px]  ">
                         <SiTypescript />
                       </span>
-                      <h4 className="text-[1.24rem] font-light">Typescript</h4>
+                      <h4 className="text-[0.8rem] sm:text-[1.24rem] font-light">Typescript</h4>
 
                     </div>
-                    <div className="flex items-center gap-6  bg-white p-5 dark:bg-darkytext">
+                    <div className="flex items-center gap-2 sm:gap-6 overflow-hidden  bg-white py-2 sm:p-5 dark:bg-darkytext">
 
-                      <span className="    bg-white text-[1.2rem] dark:text-[#252525]  rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                      <span className="    bg-white text-[0.96rem] sm:text-[1.2rem] dark:text-[#252525]  rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center  border-[1.5px]  ">
                         <DiPhotoshop />
                       </span>
-                      <h4 className="text-[1.24rem] font-light">Adobe Photoshop</h4>
+                      <h4 className=" text-[0.8rem] sm:text-[1.24rem] font-light">Adobe Photoshop</h4>
 
                     </div>
-                    <div className="flex items-center gap-6  bg-white p-5 dark:bg-darkytext">
+                    <div className="flex items-center gap-2 sm:gap-6 overflow-hidden  bg-white py-2 sm:p-5 dark:bg-darkytext">
 
-                      <span className="  bg-white text-[1.2rem] dark:text-[#252525]  rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                      <span className="  bg-white text-[0.96rem] sm:text-[1.2rem] dark:text-[#252525]  rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center  border-[1.5px]  ">
                         <DiIllustrator />
                       </span>
-                      <h4 className="text-[1.24rem] font-light">Adobe Illustrator</h4>
+                      <h4 className="text-[0.8rem] sm:text-[1.24rem] font-light">Adobe Illustrator</h4>
 
                     </div>
-                    <div className="flex items-center gap-6  bg-white p-5 dark:bg-darkytext">
+                    <div className="flex items-center gap-2 sm:gap-6 overflow-hidden  bg-white py-2 sm:p-5 dark:bg-darkytext">
 
-                      <span className="    bg-white text-[1.2rem] dark:text-[#252525]  rounded-full w-10 h-10 flex items-center justify-center  border-[1.5px]  ">
+                      <span className="    bg-white text-[0.96rem] sm:text-[1.2rem] dark:text-[#252525]  rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center  border-[1.5px]  ">
                         <SiRedux />
                       </span>
-                      <h4 className="text-[1.24rem] font-light">Redux</h4>
+                      <h4 className="text-[0.8rem] sm:text-[1.24rem] font-light">Redux</h4>
 
                     </div>
                   </div>
