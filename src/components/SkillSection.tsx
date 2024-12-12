@@ -3,7 +3,6 @@ import { Skills } from "../constant/constant";
 import WorkSection from "./WorkSection";
 import { SkillSectiondataprops } from "../models/Interface";
 
-import Image from "next/image";
 import { SiStorybook } from "react-icons/si";
 import { SiFigma } from "react-icons/si";
 import { FaReact } from "react-icons/fa6";
