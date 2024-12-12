@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { headerItem, DwnldButton, images } from "@/src/constant/constant";
-import Image from "next/image";
+import { headerItem, DwnldButton } from "@/src/constant/constant";
 import { HiMenu } from "react-icons/hi";
 import Link from "next/link";
 import { MdDarkMode } from "react-icons/md";

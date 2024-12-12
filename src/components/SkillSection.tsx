@@ -27,20 +27,7 @@ const SkillSection = ({ darkMode }: SkillSectiondataprops) => {
           <div className="relative md:grid grid-cols-2">
           
             <div className=" Skills-part py-10 ">
-            <Image
-              src={FlowerImg}
-              alt="dp"
-              width={120}
-              height={120}
-              className="absolute w-[50px] sm:w-[120px] top-[-44rem] sm:top-[-13rem] bottom-0 left-[14rem] sm:left-[-20rem] right-0 m-auto "
-            />
-            <Image
-              src={springImg}
-              alt="dp"
-              width={120}
-              height={120}
-              className="absolute  top-[4rem] left-[2rem] rotate-[-32deg] "
-            />
+           
               <div className="">
                 <div
                   id="skills"

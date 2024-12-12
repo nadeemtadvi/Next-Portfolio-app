@@ -1,10 +1,8 @@
 import React from "react";
 import { AboutMe } from "../constant/constant";
 import Image from "next/image";
-import imgStatic from "../assets/Images/profilee.png";
 import testimonialImg from "../assets/Images/Shapes/testimonialone.png";
 import testimonialImg2 from "../assets/Images/Shapes/testimonialtwo.png";
-import LightImg from "../assets/Images/Shapes/Light.png";
 import { AboutSectiondataprops } from "../models/Interface";
 
 const AboutSection = ({ darkMode }: AboutSectiondataprops) => {
