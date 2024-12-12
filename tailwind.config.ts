@@ -11,14 +11,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        purplereg:"#A388EE",
+        purplereg:"#fff",
         pinkreg:"#FFB2EF",
         redreg:"#FF7A5C",
         yellowreg:"#F4D738",
         greenreg:"#90EE90",
         skyreg:"#87CEEB",
 
-        purplelight:"#E3DFF2",
+        purplelight:"#e9e9e9",
         pinklight:"#FCDFFF",
         redlight:"#F8D6B3",
         yellowlight:"#FDFD96",

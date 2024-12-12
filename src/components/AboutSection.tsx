@@ -10,7 +10,7 @@ import { AboutSectiondataprops } from "../models/Interface";
 const AboutSection = ({ darkMode }: AboutSectiondataprops) => {
   return (
     <div className="">
-      <div className="overflow-x-hidden whitespace-nowrap bg-purplereg dark:bg-blackshadow border-t-2 border-b-2 border-purplereg dark:border-blackshadow  text-[1.4rem] font-medium text-white dark:text-darktext">
+      <div className="overflow-x-hidden whitespace-nowrap bg-purplereg dark:bg-blackshadow border-t border-b border-redreg dark:  text-[1.4rem] font-medium text-[#252525] dark:text-darktext">
         <div className="moveelement">
           <h4 className="inline-block py-3 px-12"> {AboutMe.title}</h4>
           <h4 className="inline-block py-3 px-12"> {AboutMe.title}</h4>
@@ -21,31 +21,12 @@ const AboutSection = ({ darkMode }: AboutSectiondataprops) => {
           <h4 className="inline-block py-3 px-12"> {AboutMe.title}</h4>
         </div>
       </div>
-      <div className={`${darkMode ? "" : "bg-grid "}`}>
+      <div className={`${darkMode ? "" : " "}`}>
         <div className=" mx-auto max-w-screen-xl  ">
-          <div className="md:grid grid-cols-[200px_auto] lg:grid-cols-[324px_auto] gap-4 lg:gap-10   lg:py-28 px-4 sm:px-8 py-12">
-            <div className=" flex items-center justify-center my-8 md:my-0">
-              <div className="relative w-[280px] md:w-[200px] lg:w-[324px] transform transition-transform duration-300 ease-in-out hover:scale-105">
-                <div className="">
-                  <Image
-                    src={imgStatic}
-                    alt="dp"
-                    width={100}
-                    height={100}
-                    className="  !w-full !h-full !object-fill"
-                  />
-                </div>
-                <Image
-                  src={LightImg}
-                  alt="dp"
-                  width={65}
-                  height={65}
-                  className="absolute  top-[-3rem]  left-[-1rem] "
-                />
-              </div>
-            </div>
+          <div className="max-w-screen-lg mx-auto lg:py-28  py-12">
+           
             <div className="relative flex items-center justify-center mx-4 md:mx-10 lg:mx-16">
-              <p className="bg-yellowlight border  hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)]  border-blackshadow text-[1.04rem] p-5 rounded-[6px] text-subtext dark:text-darkytext mb-2 sm:mb-4 text-justify">
+              <p className=" border  shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)]   text-[1.4rem] p-12  text-subtext dark:text-darkytext mb-2 sm:mb-4 text-justify">
                 {AboutMe.subtitle}
               </p>
               <div className="">

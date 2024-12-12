@@ -42,7 +42,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
                 {InterSect.subtitle}
               </p>
               <div className="mb-5">
-                <button className="bg-redreg rounded-[6px] border border-blackshadow  hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] text-white font-medium dark:text-darkbgcolor  p-[5px_24px_6px] ">
+                <button className="bg-redreg  border   shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] text-[#252525] font-medium dark:text-darkbgcolor  p-[5px_24px_6px] ">
                   <a href="#contact">{InterSect.contact}</a>
                 </button>
               </div>
@@ -52,7 +52,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
             <div className="mr-3 sm:mr-6 my-10 md:m0-0 lg:mr-0 md:h-[400px] flex justify-end lg:justify-center items-center">
               <div className="  flex justify-center items-center">
                 <div>
-                  <div className="relative h-[220px] sm:h-[260px] w-[170px] sm:w-[210px] img-container bg-purplereg flex items-center justify-start border border-blackshadow hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)]">
+                  <div className="relative h-[220px] sm:h-[260px] w-[170px] sm:w-[210px] img-container bg-purplereg flex items-center justify-start border  shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)]">
                     <Image
                       src={darkMode ? userinfo.picture2 : userinfo.picture}
                       alt="dp"
@@ -60,7 +60,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
                       height={240}
                       className="absolute bottom-0 left-[-25px]   w-full"
                     />
-                    <span className="lapbox absolute top-0 left-[-6.5rem] bg-purplereg  text-[2.64rem]  w-16 h-16 flex items-center justify-center  border border-blackshadow hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)]">
+                    <span className="lapbox absolute top-0 left-[-6.5rem] bg-purplereg  text-[2.64rem]  w-16 h-16 flex items-center justify-center  border  shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)]">
                       <FaLaptopCode />
                     </span>
                   </div>

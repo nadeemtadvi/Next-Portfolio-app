@@ -44,9 +44,9 @@ const SkillSection = ({ darkMode }: SkillSectiondataprops) => {
               <div className="">
                 <div
                   id="skills"
-                  className="dark:text-darkbgcolor  text-[2rem]  mb-12 text-white  text-center  bg-[]"
+                  className="dark:text-darkbgcolor  text-[2rem]  mb-12 text-[#252525]  text-center  bg-[]"
                 >
-                  <h6 className="rotate-[14deg] inline-block rounded-[6px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] p-[5px_20px_6px]  font-medium border border-blackshadow  bg-purplereg  dark:-darkblackshadow">
+                  <h6 className="rotate-[14deg] inline-block  shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] p-[5px_20px_6px]  font-medium border   bg-purplereg  dark:-darkblackshadow">
                     {Skills.skill}
                     <Image
                       src={pinImage}
@@ -67,36 +67,36 @@ const SkillSection = ({ darkMode }: SkillSectiondataprops) => {
                     height={300}
                     className="inline-block"
                   />
-                  <div className="icon-container text-white">
-                    <span className="absolute bottom-[5rem] left-[3.85rem] sm:left-[14rem] bg-[#9723C9]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-blackshadow shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                  <div className="icon-container text-[#252525]">
+                    <span className="absolute bottom-[5rem] left-[3.85rem] sm:left-[14rem] bg-[#9723C9]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
                       <SiRedux />
                     </span>
-                    <span className="absolute bottom-[5.2rem] left-[9.8rem] bg-[#FF00F5]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-blackshadow shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                    <span className="absolute bottom-[5.2rem] left-[9.8rem] bg-[#FF00F5]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
                       <SiFigma />
                     </span>
-                    <span className="absolute bottom-[8.15rem] left-[7.4rem] bg-[#FF4911]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-blackshadow shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                    <span className="absolute bottom-[8.15rem] left-[7.4rem] bg-[#FF4911]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
                       <FaGitAlt />
                     </span>
 
-                    <span className="absolute bottom-[2rem] right-[7.6rem] bg-[#FF00F5]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-blackshadow shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                    <span className="absolute bottom-[2rem] right-[7.6rem] bg-[#FF00F5]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
                       <SiStorybook />
                     </span>
-                    <span className="absolute bottom-[2rem] left-[4.6rem] sm:left-[7.3rem] bg-[#90A7EB]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-blackshadow shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                    <span className="absolute bottom-[2rem] left-[4.6rem] sm:left-[7.3rem] bg-[#90A7EB]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
                       <SiTailwindcss />
                     </span>
-                    <span className="absolute bottom-[2rem] left-[10rem] sm:left-[10.5rem] bg-[#ff9728]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-blackshadow shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                    <span className="absolute bottom-[2rem] left-[10rem] sm:left-[10.5rem] bg-[#ff9728]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
                       <IoLogoJavascript />
                     </span>
-                    <span className="absolute bottom-[5rem] left-[6.5rem] bg-[#90A7EB]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-blackshadow shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                    <span className="absolute bottom-[5rem] left-[6.5rem] bg-[#90A7EB]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
                       <FaReact />
                     </span>
-                    <span className="absolute bottom-[7.98rem] left-[4rem] sm:left-[12rem] bg-[#90A7EB]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-blackshadow shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                    <span className="absolute bottom-[7.98rem] left-[4rem] sm:left-[12rem] bg-[#90A7EB]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
                       <SiTypescript />
                     </span>
-                    <span className="absolute top-0 left-[14rem] bg-[#90A7EB]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-blackshadow shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                    <span className="absolute top-0 left-[14rem] bg-[#90A7EB]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
                       <DiPhotoshop />
                     </span>
-                    <span className="absolute top-[3rem] left-[9rem] sm:left-[10rem] bg-[#ff9728]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px] border-blackshadow shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
+                    <span className="absolute top-[3rem] left-[9rem] sm:left-[10rem] bg-[#ff9728]  text-[2rem] rounded-full w-14 h-14 flex items-center justify-center  border-[1.5px]  shadow-[4.5px_4.5px_0px_0px_rgba(0,0,0,1)]">
                       <DiIllustrator />
                     </span>
                     <div className="jar-overlay"></div>
