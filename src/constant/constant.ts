@@ -116,23 +116,23 @@ export const Project: ProjectSectionProps = {
   projectObject: [
     {
       image: shamidarbar,
-      Link: "https://github.com/nadeemtadvi/Next-Portfolio-app",
-      LiveLink: "https://imdeveloper-app.netlify.app/",
+      Link: "https://github.com/nadeemtadvi/Foodie-Cafe-App",
+      LiveLink: "https://shamidarbar.netlify.app/",
       Github: FaGithub,
       title: "Shami Darbar",
-      button: ["HTML", "CSS", "TypeScript", "React", "Nextjs", "Taiwind"],
+      button: ["HTML", "CSS","JavaScript", "Tailwind"],
       subtitle:
-      "A sleek, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Designed to showcase projects, skills, and accomplishments in a clean and modern layout. This project is focused on performance, scalability, and a seamless user experience." , 
+      "Foodie-Cafe-App is a modern and responsive landing page designed to captivate users and provide a seamless introduction to the Foodie-Resto app. Built using HTML, Tailwind CSS, and JavaScript, this project emphasizes clean design, fast loading speeds, and user engagement." , 
     },
     {
       image: wellspring,
       Link: "https://github.com/nadeemtadvi/blogapp-frontend-vite",
       LiveLink: "https://wellspringblog.netlify.app/",
       Github: FaGithub,
-      title: "Cryptopedia",
-      button: ["HTML", "CSS", "JavaScript", "React", "Taiwind","Mongodb", "expressjs", ],
+      title: "WellSpring",
+      button: ["HTML", "CSS", "JavaScript", "React", "Tailwind","Mongodb", "expressjs", ],
       subtitle:
-      "A fully responsive blogging website featuring both frontend and backend development. Built to offer a smooth and engaging user experience on all devices. Includes robust functionality for content management and user interactions."  
+      "**Wellspring** is a modern blogging platform with advanced features like content generation powered by AI. This application provides a seamless user experience with robust backend support and an elegant frontend design."  
     },
     {
       image: cryptopedia,
@@ -140,9 +140,9 @@ export const Project: ProjectSectionProps = {
       LiveLink: "https://cryptopedia-update.netlify.app/",
       Github: FaGithub,
       title: "Cryptopedia",
-      button: ["HTML", "CSS", "JavaScript", "React", "Taiwind","Mongodb", "expressjs", ],
+      button: ["HTML", "CSS", "JavaScript", "React", "Tailwind","Mongodb", "expressjs", ],
       subtitle:
-      "A fully responsive blogging website featuring both frontend and backend development. Built to offer a smooth and engaging user experience on all devices. Includes robust functionality for content management and user interactions."  
+      "A complete blogging website built with a MERN stack and styled using Tailwind CSS. Features include post creation, editing, and deletion, along with user authentication and dynamic content rendering. Backend and frontend are seamlessly integrated, providing a smooth user experience. "  
     },
     {
       image: shanti,
@@ -150,7 +150,7 @@ export const Project: ProjectSectionProps = {
       LiveLink: "https://shantifurniture.netlify.app/",
       Github: FaGithub,
       title: "Shanti Furniture",
-      button: ["HTML", "CSS", "JavaScript", "React", "Taiwind", ],
+      button: ["HTML", "CSS", "JavaScript", "React", "Tailwind", ],
       subtitle:
       "Furniture E-commerce App - A responsive e-commerce application for furniture items, built with React and Tailwind CSS. This app provides a modern and clean user interface for browsing and purchasing furniture, designed to be fully responsive across all devices."  
     },
