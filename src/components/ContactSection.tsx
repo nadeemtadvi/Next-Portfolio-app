@@ -65,10 +65,10 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <div className="lg:pl-2 ">
-                        <h5 className="dark:text-darktext font-light text-blurtext text-[1.04rem] mb-1">
+                        <h5 className="dark:text-darktext font-light text-blurtext text-[0.96rem] mb-1">
                           {item.title}
                         </h5>
-                        <h5 className="dark:text-darkhtext text-titletext font-medium text-[1.04rem] ">
+                        <h5 className="dark:text-darkhtext text-titletext font-light text-[1.04rem] ">
                           {item.subtitle}
                         </h5>
                       </div>

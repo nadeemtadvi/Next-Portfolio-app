@@ -39,9 +39,9 @@ const ProjectSection = () => {
                     />
                     <div className="bg-purplereg dark:bg-darkytext  p-5  ">
                       <div className="">
-                        <div className="text-[#272727] dark:text-white   font-medium text-[0.95rem] sm:text-[1.2rem] md:text-[1.6rem] ">
+                        <div className="text-[#272727] dark:text-white   font-medium text-[1.2rem] md:text-[1.6rem] ">
                           <h4 className="">{item.title}</h4>
-                          <p className="font-light text-[1rem] mt-4 mb-8">{item.subtitle}</p>
+                          <p className="font-light text-[0.96rem] sm:text-[1rem] mt-4 mb-8">{item.subtitle}</p>
                          
                         </div>
                         <div className="flex items-center gap-2 sm:gap-6 pt-6 border-t">
