@@ -42,7 +42,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
                 {InterSect.subtitle}
               </p>
               <div className="mb-5">
-                <button className="bg-redreg      text-[#252525] font-light dark:text-darkbgcolor  p-[5px_24px_6px] ">
+                <button className="bg-redreg  text-[0.96rem] sm:text-[1.24rem]    text-white font-light dark:text-darkbgcolor  p-[5px_24px_6px] ">
                   <a href="#contact">{InterSect.contact}</a>
                 </button>
               </div>

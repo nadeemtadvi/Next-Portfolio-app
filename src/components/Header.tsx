@@ -41,7 +41,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                   <li
                     key={index}
                     onClick={() => setActive(index)}
-                    className={`${
+                    className={`text-[0.96rem] sm:text-[1.24rem] ${
                       active === index ? "active" : ""
                     } hover:text-blackshadow hover:bg-blackshadowten dark:hover:text-darkblackshadow dark:hover:bg-darkblackshadowten p-[2px_10px_3px]  `}
                   >
@@ -62,7 +62,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
               </div>
               <div className="grow text-center mx-5 lg:mx-0 flex justify-center  items-center h-full">
                 {" "}
-                <button className=" inline-block bg-redreg text-[#252525] font-light   dark:border-darkblackshadow dark:text-darkblackshadow  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:hover:bg-darkblackshadowten hover:bg-blackshadowten">
+                <button className="text-[0.96rem] sm:text-[1.24rem] inline-block bg-redreg text-white font-light   dark:border-darkblackshadow dark:text-darkblackshadow  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:hover:bg-darkblackshadowten hover:bg-blackshadowten">
                   <Link href="/Nadeem_CV.pdf" download="Nadeem_CV.pdf" passHref>
                     <span className="hidden md:block">{DwnldButton.btn}</span>
                     <span className="md:hidden block">

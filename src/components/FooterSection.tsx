@@ -10,10 +10,10 @@ const FooterSection = () => {
   return (
     <div className="bg-white dark:bg-darkytext  footer  font-light">
       <div className="p-5 flex justify-between items-center">
-        <h4 className="text-[0.8rem] text-[#252525] dark:text-white">
+        <h4 className="text-[0.9rem] sm:text-[1rem] text-[#252525] dark:text-white">
           {Footer.copyright}
         </h4>
-        <h4 className="text-[0.8rem] text-[#252525] dark:text-white">
+        <h4 className="text-[0.9rem] sm:text-[1rem] text-[#252525] dark:text-white">
           {Footer.dev}
         </h4>
         <div className="flex-wrap flex justify-between items-center gap-1 sm:gap-5 text-[#252525] dark:text-white text-[24px]">

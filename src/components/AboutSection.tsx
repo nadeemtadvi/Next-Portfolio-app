@@ -8,7 +8,7 @@ import { AboutSectiondataprops } from "../models/Interface";
 const AboutSection = ({ darkMode }: AboutSectiondataprops) => {
   return (
     <div className="">
-      <div className="overflow-x-hidden whitespace-nowrap bg-purplereg dark:bg-blackshadow border-t border-b border-redreg dark:  text-[1.4rem] font-normal text-[#252525] dark:text-white">
+      <div className="overflow-x-hidden whitespace-nowrap bg-purplereg dark:bg-blackshadow border-t border-b border-redreg text-[0.96rem] sm:text-[1.24rem] font-normal text-[#252525] dark:text-white">
         <div className="moveelement">
           <h4 className="inline-block py-3 px-12"> {AboutMe.title}</h4>
           <h4 className="inline-block py-3 px-12"> {AboutMe.title}</h4>
@@ -24,7 +24,7 @@ const AboutSection = ({ darkMode }: AboutSectiondataprops) => {
           <div className="max-w-screen-lg mx-auto lg:py-28  py-12">
            
             <div className="relative flex items-center justify-center mx-4 md:mx-10 lg:mx-16">
-              <p className=" border font-light  dark:bg-darkytext    text-[0.96rem] sm:text-[1.4rem] p-4 sm:p-12  text-subtext dark:text-white mb-2 sm:mb-4 text-justify">
+              <p className=" border font-light  dark:bg-darkytext    text-[0.96rem] sm:text-[1.24rem] p-4 sm:p-12  text-subtext dark:text-white mb-2 sm:mb-4 text-justify">
                 {AboutMe.subtitle}
               </p>
               <div className="">

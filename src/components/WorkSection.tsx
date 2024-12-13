@@ -22,7 +22,7 @@ const WorkSection = ({ darkMode }: WorkSectiondataprops) => {
             <div className="">
               <h4 className="text-[1.24rem] sm:text-[1.82rem] leading-none text-[#272727] dark:text-white font-medium mb-3 ">
                 {Works.title}<br/>
-                <span className="text-[0.9rem] sm:text-[1rem] italic text-titletext dark:text-white font-normal">
+                <span className="text-[0.9rem] sm:text-[1rem]  text-titletext dark:text-white font-normal">
                   {" "}
                   ({Works.startDate} - {Works.endDate})
                 </span>
