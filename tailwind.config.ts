@@ -11,6 +11,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+
+          primaryColor:"#434343",
+          secondaryColor:"#ffffff",
+          layoutColor:"#e9e9e9",
+          buttonColor:"#ff7a5c",
+          lightColor:"#6b6b6b",
+          lightliteColor:"#959595",
+        
+
+
+
+
+
         purplereg:"#fff",
         pinkreg:"#FFB2EF",
         redreg:"#FF7A5C",

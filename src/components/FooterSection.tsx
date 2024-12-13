@@ -8,15 +8,15 @@ import { FaLinkedin } from "react-icons/fa";
 
 const FooterSection = () => {
   return (
-    <div className="bg-white dark:bg-darkytext  footer  font-light">
+    <div className="bg-secondaryColor dark:bg-darkytext  footer  font-light">
       <div className="p-5 flex justify-between items-center">
-        <h4 className="text-[0.9rem] sm:text-[1rem] text-[#252525] dark:text-white">
+        <h4 className="text-[0.9rem] sm:text-[1rem] text-primaryColor dark:text-secondaryColor">
           {Footer.copyright}
         </h4>
-        <h4 className="text-[0.9rem] sm:text-[1rem] text-[#252525] dark:text-white">
+        <h4 className="text-[0.9rem] sm:text-[1rem] text-primaryColor dark:text-secondaryColor">
           {Footer.dev}
         </h4>
-        <div className="flex-wrap flex justify-between items-center gap-1 sm:gap-5 text-[#252525] dark:text-white text-[24px]">
+        <div className="flex-wrap flex justify-between items-center gap-1 sm:gap-5 text-primaryColor dark:text-secondaryColor text-[24px]">
           <FaSquareInstagram />
           <FaSquareWhatsapp />
           <Link href="https://github.com/nadeemtadvi" target="_blank">
