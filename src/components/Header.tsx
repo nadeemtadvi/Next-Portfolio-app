@@ -33,7 +33,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
           {" "}
           <div className="h-[75px] flex justify-between  items-center ">
             <div className="px-2 text-center  h-full  flex justify-center  items-center">
-              <h2 className="text-[1.2rem] sm:text-[1.72rem] font-extrabold text-primaryColor dark:text-secondaryColor uppercase">
+              <h2 className="text-[1.2rem] sm:text-[1.72rem] font-bold text-primaryColor dark:text-secondaryColor uppercase">
                 Nadeem
                 <span className="text-[0.42rem] sm:text-[0.78rem]">.style</span>
               </h2>
@@ -44,7 +44,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                   <li
                     key={index}
                     onClick={() => setActive(index)}
-                    className={`text-[15px] sm:text-[20px] ${
+                    className={`text-[18px] sm:text-[20px] ${
                       active === index ? "active" : ""
                     } hover:text-primaryColor hover:bg-primaryColorten dark:hover:text-darkprimaryColor dark:hover:bg-darkprimaryColorten p-[2px_10px_3px]  `}
                   >
@@ -63,7 +63,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
               </div>
               <div className=" text-center  flex justify-center  items-center h-full">
                 {" "}
-                <button className="mx-2 text-[15px] sm:text-[20px] inline-block bg-buttonColor text-secondaryColor font-light   dark:border-darkprimaryColor dark:text-darkprimaryColor  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:hover:bg-darkprimaryColorten hover:bg-primaryColorten">
+                <button className="mx-2 text-[18px] sm:text-[20px] inline-block bg-buttonColor text-secondaryColor font-light   dark:border-darkprimaryColor dark:text-darkprimaryColor  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:hover:bg-darkprimaryColorten hover:bg-primaryColorten">
                   <Link href="/Nadeem_CV.pdf" download="Nadeem_CV.pdf" passHref>
                     <span className="hidden md:block">{DwnldButton.btn}</span>
                     <span className="md:hidden block">

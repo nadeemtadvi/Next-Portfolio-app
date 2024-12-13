@@ -26,7 +26,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
           />
           <div className="flex justify-start items-center ">
             <div>
-              <h5 className="text-lightColor dark:text-secondaryColor font-light text-[15px] sm:text-[20px] leading-[30px] sm:leading-[48px] mb-2">
+              <h5 className="text-lightColor dark:text-secondaryColor font-light text-[18px] sm:text-[20px] leading-[30px] sm:leading-[48px] mb-2">
                 {InterSect.title}
                 <span className="text-lightColor dark:text-secondaryColor">
                   {" "}
@@ -38,11 +38,11 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
                   {InterSect.spanwork}
                 </span>
               </h5>
-              <p className=" text-lightColor dark:text-secondaryColor font-light text-[15px] sm:text-[20px] mb-6">
+              <p className=" text-lightColor dark:text-secondaryColor font-light text-[18px] sm:text-[20px] mb-6">
                 {InterSect.subtitle}
               </p>
               <div className="mb-5">
-                <button className="bg-buttonColor  text-[15px] sm:text-[20px]    text-secondaryColor font-light dark:text-darkbgcolor  p-[5px_24px_6px] ">
+                <button className="bg-buttonColor  text-[18px] sm:text-[20px]    text-secondaryColor font-light dark:text-darkbgcolor  p-[5px_24px_6px] ">
                   <a href="#contact">{InterSect.contact}</a>
                 </button>
               </div>
@@ -65,7 +65,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
                     </span>
                   </div>
                   <div className="mt-4 md:mt-0 md:absolute top-0 right-0 flex items-center bottom-0">
-                    <div className="font-light text-[0.8rem] md:vertical-rl flex items-center gap-2 text-primaryColor dark:text-secondaryColor">
+                    <div className="font-light text-[0.8rem] writing-mode md:vertical-rl flex items-center gap-2 text-primaryColor dark:text-secondaryColor">
                       {InterSect.follow}
                       <div className="hidden md:block w-[1px] h-14 bg-primaryColor dark:bg-darktext"></div>
                       <div className="text-[22px] flex gap-1">

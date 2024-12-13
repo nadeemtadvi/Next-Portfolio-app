@@ -55,7 +55,7 @@ const SkillSection = ({ darkMode }: SkillSectiondataprops) => {
                         <span className="  bg-secondaryColor text-[0.96rem] text-primaryColor sm:text-[1.2rem] dark:text-primaryColor rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center  border-[1.5px]  ">
                           {item.icon && <item.icon />}
                         </span>
-                        <h4 className="text-[15px] text-start ml-2 sm:text-[20px] font-light">
+                        <h4 className="text-[18px] text-start ml-2 sm:text-[20px] font-light">
                           {item.title}
                         </h4>
                       </div>

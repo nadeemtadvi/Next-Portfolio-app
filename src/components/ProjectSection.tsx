@@ -37,20 +37,20 @@ const ProjectSection = () => {
                       <div className="">
                         <div className="text-primaryColor dark:text-secondaryColor   font-medium text-[1.2rem] md:text-[1.6rem] ">
                           <h4 className="">{item.title}</h4>
-                          <p className="font-light text-lightColor text-[15px] sm:text-[20px] mt-4 mb-8 text-ellipsis">
+                          <p className="font-light text-lightColor text-[18px] sm:text-[20px] mt-4 mb-8 text-ellipsis">
                             {item.subtitle}
                           </p>
                         </div>
                         <div className="flex items-center gap-2 lg:gap-6 pt-6 border-t">
                           <Link href={item.LiveLink} target="_blank">
-                            <div className="flex gap-3 items-center justify-center h-[38px] px-2 sm:px-4 bg-gradient-to-r from-primaryColor to-gray-700 text-secondaryColor rounded-full dark:text-secondaryColor   font-light  text-[15px] sm:text-[20px]">
+                            <div className="flex gap-3 items-center justify-center h-[38px] px-2 sm:px-4 bg-gradient-to-r from-primaryColor to-gray-700 text-secondaryColor rounded-full dark:text-secondaryColor   font-light  text-[18px] sm:text-[20px]">
                               <CiGlobe className="text-[1.5rem]" />
                               <span>Website</span>
                             </div>
                           </Link>
                           <div className="self-center  ">
                             <Link href={item.Link} target="_blank">
-                              <h4 className="dark:text-primaryColor text-primaryColor font-light bg-[#fafafa] border-2 border-[#e4e4e7] rounded-full text-[15px] sm:text-[20px] flex gap-3 items-center justify-center h-[38px]  px-2 sm:px-4">
+                              <h4 className="dark:text-primaryColor text-primaryColor font-light bg-[#fafafa] border-2 border-[#e4e4e7] rounded-full text-[18px] sm:text-[20px] flex gap-3 items-center justify-center h-[38px]  px-2 sm:px-4">
                                 {item.Github && <item.Github />}{" "}
                                 <span>Repository</span>
                               </h4>

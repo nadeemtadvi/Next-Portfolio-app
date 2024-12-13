@@ -4,40 +4,29 @@
 
 @font-face {
   font-family: "Modern";
-  src: url("./fonts/Raleway-Light.ttf") format("truetype");
+  src: url("./fonts/Apercu Pro Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Modern";
-  src: url("./fonts/PublicSans-Regular.ttf") format("truetype");
+  src: url("./fonts/Apercu Pro Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Modern";
-  src: url("./fonts/PublicSans-Medium.ttf") format("truetype");
+  src: url("./fonts/Apercu Pro Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Modern";
-  src: url("./fonts/PublicSans-SemiBold.ttf") format("truetype");
+  src: url("./fonts/Apercu Pro Bold.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
-@font-face {
-  font-family: "Modern";
-  src: url("./fonts/PublicSans-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Modern";
-  src: url("./fonts/Raleway-ExtraBold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
+
 
 body,
 html {
@@ -166,4 +155,12 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.writing-mode{
+  writing-mode: vertical-lr;
+}
+@media screen and (max-width: 767px) {
+  .writing-mode{
+    writing-mode: horizontal-tb;
+  }
 }
