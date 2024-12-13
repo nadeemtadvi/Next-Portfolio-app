@@ -164,3 +164,13 @@ body::-webkit-scrollbar-thumb {
     writing-mode: horizontal-tb;
   }
 }
+
+.boxShadow {
+  box-shadow: 0 0 0 2px #ff7a5c, 8px 8px 0 0 #ff7a5c;
+}
+.btnShadow{
+  box-shadow: rgba(255, 122, 92, 1) 5px 5px, rgba(255, 122, 92, 0.3) 10px 10px, rgba(255, 122, 92, 0.2) 15px 15px, rgba(255, 122, 92, 0.1) 20px 20px, rgba(255, 122, 92, 0.05) 25px 25px;
+}
+.dashedBorder {
+  border: 1px dashed #ff7a5c;
+}

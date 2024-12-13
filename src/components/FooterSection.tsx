@@ -8,7 +8,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const FooterSection = () => {
   return (
-    <div className="bg-secondaryColor dark:bg-darkytext  footer  font-light">
+    <div className="bg-secondaryColor dark:bg-darkytext  footer  font-light pt-8">
       <div className="p-5 flex justify-between items-center">
         <h4 className="text-[0.9rem] sm:text-[1rem] text-primaryColor dark:text-secondaryColor">
           {Footer.copyright}

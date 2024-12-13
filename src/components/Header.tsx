@@ -63,7 +63,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
               </div>
               <div className=" text-center  flex justify-center  items-center h-full">
                 {" "}
-                <button className="mx-2 text-[18px] sm:text-[20px] inline-block bg-buttonColor text-secondaryColor font-light   dark:border-darkprimaryColor dark:text-darkprimaryColor  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:hover:bg-darkprimaryColorten hover:bg-primaryColorten">
+                <button className="boxShadow border-2 border-white mx-2 text-[18px] sm:text-[20px] inline-block bg-buttonColor text-secondaryColor font-light   dark:border-darkprimaryColor dark:text-darkprimaryColor  p-[1px_10px_2px] sm:p-[5px_24px_6px] dark:hover:bg-darkprimaryColorten hover:bg-primaryColorten">
                   <Link href="/Nadeem_CV.pdf" download="Nadeem_CV.pdf" passHref>
                     <span className="hidden md:block">{DwnldButton.btn}</span>
                     <span className="md:hidden block">
@@ -91,11 +91,11 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
                         ></div>
 
                         <div className="absolute z-10 top-[45px] bg-secondaryColor dark:bg-darksectionColor dark:text-primaryColor left-[-120px]">
-                          <ul className="shadow-md min-w-[150px]  !pb-0 ">
+                          <ul className="boxShadow min-w-[150px]  !pb-0 ">
                             {Object.values(headerItem).map((item, index) => (
                               <li
                                 key={index}
-                                className="p-1.5 font-light  border-b border-gray-300 dark:border-darkprimaryColorten hover:bg-gray-300 dark:hover:bg-darkprimaryColorten"
+                                className="p-1.5 font-light text-primaryColor  border-b border-buttonColor dark:border-darkprimaryColorten hover:bg-gray-300 dark:hover:bg-darkprimaryColorten"
                               >
                                 <a href={`#${item.page}`}>{item.label}</a>
                               </li>

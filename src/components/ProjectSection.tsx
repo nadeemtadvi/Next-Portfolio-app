@@ -14,7 +14,7 @@ const ProjectSection = () => {
               id="skills"
               className="dark:text-darkbgcolor  text-primaryColor text-[2rem]   flex justify-center items-center  text-center  "
             >
-              <div className="relative  w-[240px] bg-secondaryColor   text-[1.8rem]  font-light border border-gray-200  dark:-darkprimaryColor">
+              <div className="relative  w-[240px] bg-secondaryColor   text-[1.8rem]  font-light border border-buttonColor  dark:-darkprimaryColor">
                 {Project.project}
               </div>
             </div>
@@ -22,7 +22,7 @@ const ProjectSection = () => {
 
           <div className="relative md:grid grid-cols-2 mx-auto gap-x-3 lg:gap-x-6 gap-y-8 lg:gap-y-12 sm:px-8 px-4  pt-16 lg:pt-24">
             {Project.projectObject.map((item, index) => (
-              <div key={index} className="mb-12 md:mb-0">
+              <div key={index} className="mb-12 md:mb-0 boxShadow">
                 {/* Image Section */}
                 <div className={` border  m-0 lg:m-0 w-full  `}>
                   <div className="">

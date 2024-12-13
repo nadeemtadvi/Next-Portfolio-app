@@ -42,7 +42,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
                 {InterSect.subtitle}
               </p>
               <div className="mb-5">
-                <button className="bg-buttonColor  text-[18px] sm:text-[20px]    text-secondaryColor font-light dark:text-darkbgcolor  p-[5px_24px_6px] ">
+                <button className="boxShadow border-2 border-white bg-buttonColor  text-[18px] sm:text-[20px]    text-secondaryColor font-light dark:text-darkbgcolor  p-[5px_24px_6px] ">
                   <a href="#contact">{InterSect.contact}</a>
                 </button>
               </div>
@@ -52,7 +52,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
             <div className=" sm:mr-6  md:m0-0 lg:mr-0 md:h-[400px] flex justify-end lg:justify-center items-center">
               <div className="  flex justify-center items-center">
                 <div>
-                  <div className="relative h-[220px] sm:h-[260px]  sm:w-[210px] img-container bg-purplereg flex items-center justify-start border  ">
+                  <div className="boxShadow relative h-[220px] sm:h-[260px]  sm:w-[210px] img-container bg-purplereg flex items-center justify-start border  ">
                     <Image
                       src={darkMode ? userinfo.picture2 : userinfo.picture}
                       alt="dp"
@@ -60,7 +60,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
                       height={240}
                       className="absolute bottom-0 left-[-25px]   w-full"
                     />
-                    <span className="lapbox text-primaryColor absolute top-0 left-[-6.5rem] bg-purplereg  text-[2.64rem]  w-16 h-16 flex items-center justify-center  border  ">
+                    <span className="boxShadow lapbox text-primaryColor absolute top-0 left-[-6.5rem] bg-purplereg  text-[2.64rem]  w-16 h-16 flex items-center justify-center  border  ">
                       <FaLaptopCode />
                     </span>
                   </div>

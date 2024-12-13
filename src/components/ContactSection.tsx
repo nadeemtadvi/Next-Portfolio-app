@@ -33,15 +33,15 @@ const ContactSection = () => {
             </p>
           )}
           <div className="">
-            <h4
+            <div
               id="skills"
               className="dark:text-darkbgcolor  text-[2rem] pb-8 lg:pb-12 text-primaryColor  text-center  bg-[]"
             >
-              <h6 className="relative  inline-block w-[240px]  text-[1.8rem]  font-light border border-gray-200 bg-secondaryColor  dark:-darkdarkytext">
+              <h6 className="relative  inline-block w-[240px]  text-[1.8rem]  font-light border border-buttonColor bg-secondaryColor  dark:-darkdarkytext">
                 {Contact.contact}
                
               </h6>
-            </h4>
+            </div>
           </div>
           <div className=" lg:grid sm:grid-cols-[40%_auto] pt-8 lg:pt-12 ">
             <div className="relative">
@@ -59,7 +59,7 @@ const ContactSection = () => {
                     className="grid grid-cols-[60px_auto] lg:grid-cols-[50px_auto] items-center mb-3 sm:mb-8"
                   >
                     <div>
-                      <div className=" border   w-10 h-10 bg-purplereg text-primaryColor dark:bg-darkdarkytext dark:text-darkytext flex justify-center items-center text-[20px]">
+                      <div className="boxShadow border   w-10 h-10 bg-purplereg text-primaryColor dark:bg-darkdarkytext dark:text-darkytext flex justify-center items-center text-[20px]">
                         {item.icon && <item.icon />}
                       </div>
                     </div>
@@ -85,7 +85,7 @@ const ContactSection = () => {
                       type="name"
                       id="name"
                       name="name"
-                      className=" bg-secondaryColor pl-0  placeholder:text-lightliteColor   border-b  bg-transparent outline-none  text-primaryColor dark:text-gray-200 text-[18px] sm:text-[20px] font-light  dark:bg-darkytext dark:focus:ring-darkdarkytext dark:focus:border-darkdarkytext focus:ring-darkytext focus: block w-full p-2.5"
+                      className=" bg-secondaryColor pl-0  placeholder:text-lightliteColor   border-b border-buttonColor  bg-transparent outline-none  text-primaryColor dark:text-gray-200 text-[18px] sm:text-[20px] font-light  dark:bg-darkytext dark:focus:ring-darkdarkytext dark:focus:border-darkdarkytext focus:ring-darkytext focus: block w-full p-2.5"
                       placeholder={Contact.fullname}
                       required
                     />
@@ -100,7 +100,7 @@ const ContactSection = () => {
                       type="email"
                       id="email"
                       name="email"
-                      className=" bg-secondaryColor pl-0  placeholder:text-lightliteColor  dark:bg-darkytext bg-transparent dark:text-gray-200 dark:focus:ring-darkdarkytext dark:focus:border-darkdarkytext border-b  outline-none text-primaryColor text-[18px] sm:text-[20px] font-light  focus:ring-darkytext focus: block w-full p-2.5"
+                      className=" bg-secondaryColor pl-0  placeholder:text-lightliteColor  dark:bg-darkytext bg-transparent dark:text-gray-200 dark:focus:ring-darkdarkytext dark:focus:border-darkdarkytext border-b border-buttonColor outline-none text-primaryColor text-[18px] sm:text-[20px] font-light  focus:ring-darkytext focus: block w-full p-2.5"
                       placeholder={Contact.email}
                       required
                     />
@@ -116,7 +116,7 @@ const ContactSection = () => {
                       type="tel"
                       id="tel"
                       name="tel"
-                      className=" bg-secondaryColor pl-0  placeholder:text-lightliteColor  dark:bg-darkytext bg-transparent dark:text-gray-200 dark:focus:ring-darkdarkytext dark:focus:border-darkdarkytext border-b  outline-none text-primaryColor text-[18px] sm:text-[20px] font-light  focus:ring-darkytext focus: block w-full p-2.5"
+                      className=" bg-secondaryColor pl-0  placeholder:text-lightliteColor  dark:bg-darkytext bg-transparent dark:text-gray-200 dark:focus:ring-darkdarkytext dark:focus:border-darkdarkytext border-b border-buttonColor outline-none text-primaryColor text-[18px] sm:text-[20px] font-light  focus:ring-darkytext focus: block w-full p-2.5"
                       placeholder={Contact.phone}
                       required
                     />
@@ -132,7 +132,7 @@ const ContactSection = () => {
                     id="message"
                     name="message"
                     rows={4}
-                    className="placeholder:text-lightliteColor  dark:bg-darkytext dark:focus:ring-darkdarkytext dark:text-gray-200 dark:focus:border-darkdarkytext block pl-0 p-2.5 w-full text-[18px] sm:text-[20px] font-light outline-none text-primaryColor   border-b  focus:ring-darkytext focus:"
+                    className="placeholder:text-lightliteColor  dark:bg-darkytext dark:focus:ring-darkdarkytext dark:text-gray-200 dark:focus:border-darkdarkytext block pl-0 p-2.5 w-full text-[18px] sm:text-[20px] font-light outline-none text-primaryColor   border-b border-buttonColor focus:ring-darkytext focus:"
                     placeholder={Contact.message}
                     defaultValue={""}
                   />
@@ -146,7 +146,7 @@ const ContactSection = () => {
                   <button
                     type="submit"
                     disabled={state.submitting}
-                    className="bg-buttonColor   text-[18px] sm:text-[20px]  text-secondaryColor font-light  dark:text-darkbgcolor  p-[5px_24px_6px] "
+                    className="bg-buttonColor boxShadow border-2 border-white  text-[18px] sm:text-[20px]  text-secondaryColor font-light  dark:text-darkbgcolor  p-[5px_24px_6px] "
                   >
                     {Contact.msgButton}
                   </button>
