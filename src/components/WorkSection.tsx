@@ -6,7 +6,7 @@ import { WorkSectiondataprops } from "../models/Interface";
 const WorkSection = ({ darkMode }: WorkSectiondataprops) => {
   return (
     <div className=" flex items-center justify-center h-full w-full">
-      <div className="dark:bg-darkytext lg:mx-10 xl:mx-auto border   bg-secondaryColor  ">
+      <div className="dark:bg-darkytext  border   bg-secondaryColor  ">
         
         <div className="p-4 sm:p-8 ">
           <div className="m-4 float-right flex  justify-center border  items-center transform transition-transform duration-300 ease-in-out hover:scale-105">

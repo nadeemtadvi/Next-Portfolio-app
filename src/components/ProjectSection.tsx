@@ -8,7 +8,7 @@ const ProjectSection = () => {
   return (
     <div className="">
       <div className="   dark:bg-darkbgcolor">
-        <div className="max-w-screen-xl mx-auto py-8 sm:py-12">
+        <div className="max-w-screen-xl mx-auto pt-8 md:py-8 lg:py-12">
           <div className="">
             <div
               id="skills"
@@ -20,9 +20,9 @@ const ProjectSection = () => {
             </div>
           </div>
 
-          <div className="relative md:grid grid-cols-2 mx-auto  gap-6 sm:px-8 px-4  sm:pt-8 lg:pt-24">
+          <div className="relative md:grid grid-cols-2 mx-auto gap-x-3 lg:gap-x-6 gap-y-8 lg:gap-y-12 sm:px-8 px-4  pt-16 lg:pt-24">
             {Project.projectObject.map((item, index) => (
-              <div key={index} className="py-4 sm:py-6  lg:py-0">
+              <div key={index} className="mb-12 md:mb-0">
                 {/* Image Section */}
                 <div className={` border  m-0 lg:m-0 w-full  `}>
                   <div className="">
@@ -33,7 +33,7 @@ const ProjectSection = () => {
                       height={100}
                       className="img-project  !w-full  border-b-2  "
                     />
-                    <div className="bg-purplereg dark:bg-darkytext  p-5  ">
+                    <div className="bg-purplereg dark:bg-darkytext  p-3 lg:p-5  ">
                       <div className="">
                         <div className="text-primaryColor dark:text-secondaryColor   font-medium text-[1.2rem] md:text-[1.6rem] ">
                           <h4 className="">{item.title}</h4>
@@ -41,7 +41,7 @@ const ProjectSection = () => {
                             {item.subtitle}
                           </p>
                         </div>
-                        <div className="flex items-center gap-2 sm:gap-6 pt-6 border-t">
+                        <div className="flex items-center gap-2 lg:gap-6 pt-6 border-t">
                           <Link href={item.LiveLink} target="_blank">
                             <div className="flex gap-3 items-center justify-center h-[38px] px-2 sm:px-4 bg-gradient-to-r from-primaryColor to-gray-700 text-secondaryColor rounded-full dark:text-secondaryColor   font-light  text-[15px] sm:text-[20px]">
                               <CiGlobe className="text-[1.5rem]" />

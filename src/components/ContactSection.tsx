@@ -26,7 +26,7 @@ const ContactSection = () => {
     <div className="">
      
       <div className="  dark:bg-darkbgcolor">
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-8 py-6 sm:py-10 lg:py-12">
+        <div className="mx-auto max-w-screen-xl px-4 sm:px-8 py-6 sm:py-8 lg:py-12">
           {showMessage && (
             <p className=" text-[15px] sm:text-[20px] bg-green-100  text-green-600 z-50 fixed top-[10px] right-[30px] p-[4px_50px_7px]">
               Message has been sent!
@@ -35,7 +35,7 @@ const ContactSection = () => {
           <div className="">
             <h4
               id="skills"
-              className="dark:text-darkbgcolor  text-[2rem]  mb-12 text-primaryColor  text-center  bg-[]"
+              className="dark:text-darkbgcolor  text-[2rem] pb-8 lg:pb-12 text-primaryColor  text-center  bg-[]"
             >
               <h6 className="relative  inline-block w-[240px]  text-[1.8rem]  font-light border border-gray-200 bg-secondaryColor  dark:-darkdarkytext">
                 {Contact.contact}
@@ -43,7 +43,7 @@ const ContactSection = () => {
               </h6>
             </h4>
           </div>
-          <div className=" lg:grid sm:grid-cols-[40%_auto] ">
+          <div className=" lg:grid sm:grid-cols-[40%_auto] pt-8 lg:pt-12 ">
             <div className="relative">
               <Image
                 src={cancelImg}
@@ -77,7 +77,7 @@ const ContactSection = () => {
                 ))}
               </div>
             </div>
-            <div className="lg:p-5 lg:pl-10">
+            <div className="lg:p-5 lg:pl-10 pt-8 lg:pt-0">
               <form onSubmit={handleSubmit}>
                 <div className="grid gap-3 sm:gap-6  md:grid-cols-2 mb-10">
                   <div className="md:mb-4">

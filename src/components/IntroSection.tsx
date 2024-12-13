@@ -49,10 +49,10 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
             </div>
           </div>
           <div className="">
-            <div className="mr-3 sm:mr-6  md:m0-0 lg:mr-0 md:h-[400px] flex justify-end lg:justify-center items-center">
+            <div className=" sm:mr-6  md:m0-0 lg:mr-0 md:h-[400px] flex justify-end lg:justify-center items-center">
               <div className="  flex justify-center items-center">
                 <div>
-                  <div className="relative h-[220px] sm:h-[260px] w-[170px] sm:w-[210px] img-container bg-purplereg flex items-center justify-start border  ">
+                  <div className="relative h-[220px] sm:h-[260px]  sm:w-[210px] img-container bg-purplereg flex items-center justify-start border  ">
                     <Image
                       src={darkMode ? userinfo.picture2 : userinfo.picture}
                       alt="dp"
@@ -64,10 +64,10 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
                       <FaLaptopCode />
                     </span>
                   </div>
-                  <div className="absolute top-0 right-0 flex items-center bottom-0">
-                    <h4 className="font-light text-[0.8rem] vertical-rl flex items-center gap-2 text-primaryColor dark:text-secondaryColor">
+                  <div className="mt-4 md:mt-0 md:absolute top-0 right-0 flex items-center bottom-0">
+                    <div className="font-light text-[0.8rem] md:vertical-rl flex items-center gap-2 text-primaryColor dark:text-secondaryColor">
                       {InterSect.follow}
-                      <div className="w-[1px] h-14 bg-primaryColor dark:bg-darktext"></div>
+                      <div className="hidden md:block w-[1px] h-14 bg-primaryColor dark:bg-darktext"></div>
                       <div className="text-[22px] flex gap-1">
                         <Link
                           href="https://www.linkedin.com/in/nadeem-tadvi-290339159"
@@ -84,7 +84,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
                           <FaSquareGithub />
                         </Link>
                       </div>
-                    </h4>
+                    </div>
                   </div>
                 </div>
               </div>

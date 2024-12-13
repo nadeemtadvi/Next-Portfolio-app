@@ -21,7 +21,7 @@ const AboutSection = ({ darkMode }: AboutSectiondataprops) => {
       </div>
       <div className={`${darkMode ? "" : " "}`}>
         <div className=" mx-auto max-w-screen-xl  ">
-          <div className="max-w-screen-lg mx-auto lg:pb-12 lg:pt-24  py-6">
+          <div className="max-w-screen-lg mx-auto lg:pb-12 lg:pt-24  pb-8 pt-16">
            
             <div className="relative flex items-center justify-center mx-4 md:mx-10 lg:mx-16">
               <p className=" border font-light  dark:bg-darkytext    text-[15px] sm:text-[20px] p-4 sm:p-12  text-primaryColor dark:text-secondaryColor  text-justify">
