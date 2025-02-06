@@ -8,7 +8,7 @@ const ProjectSection = () => {
   return (
     <div className="">
       <div className="   dark:bg-darkbgcolor">
-        <div className="max-w-screen-xl mx-auto pt-8 md:py-8 lg:py-12">
+        <div className="max-w-screen-2xl mx-auto pt-8 md:py-8 lg:py-12">
           <div className="">
             <div
               id="skills"

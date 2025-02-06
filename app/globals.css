@@ -27,7 +27,6 @@
   font-style: normal;
 }
 
-
 body,
 html {
   font-family: "Modern", "Frank Ruhl Libre", sans-serif, sans-serif;
@@ -69,7 +68,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #e7e9f6;
   color: #1623b2;
 }
-.jar-overlay{
+.jar-overlay {
   position: absolute;
   background-color: #ffffff4f;
   width: 181px;
@@ -96,40 +95,37 @@ body::-webkit-scrollbar-thumb {
   .jar-overlay {
     width: 162px;
     height: 168px;
-    border-radius: 34px;}
-  
+    border-radius: 34px;
+  }
 }
-.img-container{
+.img-container {
   border-top-right-radius: 160px;
   border-top-left-radius: 160px;
-  
-
 }
 
-.scroll-style::-webkit-scrollbar{
+.scroll-style::-webkit-scrollbar {
   width: 7px;
 }
 .scroll-style::-webkit-scrollbar-track {
-  background: #90a7eb3f; 
+  background: #90a7eb3f;
 }
 
 .scroll-style::-webkit-scrollbar-thumb {
-  background: #90A7EB; 
-  border-radius: 6px; 
+  background: #90a7eb;
+  border-radius: 6px;
 }
 
-.bg-grid{
+.bg-grid {
   background-image: url("../src/assets/Images/gridlines.png");
   background-size: contain;
   background-position: center;
   background-repeat: repeat;
 }
-.lapbox{
+.lapbox {
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
-
 
 .moveelement {
   white-space: nowrap;
@@ -141,26 +137,26 @@ body::-webkit-scrollbar-thumb {
 }
 @keyframes move {
   from {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 
   to {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
 .text-ellipsis {
   display: -webkit-box;
-  -webkit-line-clamp: 4; 
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.writing-mode{
+.writing-mode {
   writing-mode: vertical-lr;
 }
 @media screen and (max-width: 767px) {
-  .writing-mode{
+  .writing-mode {
     writing-mode: horizontal-tb;
   }
 }
@@ -168,9 +164,25 @@ body::-webkit-scrollbar-thumb {
 .boxShadow {
   box-shadow: 0 0 0 2px #ff7a5c, 8px 8px 0 0 #ff7a5c;
 }
-.btnShadow{
-  box-shadow: rgba(255, 122, 92, 1) 5px 5px, rgba(255, 122, 92, 0.3) 10px 10px, rgba(255, 122, 92, 0.2) 15px 15px, rgba(255, 122, 92, 0.1) 20px 20px, rgba(255, 122, 92, 0.05) 25px 25px;
+.btnShadow {
+  box-shadow: rgba(255, 122, 92, 1) 5px 5px, rgba(255, 122, 92, 0.3) 10px 10px,
+    rgba(255, 122, 92, 0.2) 15px 15px, rgba(255, 122, 92, 0.1) 20px 20px,
+    rgba(255, 122, 92, 0.05) 25px 25px;
 }
 .dashedBorder {
   border: 1px dashed #ff7a5c;
+}
+
+.skillScroll::-webkit-scrollbar {
+  width: 8px;
+  height: 12px;
+}
+
+.skillScroll::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+.skillScroll::-webkit-scrollbar-thumb {
+  background-color: #dbdada;
+  border-radius: 10px;
 }

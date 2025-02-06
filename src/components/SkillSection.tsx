@@ -1,5 +1,5 @@
 import React from "react";
-import { Skills } from "../constant/constant";
+import { Skills} from "../constant/constant";
 import WorkSection from "./WorkSection";
 import { SkillSectiondataprops } from "../models/Interface";
 import { SiStorybook } from "react-icons/si";
@@ -29,7 +29,7 @@ const SkillSection = ({ darkMode }: SkillSectiondataprops) => {
 
   return (
     <div className=" dark:bg-darkbgcolor ">
-      <div className=" max-w-screen-xl mx-auto py-8 px-4 sm:px-8  lg:py-12">
+      <div className=" max-w-screen-2xl mx-auto py-8 px-4 sm:px-8  lg:py-12">
         <div className=" mx-auto">
           <div
             id="skills"
@@ -40,7 +40,7 @@ const SkillSection = ({ darkMode }: SkillSectiondataprops) => {
             </h6>
           </div>
           <div className="relative pt-8 lg:pt-12 lg:grid grid-cols-2">
-            <div className="boxShadow Experience-part lg:mr-[14px] ">
+            <div className="boxShadow Experience-part lg:mr-[14px] overflow-y-auto h-[80vh] skillScroll">
               <WorkSection darkMode={darkMode} />
             </div>
             <div className="pt-8 sm:pt-12 lg:pt-0  Skills-part xl:ml-10">

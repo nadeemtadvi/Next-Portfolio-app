@@ -26,7 +26,7 @@ const ContactSection = () => {
     <div className="">
      
       <div className="  dark:bg-darkbgcolor">
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-8 py-6 sm:py-8 lg:py-12">
+        <div className="mx-auto max-w-screen-2xl px-4 sm:px-8 py-6 sm:py-8 lg:py-12">
           {showMessage && (
             <p className=" text-[18px] sm:text-[20px] bg-green-100  text-green-600 z-50 fixed top-[10px] right-[30px] p-[4px_50px_7px]">
               Message has been sent!

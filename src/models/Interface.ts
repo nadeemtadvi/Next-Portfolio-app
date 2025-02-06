@@ -56,15 +56,16 @@ export interface SkillSectionProps {
   title: string;
   skillObj: skillobject[];
 }
-
-export interface WorkSectionProps {
+export interface WorkSectionArray {
   title: string;
-  button: string;
   startDate: string;
   endDate: string;
   subtitle: string;
   image: string | StaticImageData;
   image2: string | StaticImageData;
+}
+export interface WorkSectionProps {
+  workDetail : WorkSectionArray[]
 }
 
 export interface projectObj {

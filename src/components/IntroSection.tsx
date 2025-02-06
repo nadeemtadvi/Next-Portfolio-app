@@ -15,7 +15,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
   return (
     <div className="bg-layoutColor dark:bg-darkbgcolor">
       {" "}
-      <div className="max-w-screen-xl mx-auto">
+      <div className="max-w-screen-2xl mx-auto">
         <div className="relative md:grid grid-cols-2 p-4 sm:px-8  lg:py-12">
           <Image
             src={arrowImg}
@@ -64,7 +64,7 @@ const IntroSection = ({ darkMode }: IntroSectiondataprops) => {
                       <FaLaptopCode />
                     </span>
                   </div>
-                  <div className="mt-4 md:mt-0 md:absolute top-0 right-0 flex items-center bottom-0">
+                  <div className="mt-4 md:mt-0 md:absolute top-0 right-[1.34rem] flex items-center bottom-0">
                     <div className="font-light text-[0.8rem] writing-mode md:vertical-rl flex items-center gap-2 text-primaryColor dark:text-secondaryColor">
                       {InterSect.follow}
                       <div className="hidden md:block w-[1px] h-14 bg-primaryColor dark:bg-darktext"></div>

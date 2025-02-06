@@ -15,6 +15,7 @@ import {
 
 import illustrate from "../assets/Images/Profile/profileN.png";
 import illustrate2 from "../assets/Images/Profile/profileN.png";
+import cmplogo3 from "../assets/Images/CompanyLogo/cmplogo.jpg";
 import cmplogo from "../assets/Images/CompanyLogo/AplLogo.png";
 import cmplogo2 from "../assets/Images/CompanyLogo/AplLogo-removebg-preview.png";
 import logo from "../assets/Images/LOGO/Nadeemlight.png";
@@ -65,9 +66,9 @@ export const InterSect: IntroSectionProps = {
   title: "Hi, I’m",
   spanname: "Nadeem,",
   middletext: "a passionate",
-  spanwork: "UI UX Developer",
+  spanwork: "Frontend Developer",
   subtitle:
-  "I specialize in UI/UX design, crafting modern, user-friendly interfaces that elevate user experiences. Driven by a passion for innovation, I leverage Figma to bring creative ideas to life and effectively solve design challenges.",
+    "I specialize in frontend developer, crafting responsive, user-friendly websites with a focus on clean, maintainable code.  I stay updated on the latest trends to deliver innovative solutions.",
   contact: "Contact Me",
   resume: "View Resume",
   image: "",
@@ -78,7 +79,7 @@ export const AboutMe: AboutSectionProps = {
   about: "About me",
   title: "Curious about me?",
   subtitle:
-  "I’m Nadeem, UI UX Developer with hands on experience in creating engaging websites. I specialize in UI/UX design and have developed a full-stack blogging platform using React and Redux. My designs are crafted in Figma, ensuring modern, user-friendly interfaces that look great on any device.  I am passionate about solving design challenges and improving user experiences through innovative solutions. Let's create something amazing together!",
+    "I’m Nadeem, Frontend developer, building modern, responsive, and user-friendly websites that enhance the digital experience. With a strong focus on clean, maintainable code and performance optimization, I utilize technologies like HTML, CSS, JavaScript, and React to bring ideas to life. Passionate about creating seamless and intuitive user interfaces, I continuously stay updated with the latest trends and best practices in frontend development to deliver innovative solutions for design and functionality challenges.",
   image: profile,
 
 };
@@ -101,16 +102,29 @@ export const Skills: SkillSectionProps = {
 };
 
 export const Works: WorkSectionProps = {
-  button: "Experience",
-  title: "UI UX Developer",
-  startDate: "Jan 2024",
-  endDate: "Sept 2024",
-  subtitle:
-    "I developed and maintained responsive websites to ensure a seamless user experience across all devices. By designing intuitive interfaces in Figma, I enhanced both the visual appeal and usability of websites, making interactions smooth and enjoyable. I also optimized web performance through efficient coding and testing practices, leading to faster load times and improved responsiveness.Collaborating closely with cross-functional teams, I aligned project goals and met deadlines, consistently delivering high-quality solutions.",
-  image: cmplogo,
-  image2: cmplogo2,
-};
+  workDetail: [
+    {
 
+      title: "Frontend Developer",
+      startDate: "Dec 2024",
+      endDate: "Feb 2025",
+      subtitle:
+        "I developed and maintained responsive websites, ensuring a smooth user experience across all devices. Using HTML, CSS, JavaScript, and React, I optimized performance, reduced load times, and improved responsiveness. Collaborating with cross-functional teams, I consistently delivered high-quality, user-friendly solutions on time.",
+      image: cmplogo3,
+      image2: cmplogo3,
+    },
+    {
+
+      title: "UI UX Developer",
+      startDate: "Jan 2024",
+      endDate: "Sept 2024",
+      subtitle:
+        "I developed and maintained responsive websites to ensure a seamless user experience across all devices. By designing intuitive interfaces in Figma, I enhanced both the visual appeal and usability of websites, making interactions smooth and enjoyable. I also optimized web performance through efficient coding and testing practices, leading to faster load times and improved responsiveness.Collaborating closely with cross-functional teams, I aligned project goals and met deadlines, consistently delivering high-quality solutions.",
+      image: cmplogo,
+      image2: cmplogo2,
+    },
+  ]
+};
 export const Project: ProjectSectionProps = {
   project: "Projects",
   projectObject: [
@@ -120,9 +134,9 @@ export const Project: ProjectSectionProps = {
       LiveLink: "https://shamidarbar.netlify.app/",
       Github: FaGithub,
       title: "Shami Darbar",
-      button: ["HTML", "CSS","JavaScript", "Tailwind"],
+      button: ["HTML", "CSS", "JavaScript", "Tailwind"],
       subtitle:
-      "Foodie-Cafe-App is a modern and responsive landing page designed to captivate users and provide a seamless introduction to the Foodie-Resto app. Built using HTML, Tailwind CSS, and JavaScript, this project emphasizes clean design, fast loading speeds, and user engagement." , 
+        "Foodie-Cafe-App is a modern and responsive landing page designed to captivate users and provide a seamless introduction to the Foodie-Resto app. Built using HTML, Tailwind CSS, and JavaScript, this project emphasizes clean design, fast loading speeds, and user engagement.",
     },
     {
       image: wellspring,
@@ -130,9 +144,9 @@ export const Project: ProjectSectionProps = {
       LiveLink: "https://wellspringblog.netlify.app/",
       Github: FaGithub,
       title: "WellSpring",
-      button: ["HTML", "CSS", "JavaScript", "React", "Tailwind","Mongodb", "expressjs", ],
+      button: ["HTML", "CSS", "JavaScript", "React", "Tailwind", "Mongodb", "expressjs",],
       subtitle:
-      "**Wellspring** is a modern blogging platform with advanced features like content generation powered by AI. This application provides a seamless user experience with robust backend support and an elegant frontend design."  
+        "**Wellspring** is a modern blogging platform with advanced features like content generation powered by AI. This application provides a seamless user experience with robust backend support and an elegant frontend design."
     },
     {
       image: cryptopedia,
@@ -140,9 +154,9 @@ export const Project: ProjectSectionProps = {
       LiveLink: "https://cryptopedia-update.netlify.app/",
       Github: FaGithub,
       title: "Cryptopedia",
-      button: ["HTML", "CSS", "JavaScript", "React", "Tailwind","Mongodb", "expressjs", ],
+      button: ["HTML", "CSS", "JavaScript", "React", "Tailwind", "Mongodb", "expressjs",],
       subtitle:
-      "A complete blogging website built with a MERN stack and styled using Tailwind CSS. Features include post creation, editing, and deletion, along with user authentication and dynamic content rendering. Backend and frontend are seamlessly integrated, providing a smooth user experience. "  
+        "A complete blogging website built with a MERN stack and styled using Tailwind CSS. Features include post creation, editing, and deletion, along with user authentication and dynamic content rendering. Backend and frontend are seamlessly integrated, providing a smooth user experience. "
     },
     {
       image: shanti,
@@ -150,12 +164,12 @@ export const Project: ProjectSectionProps = {
       LiveLink: "https://shantifurniture.netlify.app/",
       Github: FaGithub,
       title: "Shanti Furniture",
-      button: ["HTML", "CSS", "JavaScript", "React", "Tailwind", ],
+      button: ["HTML", "CSS", "JavaScript", "React", "Tailwind",],
       subtitle:
-      "Furniture E-commerce App - A responsive e-commerce application for furniture items, built with React and Tailwind CSS. This app provides a modern and clean user interface for browsing and purchasing furniture, designed to be fully responsive across all devices."  
+        "Furniture E-commerce App - A responsive e-commerce application for furniture items, built with React and Tailwind CSS. This app provides a modern and clean user interface for browsing and purchasing furniture, designed to be fully responsive across all devices."
     },
-   
-    
+
+
   ],
 };
 

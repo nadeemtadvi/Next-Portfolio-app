@@ -29,7 +29,7 @@ const Header = ({ darkMode, setDarkMode }: Headerdataprops) => {
   return (
     <>
       <div className="mb-[0rem]  bg-secondaryColor  dark:bg-primaryColor border-b ">
-        <div className="max-w-screen-xl mx-auto">
+        <div className="max-w-screen-2xl mx-auto">
           {" "}
           <div className="h-[75px] flex justify-between  items-center p-4 sm:px-8">
             <div className=" text-center  h-full  flex justify-center  items-center">

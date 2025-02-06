@@ -20,7 +20,7 @@ const AboutSection = ({ darkMode }: AboutSectiondataprops) => {
         </div>
       </div>
       <div className={`${darkMode ? "" : " "}`}>
-        <div className=" mx-auto max-w-screen-xl  ">
+        <div className=" mx-auto max-w-screen-2xl  ">
           <div className="max-w-screen-lg mx-auto lg:pb-12 lg:pt-24  pb-8 pt-16">
            
             <div className="boxShadow relative flex items-center justify-center mx-4 md:mx-10 lg:mx-16">
